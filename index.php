@@ -64,4 +64,4 @@ if($ch_response === FALSE){
   }
 }
 */
-echo $text; //$reply;
+echo $text."garbage"; //$reply;
