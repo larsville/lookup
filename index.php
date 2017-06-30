@@ -5,7 +5,7 @@ $text = $_POST['text'];
 $token = $_POST['token'];
 # Check the token and make sure the request is from our team
 if($token != 'yGmqYtpolYQE7j2x9E3vx3YQ'){ #replace this with the token from your slash command configuration page
-  $msg = "The token for the slash command doesn't match. Check your script.";
+  $msg = "Unauthorized access.";
   die($msg);
   echo $msg;
 }
