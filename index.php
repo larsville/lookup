@@ -10,6 +10,7 @@ if($token != 'yGmqYtpolYQE7j2x9E3vx3YQ'){ #replace this with the token from your
   echo $msg;
 }
 $text = strtolower($text);
+$quote = '"';
 /*
 $environment = "";
 if($text == "prod"){
@@ -32,7 +33,7 @@ if($text == "?" || $text == "" || $text == "help"){
   echo $msg;
 } else {
   // look up the thing that was typed
-  echo 'Sorry, I don'."'".'t yet know about "'.$text.'"'; //$reply;
+  echo "Sorry, I don't know about ".$quote.$text.$quote; //$reply;
 }
 /*
 $user_agent = "BIM360IQSlackHealth/1.0 (https://git.autodesk.com/murithn/iq-health-slash-command; nathan.murith@autodesk.com)";
