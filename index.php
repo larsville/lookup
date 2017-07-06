@@ -32,7 +32,7 @@ if($text == "?" || $text == "" || $text == "help"){
   //exit($msg);
   echo $msg;
 } else if($text == "mendeleev") { 
-  echo "Dmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements.\n\nThe Mendeleev conference room is near Lars's desk."
+  echo "The Mendeleev conference room is near Lars's desk. Dmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements."
 } else {
   // look up the thing that was typed
   echo "Sorry, I don't know about ".$quote.$text.$quote."."; //$reply;
