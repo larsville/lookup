@@ -32,7 +32,7 @@ if($text == "?" || $text == "" || $text == "help"){
   echo $msg;
 } else {
   // look up the thing that was typed
-  echo "Sorry I can't yet give you any help on ".$text; //$reply;
+  echo "Sorry, I don't yet know about: ".$text; //$reply;
 }
 /*
 $user_agent = "BIM360IQSlackHealth/1.0 (https://git.autodesk.com/murithn/iq-health-slash-command; nathan.murith@autodesk.com)";
