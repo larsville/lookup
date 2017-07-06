@@ -27,7 +27,7 @@ if($text == "prod"){
 if($text == "?" || $text == "" || $text == "help"){
   // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
   $environment = "";
-  $msg = "To find out what something is, type: slash question-mark something";
+  $msg = "To find out what something is, do this:   /? thing-you-want-to-know-about";
   //exit($msg);
   echo $msg;
 } else {
