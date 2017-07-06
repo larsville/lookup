@@ -31,6 +31,8 @@ if($text == "?" or $text == "" or $text == "help"){
   $msg = 'To find out about X, type "/? X"';
   //exit($msg);
   echo $msg;
+} else if($text == "lars"){ 
+  echo "*Lars* created me.";
 } else if($text == "mendeleev"){ 
   echo "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
 } else{
