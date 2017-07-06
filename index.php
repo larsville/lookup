@@ -31,9 +31,9 @@ if($text == "?" or $text == "" or $text == "help"){
   $msg = 'To find out about X, type "/? X"';
   //exit($msg);
   echo $msg;
-} else if($text == "mendeleev") { 
+} else if($text == "mendeleev"){ 
   echo "Hi."
-} else {
+} else{
   // look up the thing that was typed
   echo "Sorry, I don't know about ".$quote.$text.$quote."."; //$reply;
 }
