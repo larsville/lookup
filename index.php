@@ -23,6 +23,18 @@ if($text == "prod"){
   die($msg);
   echo $msg;
 }
+*/
+if($text == "?" || $text == "" || $text == "help"){
+  // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
+  $environment = "";
+  $msg = "To find out what something means, type 'slash-questionmark<space>something'.";
+  //exit($msg);
+  echo $msg;
+} else {
+  // look up the thing that was typed
+  echo "Sorry I can't yet give you any help on ".$text; //$reply;
+}
+/*
 $user_agent = "BIM360IQSlackHealth/1.0 (https://git.autodesk.com/murithn/iq-health-slash-command; nathan.murith@autodesk.com)";
 $environment_url = "https://bim360iq".$environment.".autodesk.com";
 $url_to_check = $environment_url."/health";
@@ -64,4 +76,4 @@ if($ch_response === FALSE){
   }
 }
 */
-echo "you typed ".$text; //$reply;
+//echo "you typed ".$text; //$reply;
