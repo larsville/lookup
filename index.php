@@ -60,6 +60,7 @@ function Lookup($term) {
   foreach($DataLines as $line)
   {
     $result = $line;
+    echo $result;
   }
 
   // if ($term == "lars")
