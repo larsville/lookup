@@ -64,21 +64,21 @@ function Response($input)
 function Lookup($term) {
 
   $result = "";
-  $term = strtolower($term).chr(9); // append tab char
-    Debug("Lookup", "term", $term);
+  // $term = strtolower($term).chr(9); // append tab char
+  //   Debug("Lookup", "term", $term);
 
-  global $DataLines;
-  foreach($DataLines as $line)
-  {
-    Debug("Lookup", "line", $line);
-    if (stripos($line, $term) == 0)
-    {
-      $result = $line;
-      break; // take the first match we find
-    }
-  }
+  // global $DataLines;
+  // foreach($DataLines as $line)
+  // {
+  //   Debug("Lookup", "line", $line);
+  //   if (stripos($line, $term) == 0)
+  //   {
+  //     $result = $line;
+  //     break; // take the first match we find
+  //   }
+  // }
 
-  Debug("Lookup", "result", $result);
+  // Debug("Lookup", "result", $result);
   return $result;
 
 } // end Lookup
