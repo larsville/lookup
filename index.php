@@ -53,7 +53,7 @@ function Lookup($term) {
   if ($term == "lars")
   { 
     $quote = '"';
-    $result = "<a href=".quote."ljensen.com".quote.">*Lars*</a> is my creator.";
+    $result = "<a href=".$quote."ljensen.com".$quote.">*Lars*</a> is my creator.";
   }
   // else if ($term == "mendeleev")
   // { 
