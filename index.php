@@ -1,14 +1,21 @@
 <?php
-# Grab some of the values from the slash command, create vars for post back to Slack
+
+// Extract the important values from the slash command.
+
 $command = $_POST['command'];
 $text = $_POST['text'];
 $token = $_POST['token'];
-# Check the token and make sure the request is from our team
-if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') { #replace this with the token from your slash command configuration page
-  $msg = "Unauthorized.";
+
+// Make sure we have the proper token.
+
+if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config page
+{
+  $msg = "Authorization failure.";
   die($msg);
   echo $msg;
 }
+
+$DataLines = file("data.txt");
 
 echo Response($text);
 
@@ -47,33 +54,25 @@ function Response($input)
 
 function Lookup($term) {
 
-  $result = "";
   $term = strtolower($term);
 
-  $lines = Data();
+  global $DataLines;
+  foreach($DataLines as $line)
+  {
+    $result = $line;
+  }
 
-  if ($term == "lars")
-  { 
-    $result = "*Lars* is my creator!";
-  }
-  else if ($term == "mendeleev")
-  { 
-    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-  }
+  // if ($term == "lars")
+  // { 
+  //   $result = "*Lars* is my creator!";
+  // }
+  // else if ($term == "mendeleev")
+  // { 
+  //   $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
+  // }
 
   return $result;
 
 } // end Lookup
-
-/////////////////
-
-function Data() {
-
-  echo "Reading data file";
-  $lines = file("data.txt");
-  echo $lines;
-  return $lines;
-
-} // end Dataset
 
 ?>
