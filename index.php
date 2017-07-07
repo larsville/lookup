@@ -29,8 +29,8 @@ if ($text == "?" or $text == "" or $text == "help") {
   // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
   $environment = "";
   $msg = 'To find out about X, type "/? X"';
-  Response();
   echo $msg;
+  echo Response($text);
 
 } else if ($text == "lars") { 
   echo "*Lars* is my creator.";
@@ -86,7 +86,7 @@ if($ch_response === FALSE){
 */
 //echo "you typed ".$text; //$reply;
 
-function Response($input){
+function Response($input = ""){
   echo "*_".$input."_*";
 }
 
