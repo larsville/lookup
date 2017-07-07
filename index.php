@@ -12,7 +12,7 @@ if($token != 'yGmqYtpolYQE7j2x9E3vx3YQ'){ #replace this with the token from your
   echo $msg;
 }
 
-echo Response($text)
+echo Response($text);
 //echo "you typed ".$text;
 /*
 if($text == "?" or $text == "" or $text == "help"){
@@ -36,24 +36,19 @@ function Response($term="") {
   $quote = '"';
   $term = strtolower($term);
 
-  if ($term == "" or $term == "?" or $term == "help")
-  {
+  if ($term == "" or $term == "?" or $term == "help") {
     // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
     $result = 'To find out about X, type "/? X"';
   }
-  else if ($term == "lars")
-  { 
-    $result = "*Lars* created me.";
-  }
-  else if ($term == "mendeleev")
-  { 
-    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-  } 
-  else 
-  {
-    // look up the thing that was typed
-    $result = "Sorry, I don't know about ".$quote.$term.$quote.".";
 
+  else if ($term == "mendeleev") { 
+    // Return some text about what was typed.
+    $result = "The *Mendeleev* conference room is near <a href="ljensen.com">Lars</a>'s desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
+  }
+
+  else {
+    // If we don't know anything about what was typed, admit defeat.
+    $result = "Sorry, I don't know about ".$quote.$term.$quote.".";
   }
 
   return $result;
