@@ -24,7 +24,7 @@ echo "\n".Response($text);
 
 function Debug($fn, $name, $value)
 {
-  echo "\n-> ".$fn.": ".$name." = ".$value;
+  echo "\n-> ".$fn.": ".$name." = <".$value.">";
 }
 
 /////////////////
