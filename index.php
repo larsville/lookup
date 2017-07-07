@@ -84,7 +84,7 @@ if($ch_response === FALSE){
 //echo "you typed ".$text; //$reply;
 
 function Response($input){
-  echo $input
+  echo $input;
 }
 
 ?>
