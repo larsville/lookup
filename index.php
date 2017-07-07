@@ -18,14 +18,14 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config pag
 $DataLines = file("data.txt");
 sort($DataLines);
 
-global debug; if ($debug) echo "\n".Response($text);
+echo "\n".Response($text);
 
 /////////////////
 
-function Debug($fn, $name, $value)
-{
-  echo "\n-> ".$fn.": ".$name." = ".$value;
-}
+// function Debug($fn, $name, $value)
+// {
+//   echo "\n-> ".$fn.": ".$name." = ".$value;
+// }
 
 /////////////////
 
@@ -45,7 +45,7 @@ function Response($input)
   {
     // Get the definition for our term.
     $result = Lookup($input);
-    Debug("Response", "input", $input);
+    //Debug("Response", "input", $input);
 
     if ($result == "")
     {
