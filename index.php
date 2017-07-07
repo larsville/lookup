@@ -38,6 +38,7 @@ function Response($input)
   {
     // Get the definition for our term.
     $result = Lookup($input);
+    echo "Response: input=".$input;
 
     if ($result == "")
     {
@@ -55,15 +56,18 @@ function Response($input)
 
 function Lookup($term) {
 
+  $result = "";
   $term = strtolower($term) + chr(9); // append tab char
+  echo "Lookup: term=".$term;
 
   global $DataLines;
   foreach($DataLines as $line)
   {
+    echo "Lookup: line=".$line;
     if (stripos($line, $term) == 0)
     {
       $result = $line;
-      break; // take the first one we find
+      break; // take the first match we find
     }
   }
 
