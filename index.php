@@ -14,26 +14,24 @@ echo Response($text);
 
 /////////////////
 
-function Response($input = "") {
+function Response($input) {
 
   $result = "";
   $input = strtolower($input);
 
   if ($input == "?" or $input == "" or $input == "help") {
-
     // Here if the user seems to need help.
     $result = 'Do you want to know who, what, or where a thing is? Just type: *_/? [thing]_*'
       ."\nThe thing can be a staff member, acronym, business term, or conference room.";
 
   } else {
-
     // Get the definition for our term.
-    $result = Lookup($input);
-    if ($result == "") {
+    $result = "";#Lookup($input);
 
+    if ($result == "") {
     // If there is no definition, admit defeat.
     $quote = '"';
-    $result = "Sorry, I don't know about ".$quote.$input.$quote."."; //$reply;
+    $result = "Sorry, I don't know about ".$quote.$input.$quote.".";
   
   }
 
@@ -43,22 +41,22 @@ function Response($input = "") {
 
 /////////////////
 
-function Lookup($term = "") {
+// function Lookup($term) {
 
-  $result = "";
-  $term = strtolower($term);
+//   $result = "";
+//   $term = strtolower($term);
 
-  if ($input == "lars") { 
-    // Return the string corresponding to the result.
-    $result = "*Lars* is my creator.";
+//   if ($input == "lars") { 
+//     // Return the string corresponding to the result.
+//     $result = "<a href="ljensen.com">*Lars*</a> is my creator.";
 
-  } else if ($input == "mendeleev") { 
-    // Return the string corresponding to the result.
-    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
+//   } else if ($input == "mendeleev") { 
+//     // Return the string corresponding to the result.
+//     $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
 
-  }
+//   }
 
-  return $result;
+//   return $result;
 
 } // end Lookup
 
