@@ -20,21 +20,18 @@ function Response($input = "") {
   $input = strtolower($input);
 
   if ($input == "?" or $input == "" or $input == "help") {
+
     // Here if the user seems to need help.
-    $environment = "";
     $result = 'Do you want to know who, what, or where a thing is? Just type: *_/? [thing]_*'
       ."\nThe thing can be a staff member, acronym, business term, or conference room.";
 
-  } else if ($input == "lars") { 
-    // Return the string corresponding to the result.
-    $result = "*Lars* is my creator.";
-
-  } else if ($input == "mendeleev") { 
-    // Return the string corresponding to the result.
-    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-
   } else {
-    // Admit defeat.
+
+    // Get the definition for our term.
+    $result = Lookup($input);
+    if ($result == "") {
+
+    // If there is no definition, admit defeat.
     $quote = '"';
     $result = "Sorry, I don't know about ".$quote.$input.$quote."."; //$reply;
   
@@ -43,5 +40,26 @@ function Response($input = "") {
   return $result;
 
 } // end Response
+
+/////////////////
+
+function Lookup($term = "") {
+
+  $result = "";
+  $term = strtolower($term);
+
+  if ($input == "lars") { 
+    // Return the string corresponding to the result.
+    $result = "*Lars* is my creator.";
+
+  } else if ($input == "mendeleev") { 
+    // Return the string corresponding to the result.
+    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
+
+  }
+
+  return $result;
+
+} // end Lookup
 
 ?>
