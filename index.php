@@ -12,9 +12,9 @@ if($token != 'yGmqYtpolYQE7j2x9E3vx3YQ'){ #replace this with the token from your
   echo $msg;
 }
 
-echo Response($text);
+//echo Response($text);
 //echo "you typed ".$text;
-/*
+// /*
 if($text == "?" or $text == "" or $text == "help"){
   // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
   $msg = 'To find out about X, type "/? X"';
@@ -28,16 +28,16 @@ if($text == "?" or $text == "" or $text == "help"){
   // look up the thing that was typed
   echo "Sorry, I don't know about ".$quote.$text.$quote."."; //$reply;
 }
-*/
+//*/
 
-function Response($term="") {
+function Response($term = "") {
 
   $result = "";
   $quote = '"';
   $term = strtolower($term);
 
   if ($term == "" or $term == "?" or $term == "help") {
-    // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
+    // Here if the user probably needs some help. Give a helpful message.
     $result = 'To find out about X, type "/? X"';
   }
 
