@@ -32,7 +32,7 @@ if($text == "?" or $text == "" or $text == "help"){
 
 function Response($term="") {
 
-  $result = ""
+  $result = "";
   $quote = '"';
   $term = strtolower($term);
 
@@ -52,7 +52,7 @@ function Response($term="") {
   else 
   {
     // look up the thing that was typed
-    $result = "Sorry, I don't know about ".$quote.$term.$quote."."; //$reply;
+    $result = "Sorry, I don't know about ".$quote.$term.$quote.".";
 
   }
 
