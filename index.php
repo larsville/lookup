@@ -18,7 +18,14 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config pag
 $DataLines = file("data.txt");
 sort($DataLines);
 
-echo "\n".Response($text);
+global debug; if ($debug) echo "\n".Response($text);
+
+/////////////////
+
+function Debug($fn, $name, $value)
+{
+  echo "\n-> ".$fn.": ".$name." = ".$value;
+}
 
 /////////////////
 
@@ -38,7 +45,7 @@ function Response($input)
   {
     // Get the definition for our term.
     $result = Lookup($input);
-    echo "\n-> Response: input=".$input;
+    Debug("Response", "input", $input);
 
     if ($result == "")
     {
@@ -58,12 +65,12 @@ function Lookup($term) {
 
   $result = "";
   $term = strtolower($term).chr(9); // append tab char
-  echo "\n-> Lookup: term=".$term;
+    Debug("Lookup", "term", $term);
 
   global $DataLines;
   foreach($DataLines as $line)
   {
-    echo "\n-> Lookup: line=".$line;
+    Debug("Lookup", "line", $line);
     if (stripos($line, $term) == 0)
     {
       $result = $line;
@@ -71,7 +78,7 @@ function Lookup($term) {
     }
   }
 
-  echo "\n-> Lookup: result=".$result;
+  Debug("Lookup", "result", $result);
   return $result;
 
 } // end Lookup
