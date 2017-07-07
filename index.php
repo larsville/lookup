@@ -24,7 +24,7 @@ echo "\n".Response($text);
 
 function Debug($scope, $name, $value)
 {
-  echo "\n-->".$scope.": <".$name."> = <".$value.">";
+  //echo "\n-->".$scope.": <".$name."> = <".$value.">";
 }
 
 /////////////////
