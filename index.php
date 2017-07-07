@@ -38,7 +38,7 @@ function Response($input)
   {
     // Get the definition for our term.
     $result = Lookup($input);
-    echo "Response: input=".$input;
+    echo "\n-> Response: input=".$input;
 
     if ($result == "")
     {
@@ -58,12 +58,12 @@ function Lookup($term) {
 
   $result = "";
   $term = strtolower($term) + chr(9); // append tab char
-  echo "Lookup: term=".$term;
+  echo "\n-> Lookup: term=".$term;
 
   global $DataLines;
   foreach($DataLines as $line)
   {
-    echo "Lookup: line=".$line;
+    echo "\n-> Lookup: line=".$line;
     if (stripos($line, $term) == 0)
     {
       $result = $line;
@@ -71,6 +71,7 @@ function Lookup($term) {
     }
   }
 
+  echo "\n-> Lookup: result=".$result;
   return $result;
 
 } // end Lookup
