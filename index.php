@@ -50,6 +50,8 @@ function Lookup($term) {
   $result = "";
   $term = strtolower($term);
 
+  echo Dataset();
+
   if ($term == "lars")
   { 
     $result = "*Lars* is my creator!";
@@ -62,5 +64,13 @@ function Lookup($term) {
   return $result;
 
 } // end Lookup
+
+/////////////////
+
+function Dataset() {
+
+  return file("dataset.txt");
+
+} // end Dataset
 
 ?>
