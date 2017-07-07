@@ -22,7 +22,7 @@ function Response($input = "") {
   if ($input == "?" or $input == "" or $input == "help") {
     // Here if the user seems to need help.
     $environment = "";
-    $result = 'Do you want to know who, what, or where a thing is? Just type *_/? [thing]_*.'
+    $result = 'Do you want to know who, what, or where a thing is? Just type: *_/? [thing]_*'
       ."\nThe thing can be a staff member, acronym, business term, or conference room.";
 
   } else if ($input == "lars") { 
