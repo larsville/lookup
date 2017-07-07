@@ -22,10 +22,10 @@ echo "\n".Response($text);
 
 /////////////////
 
-// function Debug($fn, $name, $value)
-// {
-//   echo "\n-> ".$fn.": ".$name." = ".$value;
-// }
+function Debug($fn, $name, $value)
+{
+  echo "\n-> ".$fn.": ".$name." = ".$value;
+}
 
 /////////////////
 
@@ -78,7 +78,7 @@ function Lookup($term) {
   //   }
   // }
 
-  // Debug("Lookup", "result", $result);
+  Debug("Lookup", "result", $result);
   return $result;
 
 } // end Lookup
