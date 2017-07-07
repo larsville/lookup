@@ -4,7 +4,7 @@ $command = $_POST['command'];
 $text = $_POST['text'];
 $token = $_POST['token'];
 # Check the token and make sure the request is from our team
-if($token != 'yGmqYtpolYQE7j2x9E3vx3YQ'){ #replace this with the token from your slash command configuration page
+if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') { #replace this with the token from your slash command configuration page
   $msg = "Unauthorized.";
   die($msg);
   echo $msg;
@@ -25,17 +25,20 @@ if($text == "prod"){
   echo $msg;
 }
 */
-if($text == "?" or $text == "" or $text == "help"){
+if ($text == "?" or $text == "" or $text == "help") {
   // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
   $environment = "";
   $msg = 'To find out about X, type "/? X"';
-  //exit($msg);
+  Response();
   echo $msg;
-} else if($text == "lars"){ 
+
+} else if ($text == "lars") { 
   echo "*Lars* is my creator.";
-} else if($text == "mendeleev"){ 
+
+} else if ($text == "mendeleev") { 
   echo "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-} else{
+
+} else {
   // look up the thing that was typed
   echo "Sorry, I don't know about ".$quote.$text.$quote."."; //$reply;
 }
@@ -84,7 +87,7 @@ if($ch_response === FALSE){
 //echo "you typed ".$text; //$reply;
 
 function Response($input){
-  echo $input;
+  echo "*_".$input."_*";
 }
 
 ?>
