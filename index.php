@@ -22,8 +22,8 @@ function Response($input = "") {
   if ($input == "?" or $input == "" or $input == "help") {
     // Here if the user seems to need help.
     $environment = "";
-    $result = 'You can find out who, what, or where something is by typing "/? something"'
-    ."\nThe thing can be a person, acronym, business term, or conference room.";
+    $result = 'You can find out who, what, or where a thing is by typing </? thing>.'
+      ."\nThe thing can be a staff member, acronym, business term, or conference room.";
 
   } else if ($input == "lars") { 
     // Return the string corresponding to the result.
