@@ -82,3 +82,5 @@ if($ch_response === FALSE){
 }
 */
 //echo "you typed ".$text; //$reply;
+
+?>
