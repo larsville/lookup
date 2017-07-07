@@ -9,44 +9,35 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') { #replace this with the token from yo
   die($msg);
   echo $msg;
 }
-$text = strtolower($text);
-$quote = '"';
-/*
-$environment = "";
-if($text == "prod"){
-  $environment = "";
-} else if ($text == "dev" or $text == "qa"){
-  $environment = "-".$text;
-} else if ($text == "stage" or $text == "staging"){
-  $environment = "-staging";
-} else {
-  $msg = "The environment specified does not exist. Please specify dev, qa, stage or prod.";
-  die($msg);
-  echo $msg;
-}
-*/
-if ($text == "?" or $text == "" or $text == "help") {
-  // Here if the user typed in no argument, or a question mark, or "help". Give a helpful message.
-  $environment = "";
-  $msg = 'To find out about X, type "/? X"';
-  echo $msg;
-  echo Response($text);
 
-} else if ($text == "lars") { 
-  echo "*Lars* is my creator.";
+echo Response($text);
 
-} else if ($text == "mendeleev") { 
-  echo "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-
-} else {
-  // look up the thing that was typed
-  echo "Sorry, I don't know about ".$quote.$text.$quote."."; //$reply;
-}
+/////////////////
 
 function Response($input = "") {
+
   $result = "";
-  $quote = '"';
-  $result = "input = ".$quote.$input.$quote;
+  $input = strtolower($input);
+
+  if ($input == "?" or $input == "" or $input == "help") {
+    // Here if the user seems to need help.
+    $environment = "";
+    $result = 'To find out about X, type "/? x"';
+
+  } else if ($input == "lars") { 
+    // Return the string corresponding to the result.
+    $result = "*Lars* is my creator.";
+
+  } else if ($input == "mendeleev") { 
+    // Return the string corresponding to the result.
+    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
+
+  } else {
+    // Admit defeat.
+    $quote = '"';
+    $result = "Sorry, I don't know about ".$quote.$input.$quote."."; //$reply;
+  
+  }
 
   return $result;
 
