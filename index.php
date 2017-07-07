@@ -83,6 +83,8 @@ if($ch_response === FALSE){
 */
 //echo "you typed ".$text; //$reply;
 
-function Response(){}
+function Response($input){
+  echo $input
+}
 
 ?>
