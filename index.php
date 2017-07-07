@@ -18,7 +18,7 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config pag
 $DataLines = file("data.txt");
 sort($DataLines);
 
-echo Response($text);
+echo "\n".Response($text);
 
 /////////////////
 
@@ -57,7 +57,7 @@ function Response($input)
 function Lookup($term) {
 
   $result = "";
-  $term = strtolower($term) + chr(9); // append tab char
+  $term = strtolower($term).chr(9); // append tab char
   echo "\n-> Lookup: term=".$term;
 
   global $DataLines;
