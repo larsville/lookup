@@ -83,13 +83,4 @@ if($ch_response === FALSE){
 */
 //echo "you typed ".$text; //$reply;
 
-function Response($input="") {
-  $quote = '";'
-  $result = "";
-
-  $result = "input = ".$quote.$input.$quote;
-
-  return $result;
-
-} // end Response
 ?>
