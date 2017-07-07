@@ -71,7 +71,8 @@ function Lookup($term) {
   foreach($DataLines as $line)
   {
     Debug("Lookup", "line", $line);
-    if (stripos($line, $term) == 0)
+    Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
+    if (stripos($line, $term))
     {
       $result = $line;
       break; // take the first match we find
