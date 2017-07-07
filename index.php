@@ -35,7 +35,7 @@ function Response($input)
     {
       // If there is no definition, admit defeat.
       $quote = '"';
-      $result = "Sorry, I don't know about ".$quote.$input.$quote.".";
+      $result = "Sorry, I don't know about ".$quote.$input.$quote.". Try a staff member, acronym, business term, or conference room.";
     }
   }
 
