@@ -16,6 +16,7 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config pag
 }
 
 $DataLines = file("data.txt");
+sort($DataLines);
 
 echo Response($text);
 
@@ -54,23 +55,17 @@ function Response($input)
 
 function Lookup($term) {
 
-  $term = strtolower($term);
+  $term = strtolower($term) + chr(9); // append tab char
 
   global $DataLines;
   foreach($DataLines as $line)
   {
-    $result = $line;
-    echo $result;
+    if (stripos($line, $term) == 0)
+    {
+      $result = $line;
+      break; // take the first one we find
+    }
   }
-
-  // if ($term == "lars")
-  // { 
-  //   $result = "*Lars* is my creator!";
-  // }
-  // else if ($term == "mendeleev")
-  // { 
-  //   $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-  // }
 
   return $result;
 
