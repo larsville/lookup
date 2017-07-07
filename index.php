@@ -22,9 +22,9 @@ echo "\n".Response($text);
 
 /////////////////
 
-function Debug($fn, $name, $value)
+function Debug($scope, $name, $value)
 {
-  echo "\n-> ".$fn.": ".$name." = <".$value.">";
+  echo "\n*** <".$scope.">: <".$name."> = <".$value.">";
 }
 
 /////////////////
@@ -71,7 +71,7 @@ function Lookup($term) {
   foreach($DataLines as $line)
   {
     //Debug("Lookup", "line", $line);
-    Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
+    Debug("Lookup", "stripos(line, term)", stripos($line, $term));
     if (stripos($line, $term))
     {
       $result = $line;
