@@ -72,7 +72,7 @@ function Lookup($term) {
   {
     //Debug("Lookup", "line", $line);
     Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
-    if (stripos($line, $term) == 0)
+    if (stripos($line, $term))
     {
       $result = $line;
       break; // take the first match we find
