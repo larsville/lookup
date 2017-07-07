@@ -52,13 +52,12 @@ function Lookup($term) {
 
   if ($term == "lars")
   { 
-    $quote = '"';
-    $result = "<a href=".$quote."ljensen.com".$quote.">*Lars*</a> is my creator.";
+    $result = "*Lars* is my creator!";
   }
-  // else if ($term == "mendeleev")
-  // { 
-  //   $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
-  // }
+  else if ($term == "mendeleev")
+  { 
+    $result = "The *Mendeleev* conference room is near Lars's desk.\n\nDmitri Ivanovich *Mendeleev* (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev";
+  }
 
   return $result;
 
