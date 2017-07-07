@@ -72,10 +72,11 @@ function Lookup($term) {
   {
     //Debug("Lookup", "line", $line);
     Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
-    if (stripos($line, $term) === 0)
+    if (stripos($line, $term) === 0) // note strict comparison operator
     {
-      $result = $line;
-      break; // take the first match we find
+      //$result = $line;
+      $result = substr($line, strlen($term));
+      break; // one match is all we need
     }
   }
 
