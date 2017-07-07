@@ -45,7 +45,7 @@ function Response($input)
   {
     // Get the definition for our term.
     $result = Lookup($input);
-    //Debug("Response", "input", $input);
+    Debug("Response", "input", $input);
 
     if ($result == "")
     {
