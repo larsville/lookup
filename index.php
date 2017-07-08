@@ -74,9 +74,8 @@ function Lookup($term) {
     Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
     if (stripos($line, $term) === 0) // note strict comparison operator
     {
-      //$result = $line;
       $result = substr($line, strlen($term));
-      $result = str_ireplace($term,"\\"."n","\n");
+      result = str_ireplace($result,"\\n","\n");
       break; // one match is all we need
     }
   }
