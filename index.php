@@ -76,7 +76,7 @@ function Lookup($term) {
       $result = substr($line, strlen($termWithSep));
       $result = str_ireplace("\\n", chr(13), $result);
       $canonicalTerm = substr($line, strlen($term));
-      $result = str_ireplace($term, "*".$canonicalTerm."*", $result); // bold the target
+      $result = str_ireplace($term, "*target*", $result); // bold the target
       break; // one match is all we need
     }
   }
