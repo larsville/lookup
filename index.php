@@ -37,8 +37,8 @@ function Response($input)
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
-    $result = 'Do you want to know who, what, or where a thing is? Just type: *_/? [thing]_*'
-      ."\nThe thing can be a staff member, acronym, business term, or conference room.";
+    $result = 'If you want to know who, what, or where a thing is, just type: *_/? [thing]_*'
+      ."\nTry it with acronyms, business terms, code names, staff members, even conference rooms.";
 
   }
   else
@@ -51,7 +51,7 @@ function Response($input)
     {
       // If there is no definition, admit defeat.
       $quote = '"';
-      $result = "Sorry, I don't know about ".$quote.$input.$quote.". Try a staff member, acronym, business term, or conference room.";
+      $result = "Sorry, I don't know about ".$quote.$input.$quote.". Try an acronym, business term, code name, staff member, or conference room.";
     }
   }
 
@@ -64,20 +64,18 @@ function Response($input)
 function Lookup($term) {
 
   $result = "";
-  $term_orig = $term; // save for bolding later
-  $term = strtolower($term).chr(9); // append tab char
-    Debug("Lookup", "term", $term);
+  $termWithSep = strtolower($term).chr(9); // append tab char
+    Debug("Lookup", "termWithSep", $termWithSep);
 
   global $DataLines;
   foreach($DataLines as $line)
   {
-    //Debug("Lookup", "line", $line);
-    Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
-    if (stripos($line, $term) === 0) // note strict comparison operator
+    Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
+    if (stripos($line, $termWithSep) === 0) // note strict comparison operator
     {
-      $result = substr($line, strlen($term)); // exclude first field
+      $result = substr($line, strlen($termWithSep));
       # $result = str_ireplace("\\n", chr(13));
-      # $result = str_ireplace($term_orig, "*".$term_orig."*", $result); // bold the target
+      # $result = str_ireplace($term, "*".$term."*", $result); // bold the target
       break; // one match is all we need
     }
   }
