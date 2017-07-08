@@ -64,7 +64,7 @@ function Response($input)
 function Lookup($term) {
 
   $result = "";
-  $term_orig = $term;
+  $term_orig = $term; // save for bolding later
   $term = strtolower($term).chr(9); // append tab char
     Debug("Lookup", "term", $term);
 
@@ -76,8 +76,8 @@ function Lookup($term) {
     if (stripos($line, $term) === 0) // note strict comparison operator
     {
       $result = substr($line, strlen($term)); // exclude first field
-      $result = str_ireplace("\\n", chr(13));
-      $result = str_ireplace($term_orig, "*".$term_orig."*", $result);
+      //$result = str_ireplace("\\n", chr(13));
+      $result = str_ireplace($term_orig, "*".$term_orig."*", $result); // bold the target
       break; // one match is all we need
     }
   }
