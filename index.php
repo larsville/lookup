@@ -11,7 +11,7 @@ $token = $_POST['token'];
 if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config page
 {
   $msg = "Authorization failure.";
-  die($msg);
+  exit($msg);
   echo $msg;
 }
 
@@ -25,6 +25,8 @@ function Debug($scope, $name, $value)
 }
 
 /////////////////
+
+// Return a response for the given input, including help or failure messages.
 
 function Response($input)
 {
@@ -56,6 +58,8 @@ function Response($input)
 } // end Response
 
 /////////////////
+
+// Return whatever our dataset contains for the given term.
 
 function Lookup($term)
 {
