@@ -64,6 +64,7 @@ function Response($input)
 function Lookup($term) {
 
   $result = "";
+  $term_orig = $term;
   $term = strtolower($term).chr(9); // append tab char
     Debug("Lookup", "term", $term);
 
@@ -75,7 +76,8 @@ function Lookup($term) {
     if (stripos($line, $term) === 0) // note strict comparison operator
     {
       $result = substr($line, strlen($term));
-      result = str_ireplace($result,"\\n","\n");
+      $result = str_ireplace($result, "\\n", chr(13));
+      $result = str_ireplace($result, $term_orig, "*".$term_orig."*");
       break; // one match is all we need
     }
   }
