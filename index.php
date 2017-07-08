@@ -18,7 +18,7 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config pag
 $DataLines = file("data.txt");
 sort($DataLines);
 
-echo "\n".Response($text);
+echo "---\n".Response($text);
 
 /////////////////
 
