@@ -58,8 +58,8 @@ function Response($input)
 
 /////////////////
 
-function Lookup($term) {
-
+function Lookup($term)
+{
   $result = "";
   $termWithSep = strtolower($term).chr(9); // append tab char
     Debug("Lookup", "termWithSep", $termWithSep);
