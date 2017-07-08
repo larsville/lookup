@@ -70,7 +70,7 @@ function Lookup($term) {
   global $DataLines;
   foreach($DataLines as $line)
   {
-    if strlen((trim($line)) >= 0)
+//    if strlen((trim($line)) >= 0)
     {
       Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
       if (stripos($line, $termWithSep) === 0) // note strict comparison operator
