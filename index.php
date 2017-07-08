@@ -74,7 +74,7 @@ function Lookup($term) {
     if (stripos($line, $termWithSep) === 0) // note strict comparison operator
     {
       $result = substr($line, strlen($termWithSep));
-      # $result = str_ireplace("\\n", chr(13));
+      $result = str_ireplace("\\n", chr(13), $result);
       # $result = str_ireplace($term, "*".$term."*", $result); // bold the target
       break; // one match is all we need
     }
