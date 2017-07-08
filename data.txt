@@ -1,123 +1,126 @@
 Lars	Lars is my creator!
 
-Planck	The Planck conference room is on Steuart 4.
-Kirschhoff	The Kirschhoff conference room is on Steuart 4.
-Born	The Born conference room is on Steuart 4.
-Townsquare	The Townsquare conference room is on Steuart 4.
-Dalton	The Dalton conference room is on Steuart 4.
-Hawking	The Hawking conference room is on Steuart 4.
-Lyell	The Lyell conference room is on Steuart 4.
-Linnaeus	The Linnaeus conference room is on Steuart 4.
-Pavlov	The Pavlov conference room is on Steuart 4.
-Margulis	The Margulis conference room is on Steuart 4.
-Hertz	The Hertz conference room is on Landmarkon Steuart 4.
-Apgar	The Apgar conference room is on Steuart 4.
-Wright	The Wright conference room is on Steuart 4.
-Goodall	The Goodall conference room is on Steuart 4.
-Herschel	The Herschel conference room is on Steuart 4.
-Fleming	The Fleming conference room is on Steuart 4.
-Oppenheimer	The Oppenheimer conference room is on Steuart 4.
+Planck	The Planck conference room is on Steuart 4, east side.
+Kirschhoff	The Kirschhoff conference room is on Steuart 4, east side.
+Born	The Born conference room is on Steuart 4, east side.
+Townsquare	The Steuart Townsquare is adjacent to the Steuart 4 kitchen.
+Dalton	The Dalton conference room is on Steuart 4, east side.
+Hawking	The Hawking conference room is on Steuart 4, north end.
+Lyell	The Lyell conference room is on Steuart 4, north end.
+Galton	The Galton conference area (with massage chairs) is on Steuart 4, north end.
+Linnaeus	The Linnaeus game room is on Steuart 4, northwest corner.
+Pavlov	The Pavlov conference room is on Steuart 4, northwest corner.
+Margulis	The Margulis conference room is on Steuart 4, northwest corner.
+Hertz	The Hertz conference room is on Landmarkon Steuart 4, west side.
+Apgar	The Apgar conference room is on Steuart 4, west side.
+Wright	The Wright conference room is on Steuart 4, west side.
+Goodall	The Goodall conference room is on Steuart 4, southwest corner.
+Herschel	The Herschel conference room is on Steuart 4, south end.
+Fleming	The Fleming conference room is on Steuart 4, south end.
+Oppenheimer	The Oppenheimer conference room is on Steuart 4, south end.
 
-Farnsworth	The Farnsworth conference room is on Steuart 3.
-Westinghouse	The Westinghouse conference room is on Steuart 3.
-Hodgkin	The Hodgkin conference room is on Steuart 3.
-Sejima	The Sejima conference room is on Steuart 3.
-Nye	The Nye conference room is on Steuart 3.
-Braille	The Braille conference room is on Steuart 3.
-Kauffman	The Kauffman conference room is on Steuart 3.
-Piaget	The Piaget conference room is on Steuart 3.
-Kahn	The Kahn conference room is on Steuart 3.
-Eames	The Eames conference room is on Steuart 3.
-Prouve	The Prouve conference room is on Steuart 3.
-Chomsky	The Chomsky conference room is on Steuart 3.
-Montessori	The Montessori conference room is on Steuart 3.
-Maybeck	The Maybeck conference room is on Steuart 3.
-Griffin	The Griffin conference room is on Steuart 3.
-Mendeleev	The Mendeleev conference room is on Steuart 3.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
-Leakey	The Leakey conference room is on Steuart 3.
+Farnsworth	The Farnsworth conference room is on Steuart 3, east side.
+Westinghouse	The Westinghouse conference room is on Steuart 3, east side.
+Hodgkin	The Hodgkin conference room is next to the Steuart 3 kitchen, east side.
+Sejima	The Sejima conference room is on Steuart 3, east side.
+Nye	The Nye conference room is on Steuart 3, east side.
+Braille	The Braille conference room is on Steuart 3, north end.
+Kauffman	The Kauffman conference room is on Steuart 3, north end.
+Piaget	The Piaget conference room is on Steuart 3, north end.
+Kahn	The Kahn conference room is on Steuart 3, south end.
+Eames	The Eames conference room is on Steuart 3, south end.
+Prouve	The Prouve conference room is on Steuart 3, south end.
+Chomsky	The Chomsky conference room is on Steuart 3, northwest corner.
+Montessori	The Montessori conference room is on Steuart 3, west side.
+Maybeck	The Maybeck conference room is on Steuart 3, west side.
+Griffin	The Griffin conference room is on Steuart 3, west side.
+Mendeleev	The Mendeleev conference room is on Steuart 3, west side.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
+Leakey	The Leakey conference room is on Steuart 3, southwest corner.
 
-Salk	The Salk conference room is on Steuart 2.
-Skinner	The Skinner conference room is on Steuart 2.
-Calatrava	The Calatrava conference room is on Steuart 2.
-Zeisel	The Zeisel conference room is on Steuart 2.
-Pontelli	The Pontelli conference room is on Steuart 2.
-Hadid	The Hadid conference room is on Steuart 2.
-Rand	The Rand conference room is on Steuart 2.
-Earl	The Earl conference room is on Steuart 2.
-Freud	The Freud conference room is on Steuart 2.
-Galilei	The Galilei conference room is on Steuart 2.
-Darwin	The Darwin conference room is on Steuart 2.
-Vignelli	The Vignelli conference room is on Steuart 2.
-The Park	The The Park conference room is on Steuart 2.
-Mead	The Mead conference room is on Steuart 2.
-Keynes	The Keynes conference room is on Steuart 2.
-Mayer	The Mayer conference room is on Steuart 2.
-Pei	The Pei conference room is on Steuart 2.
-Heinlein	The Heinlein conference room is on Steuart 2.
-EIS	The EIS conference room is on Steuart 2.
-Bethune	The Bethune conference room is on Steuart 2.
+Salk	The Salk conference room is on Steuart 2, east side.
+Skinner	The Skinner conference room is on Steuart 2, east side next to the kitchen.
+Calatrava	The Calatrava conference room is on Steuart 2, east side.
+Zeisel	The Zeisel conference room is on Steuart 2, east side.
+Pontelli	The Pontelli conference room is on Steuart 2, south end.
+Hadid	The Hadid conference room is on Steuart 2, south end.
+Rand	The Rand conference room is on Steuart 2, south end.
+Earl	The Earl conference room is on Steuart 2, northwest corner.
+Freud	The Freud conference room is on Steuart 2, north end.
+Galilei	The Galilei conference room is on Steuart 2, north end.
+Darwin	The Darwin conference room is on Steuart 2, north end.
+Vignelli	The Vignelli conference room is on Steuart 2, northwest corner.
+Mead	The Mead conference room is on Steuart 2, northwest corner.
+Keynes	The Keynes conference room is on Steuart 2, west side.
+Mayer	The Mayer conference room is on Steuart 2, west side.
+Pei	The Pei conference room is on Steuart 2, west side.
+Heinlein	The Heinlein conference room is on Steuart 2, west side.
+EIS	The EIS conference room is on Steuart 2, west side.
+Bethune	The Bethune conference room is on Steuart 2, west side.
 
-Albers	The Albers conference room is on Spear 2.
-Tyson	The Tyson conference room is on Spear 2.
-Bennett	The Bennett conference room is on Spear 2.
-Salvi	The Salvi conference room is on Spear 2.
-Lamb	The Lamb conference room is on Spear 2.
-Morgan	The Morgan conference room is on Spear 2.
-Game Room	The Game Room conference room is on Spear 2.
-Pelli	The Pelli conference room is on Spear 2.
-Exner	The Exner conference room is on Spear 2.
-Yoga	The Yoga conference room is on Spear 2.
-Dolci	The Dolci conference room is on Spear 2.
-Clarke	The Clarke conference room is on Spear 2.
-Townsquare	The Townsquare conference room is on Spear 2.
-Loewy	The Loewy conference room is on Spear 2.
-Pisano	The Pisano conference room is on Spear 2.
-Toolbar	The Toolbar conference room is on Spear 2.
+Toolbar	The Toolbar is on Spear 2, north end.
+The Park	The Park is on Spear 2, north end.
+Albers	The Albers conference room is on Spear 2, north end.
+Tyson	The Tyson conference room is on Spear 2, east side.
+Bennett	The Bennett conference room is on Spear 2, east side.
+Salvi	The Salvi conference room is on Spear 2, east side.
+Lamb	The Lamb conference room is on Spear 2, east side.
+Morgan	The Morgan conference room is on Spear 2, east side.
+Game Room	The Spear Game Room is on Spear 2, southeast corner.
+Pelli	The Pelli conference room is on Spear 2, center.
+Exner	The Exner conference room is on Spear 2, center.
+Yoga	The Yoga room is on Spear 2.
+Dolci	The Dolci conference room is on Spear 2, west side.
+Clarke	The Clarke conference room is on Spear 2, west side.
+Townsquare	The Spear Townsquare is adjacent to the Spear 2 kitchen.
+Loewy	The Loewy conference room is on Spear 2, west side.
+Pisano	The Pisano conference room is on Spear 2, west side.
+Roebling	The Roebling conference room is on Spear 2.
+Bracci	The Bracci conference room is on Spear 2.
 
-Plato	The Plato conference room is on Landmark 2.
-Newton	The Newton conference room is on Landmark 2.
-Euclid	The Euclid conference room is on Landmark 2.
-Ockham	The Ockham conference room is on Landmark 2.
-Pythagoras	The Pythagoras conference room is on Landmark 2.
-Thales	The Thales conference room is on Landmark 2.
+Tesla	The Tesla conference room is on Landmark 2, east side.
+Von Neumann	The Von Neumann conference room is on Landmark 2, east side.
+Ramanujan	The Ramanujan conference room is on Landmark 2, east side.
+Maxwell	The Maxwell conference room is on Landmark 2, east side.
+Gauss	The Gauss conference room is on Landmark 2, east side.
+Curie	The Curie conference room is on Landmark 2, east side.
+Plato	The Plato conference room is on Landmark 2, west side.
+Newton	The Newton conference room is on Landmark 2, west side.
+Euclid	The Euclid conference room is on Landmark 2, west side.
+Ockham	The Ockham conference room is on Landmark 2, west side.
+Pythagoras	The Pythagoras conference room is on Landmark 2, west side.
+Thales	The Thales conference room is on Landmark 2, west side.
 Copernicus	The Copernicus conference room is on Landmark 2.
 Brahmagupta	The Brahmagupta conference room is on Landmark 2.
-Usability	The Usability conference room is on Landmark 2.
-Curie	The Curie conference room is on Landmark 2.
-Gauss	The Gauss conference room is on Landmark 2.
-Maxwell	The Maxwell conference room is on Landmark 2.
-Von Neumann	The Von Neumann conference room is on Landmark 2.
-Ramanujan	The Ramanujan conference room is on Landmark 2.
-Tesla	The Tesla conference room is on Landmark 2.
+Usability	The Usability lab is on Landmark 2, near reception.
 
-Le Vau	The Le Vau conference room is on Landmark 4.
-Von Braun	The Von Braun conference room is on Landmark 4.
-Imotep	The Imotep conference room is on Landmark 4.
-Heisenberg	The Heisenberg conference room is on Landmark 4.
-Holland	The Holland conference room is on Landmark 4.
-Sutter	The Sutter conference room is on Landmark 4.
-Gaudi	The Gaudi conference room is on Landmark 4.
-Leinneaus	The Leinneaus conference room is on Landmark 4.
-Dirac	The Dirac conference room is on Landmark 4.
-Strauss	The Strauss conference room is on Landmark 4.
-Graves	The Graves conference room is on Landmark 4.
+Le Vau	The Le Vau conference room is on Landmark 4, northeast corner.
+Von Braun	The Von Braun conference room is on Landmark 4, northeast corner.
+Imotep	The Imotep conference room is on Landmark 4, northeast corner.
+Heisenberg	The Heisenberg conference room is on Landmark 4, east side.
+Holland	The Holland conference room is on Landmark 4, east side.
+Sutter	The Sutter conference room is on Landmark 4, east side.
+Gaudi	The Gaudi conference room is on Landmark 4, east side.
+Leinneaus	The Leinneaus conference room is on Landmark 4, north side.
+Dirac	The Dirac conference room is on Landmark 4, north side.
+Strauss	The Strauss conference room is on Landmark 4, north side.
+Graves	The Graves conference room is on Landmark 4, north side.
 
-Mediterranean	The Mediterranean conference room is on Landmark 5.
-Pacific	The Pacific conference room is on Landmark 5.
-Huron	The Huron conference room is on Landmark 5.
-Indian	The Indian conference room is on Landmark 5.
-Phillippine	The Phillippine conference room is on Landmark 5.
-Adriatic	The Adriatic conference room is on Landmark 5.
-Bering Sea	The Bering Sea conference room is on Landmark 5.
-Red Sea	The Red Sea conference room is on Landmark 5.
-Baltic Sea	The Baltic Sea conference room is on Landmark 5.
-South China Sea	The South China Sea conference room is on Landmark 5.
-Norwegian	The Norwegian conference room is on Landmark 5.
-Gulf of Mexico	The Gulf of Mexico conference room is on Landmark 5.
-Tasman Sea	The Tasman Sea conference room is on Landmark 5.
-Dead Sea	The Dead Sea conference room is on Landmark 5.
-Studio	The Studio is on Landmark 5.
-Library	The Library conference room is on Landmark 5.
-Atlantic	The Atlantic conference room is on Landmark 5.
-Caribbean	The Caribbean conference room is on Landmark 5.
-Aegean	The Aegean conference room is on Landmark 5.
+Mediterranean	The Mediterranean conference room is on Landmark 5, northeast corner.
+Pacific	The Pacific conference room is on Landmark 5, northeast corner.
+Huron	The Huron conference room is on Landmark 5, northeast corner.
+Indian	The Indian conference room is on Landmark 5, northeast corner.
+Phillippine	The Phillippine conference room is on Landmark 5, southeast corner.
+Adriatic	The Adriatic conference room is on Landmark 5, southeast corner.
+Bering Sea	The Bering Sea conference room is on Landmark 5, southeast corner.
+Red Sea	The Red Sea conference room is on Landmark 5, southeast corner.
+Baltic Sea	The Baltic Sea conference room is on Landmark 5, northwest corner.
+South China Sea	The South China Sea conference room is on Landmark 5, northwest corner.
+Gulf of Mexico	The Gulf of Mexico conference room is on Landmark 5, northwest corner.
+Tasman Sea	The Tasman Sea conference room is on Landmark 5, northwest corner.
+Norwegian	The Norwegian conference room is on Landmark 5, southwest corner.
+Dead Sea	The Dead Sea conference room is on Landmark 5, southwest corner.
+Studio	The Studio is on Landmark 5, southwest corner.
+Library	The Library is on Landmark 5, southwest corner.
+Atlantic	The Atlantic conference room is on Landmark 5, southwest corner.
+Caribbean	The Caribbean conference room is on Landmark 5, southwest corner.
+Aegean	The Aegean conference room is on Landmark 5, southwest corner.
