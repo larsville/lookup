@@ -70,14 +70,17 @@ function Lookup($term) {
   global $DataLines;
   foreach($DataLines as $line)
   {
-    Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
-    if (stripos($line, $termWithSep) === 0) // note strict comparison operator
+    if strlen((trim($line)) >= 0)
     {
-      $result = substr($line, strlen($termWithSep));
-      $result = str_ireplace("\\n", chr(13), $result);
-      # $canonicalTerm = substr($line, strlen($term));
-      # $result = str_ireplace($term, "*".$canonicalTerm."*", $result); // bold the target
-      break; // one match is all we need
+      Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
+      if (stripos($line, $termWithSep) === 0) // note strict comparison operator
+      {
+        $result = substr($line, strlen($termWithSep));
+        $result = str_ireplace("\\n", chr(13), $result);
+        # $canonicalTerm = substr($line, strlen($term));
+        # $result = str_ireplace($term, "*".$canonicalTerm."*", $result); // bold the target
+        break; // one match is all we need
+      }
     }
   }
 

@@ -1,96 +1,91 @@
 lars	Lars is my creator!
 
-#Steuart 4
-Planck
-Kirschhoff
-Born
-Townsquare
-Dalton
-Hawking
-Lyell
-Linnaeus
-Pavlov
-Margulis
-Hertz
-Apgar
-Wright
-Goodall
-Herschel
-Fleming
-Oppenheimer
+Planck	Steuart 4
+Kirschhoff	Steuart 4
+Born	Steuart 4
+Townsquare	Steuart 4
+Dalton	Steuart 4
+Hawking	Steuart 4
+Lyell	Steuart 4
+Linnaeus	Steuart 4
+Pavlov	Steuart 4
+Margulis	Steuart 4
+Hertz	Steuart 4
+Apgar	Steuart 4
+Wright	Steuart 4
+Goodall	Steuart 4
+Herschel	Steuart 4
+Fleming	Steuart 4
+Oppenheimer	Steuart 4
 
-#Steuart 3
-Farnsworth
-Westinghouse
-Hodgkin
-Sejima
-Nye
-Braille
-Kauffman
-Piaget
-Kahn
-Eames
-Prouve
-Chomsky
-Montessori
-Maybeck
-Griffin
+Farnsworth	Steuart 3
+Westinghouse	Steuart 3
+Hodgkin	Steuart 3
+Sejima	Steuart 3
+Nye	Steuart 3
+Braille	Steuart 3
+Kauffman	Steuart 3
+Piaget	Steuart 3
+Kahn	Steuart 3
+Eames	Steuart 3
+Prouve	Steuart 3
+Chomsky	Steuart 3
+Montessori	Steuart 3
+Maybeck	Steuart 3
+Griffin	Steuart 3
 Mendeleev	The Mendeleev conference room is near Lars's desk.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
-Leakey
+Leakey	Steuart 3
 
-#Steuart 2
-Salk
-Skinner
-Calatrava
-Zeisel
-Pontelli
-Hadid
-Rand
-Earl
-Freud
-Galilei
-Darwin
-Vignelli
-The Park
-Mead
-Keynes
-Mayer
-Pei
-Heinlein
-EIS
-Bethune
+Salk	Steuart 2
+Skinner	Steuart 2
+Calatrava	Steuart 2
+Zeisel	Steuart 2
+Pontelli	Steuart 2
+Hadid	Steuart 2
+Rand	Steuart 2
+Earl	Steuart 2
+Freud	Steuart 2
+Galilei	Steuart 2
+Darwin	Steuart 2
+Vignelli	Steuart 2
+The Park	Steuart 2
+Mead	Steuart 2
+Keynes	Steuart 2
+Mayer	Steuart 2
+Pei	Steuart 2
+Heinlein	Steuart 2
+EIS	Steuart 2
+Bethune	Steuart 2
 
-#Spear 2
-Albers
-Tyson
-Bennett
-Salvi
-Lamb
-Morgan
-Game Room
-Pelli
-Exner
-Yoga
-Dolci
-Clarke
-Spear Townsquare
-Loewy
-Pisano
-Toolbar
+Albers	Spear 2
+Tyson	Spear 2
+Bennett	Spear 2
+Salvi	Spear 2
+Lamb	Spear 2
+Morgan	Spear 2
+Game Room	Spear 2
+Pelli	Spear 2
+Exner	Spear 2
+Yoga	Spear 2
+Dolci	Spear 2
+Clarke	Spear 2
+Spear Townsquare	Spear 2
+Loewy	Spear 2
+Pisano	Spear 2
+Toolbar	Spear 2
 
-#Landmark 2
-Plato
-Newton
-Euclid
-Ockham
-Pythagoras
-Thales
-Copernicus
-Brahmagupta
-Usability
-Curie
-Gauss
-Maxwell
-Von Neumann
-Ramanujan
-Tesla
+Plato	Landmark 2
+Newton	Landmark 2
+Euclid	Landmark 2
+Ockham	Landmark 2
+Pythagoras	Landmark 2
+Thales	Landmark 2
+Copernicus	Landmark 2
+Brahmagupta	Landmark 2
+Usability	Landmark 2
+Curie	Landmark 2
+Gauss	Landmark 2
+Maxwell	Landmark 2
+Von Neumann	Landmark 2
+Ramanujan	Landmark 2
+Tesla	Landmark 2
