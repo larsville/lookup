@@ -75,9 +75,9 @@ function Lookup($term) {
     Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
     if (stripos($line, $term) === 0) // note strict comparison operator
     {
-      $result = substr($line, strlen($term));
-      // $result = str_ireplace($result, "\\n", chr(13));
-      // $result = str_ireplace($result, $term_orig, "*".$term_orig."*");
+      $result = substr($line, strlen($term)); // exclude first field
+      $result = str_ireplace("\\n", chr(13));
+      $result = str_ireplace($term_orig, "*".$term_orig."*", $result);
       break; // one match is all we need
     }
   }
