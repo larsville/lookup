@@ -1,91 +1,91 @@
 lars	Lars is my creator!
 
-Planck	Steuart 4
-Kirschhoff	Steuart 4
-Born	Steuart 4
-Townsquare	Steuart 4
-Dalton	Steuart 4
-Hawking	Steuart 4
-Lyell	Steuart 4
-Linnaeus	Steuart 4
-Pavlov	Steuart 4
-Margulis	Steuart 4
-Hertz	Steuart 4
-Apgar	Steuart 4
-Wright	Steuart 4
-Goodall	Steuart 4
-Herschel	Steuart 4
-Fleming	Steuart 4
-Oppenheimer	Steuart 4
+Planck	Planck is a conference room on Steuart 4
+Kirschhoff	 Kirschhoff is a conference room on Steuart 4
+Born	 Born is a conference room on Steuart 4
+Townsquare	 Townsquare is a conference room on Steuart 4
+Dalton	 Dalton is a conference room on Steuart 4
+Hawking	Hawking is a conference room on Steuart 4
+Lyell	Lyell is a conference room on Steuart 4
+Linnaeus	Linnaeus is a conference room on Steuart 4
+Pavlov	Pavlov is a conference room on Steuart 4
+Margulis	Margulis is a conference room on Steuart 4
+Hertz	Hertz is a conference room on Steuart 4
+Apgar	Apgar is a conference room on Steuart 4
+Wright	Wright is a conference room on Steuart 4
+Goodall	Goodall is a conference room on Steuart 4
+Herschel	Herschel is a conference room on Steuart 4
+Fleming	Fleming is a conference room on Steuart 4
+Oppenheimer	Oppenheimer is a conference room on Steuart 4
 
-Farnsworth	Steuart 3
-Westinghouse	Steuart 3
-Hodgkin	Steuart 3
-Sejima	Steuart 3
-Nye	Steuart 3
-Braille	Steuart 3
-Kauffman	Steuart 3
-Piaget	Steuart 3
-Kahn	Steuart 3
-Eames	Steuart 3
-Prouve	Steuart 3
-Chomsky	Steuart 3
-Montessori	Steuart 3
-Maybeck	Steuart 3
-Griffin	Steuart 3
-Mendeleev	The Mendeleev conference room is near Lars's desk.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
-Leakey	Steuart 3
+Farnsworth	Farnsworth is a conference room on Steuart 3
+Westinghouse	Westinghouse is a conference room on Steuart 3
+Hodgkin	Hodgkin is a conference room on Steuart 3
+Sejima	Sejima is a conference room on Steuart 3
+Nye	Nye is a conference room on Steuart 3
+Braille	Braille is a conference room on Steuart 3
+Kauffman	Kauffman is a conference room on Steuart 3
+Piaget	Piaget is a conference room on Steuart 3
+Kahn	Kahn is a conference room on Steuart 3
+Eames	Eames is a conference room on Steuart 3
+Prouve	Prouve is a conference room on Steuart 3
+Chomsky	Chomsky is a conference room on Steuart 3
+Montessori	Montessori is a conference room on Steuart 3
+Maybeck	Maybeck is a conference room on Steuart 3
+Griffin	Griffin is a conference room on Steuart 3
+Mendeleev	Mendeleev The Mendeleev conference room is near Lars's desk.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
+Leakey	Leakey is a conference room on Steuart 3
 
-Salk	Steuart 2
-Skinner	Steuart 2
-Calatrava	Steuart 2
-Zeisel	Steuart 2
-Pontelli	Steuart 2
-Hadid	Steuart 2
-Rand	Steuart 2
-Earl	Steuart 2
-Freud	Steuart 2
-Galilei	Steuart 2
-Darwin	Steuart 2
-Vignelli	Steuart 2
-The Park	Steuart 2
-Mead	Steuart 2
-Keynes	Steuart 2
-Mayer	Steuart 2
-Pei	Steuart 2
-Heinlein	Steuart 2
-EIS	Steuart 2
-Bethune	Steuart 2
+Salk	Salk is a conference room on Steuart 2
+Skinner	Skinner is a conference room on Steuart 2
+Calatrava	Calatrava is a conference room on Steuart 2
+Zeisel	Zeisel is a conference room on Steuart 2
+Pontelli	Pontelli is a conference room on Steuart 2
+Hadid	Hadid is a conference room on Steuart 2
+Rand	Rand is a conference room on Steuart 2
+Earl	Earl is a conference room on Steuart 2
+Freud	Freud is a conference room on Steuart 2
+Galilei	Galilei is a conference room on Steuart 2
+Darwin	Darwin is a conference room on Steuart 2
+Vignelli	Vignelli is a conference room on Steuart 2
+The Park	The Park is a conference room on Steuart 2
+Mead	Mead is a conference room on Steuart 2
+Keynes	Keynes is a conference room on Steuart 2
+Mayer	Mayer is a conference room on Steuart 2
+Pei	Pei is a conference room on Steuart 2
+Heinlein	Heinlein is a conference room on Steuart 2
+EIS	EIS is a conference room on Steuart 2
+Bethune	Bethune is a conference room on Steuart 2
 
-Albers	Spear 2
-Tyson	Spear 2
-Bennett	Spear 2
-Salvi	Spear 2
-Lamb	Spear 2
-Morgan	Spear 2
-Game Room	Spear 2
-Pelli	Spear 2
-Exner	Spear 2
-Yoga	Spear 2
-Dolci	Spear 2
-Clarke	Spear 2
-Spear Townsquare	Spear 2
-Loewy	Spear 2
-Pisano	Spear 2
-Toolbar	Spear 2
+Albers	Albers is a conference room on Spear 2
+Tyson	Tyson is a conference room on Spear 2
+Bennett	Bennett is a conference room on Spear 2
+Salvi	Salvi is a conference room on Spear 2
+Lamb	Lamb is a conference room on Spear 2
+Morgan	Morgan is a conference room on Spear 2
+Game Room	Game Room is a conference room on Spear 2
+Pelli	Pelli is a conference room on Spear 2
+Exner	Exner is a conference room on Spear 2
+Yoga	Yoga is a conference room on Spear 2
+Dolci	Dolci is a conference room on Spear 2
+Clarke	Clarke is a conference room on Spear 2
+Townsquare	Townsquare is a conference room on Spear 2
+Loewy	Loewy is a conference room on Spear 2
+Pisano	Pisano is a conference room on Spear 2
+Toolbar	Toolbar is a conference room on Spear 2
 
-Plato	Landmark 2
-Newton	Landmark 2
-Euclid	Landmark 2
-Ockham	Landmark 2
-Pythagoras	Landmark 2
-Thales	Landmark 2
-Copernicus	Landmark 2
-Brahmagupta	Landmark 2
-Usability	Landmark 2
-Curie	Landmark 2
-Gauss	Landmark 2
-Maxwell	Landmark 2
-Von Neumann	Landmark 2
-Ramanujan	Landmark 2
-Tesla	Landmark 2
+Plato	Plato is a conference room on Landmark 2
+Newton	Newton is a conference room on Landmark 2
+Euclid	Euclid is a conference room on Landmark 2
+Ockham	Ockham is a conference room on Landmark 2
+Pythagoras	Pythagoras is a conference room on Landmark 2
+Thales	Thales is a conference room on Landmark 2
+Copernicus	Copernicus is a conference room on Landmark 2
+Brahmagupta	Brahmagupta is a conference room on Landmark 2
+Usability	Usability is a conference room on Landmark 2
+Curie	Curie is a conference room on Landmark 2
+Gauss	Gauss is a conference room on Landmark 2
+Maxwell	Maxwell is a conference room on Landmark 2
+Von Neumann	Von Neumann is a conference room on Landmark 2
+Ramanujan	Ramanujan is a conference room on Landmark 2
+Tesla	Tesla is a conference room on Landmark 2
