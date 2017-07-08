@@ -34,8 +34,7 @@ function Response($input)
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
-    $result = 'If you want to know who, what, or where a thing is, just type: *_/? [thing]_*'
-      ."\nTry it with acronyms, business terms, code names, staff members, even conference rooms.";
+    $result = 'If you want to know where a conference room is, type: *_/? [room]_*';
 
   }
   else
@@ -48,7 +47,7 @@ function Response($input)
     {
       // If there is no definition, admit defeat.
       $quote = '"';
-      $result = "Sorry, I don't know about ".$quote.$input.$quote.". Try an acronym, business term, code name, staff member, or conference room.";
+      $result = "Sorry, I don't recognize ".$quote.$input.$quote.".";
     }
   }
 
