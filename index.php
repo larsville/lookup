@@ -65,7 +65,7 @@ function Lookup($term) {
     Debug("Lookup", "termWithSep", $termWithSep);
 
   static $DataLines;
-  if ($DataLines = NULL)
+  if ($DataLines == NULL)
   {
     $DataLines = file("data.txt");
     sort($DataLines);
