@@ -15,9 +15,6 @@ if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config pag
   echo $msg;
 }
 
-$DataLines = file("data.txt");
-sort($DataLines);
-
 echo "---\n".Response($text);
 
 /////////////////
@@ -67,10 +64,16 @@ function Lookup($term) {
   $termWithSep = strtolower($term).chr(9); // append tab char
     Debug("Lookup", "termWithSep", $termWithSep);
 
-  global $DataLines;
+  static $DataLines;
+  if ($DataLines = NULL)
+  {
+    $DataLines = file("data.txt");
+    sort($DataLines);
+  }
+
   foreach($DataLines as $line)
   {
-//    if strlen((trim($line)) >= 0)
+    //if strlen((trim($line)) >= 0)
     {
       Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
       if (stripos($line, $termWithSep) === 0) // note strict comparison operator
@@ -79,7 +82,8 @@ function Lookup($term) {
         $result = str_ireplace("\\n", chr(13), $result);
         # $canonicalTerm = substr($line, strlen($term));
         # $result = str_ireplace($term, "*".$canonicalTerm."*", $result); // bold the target
-        //break; // one match is all we need
+        break; // one match is all we need
+        // hack; should accumulate all matches in an array
       }
     }
   }
