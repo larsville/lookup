@@ -76,6 +76,7 @@ function Lookup($term) {
     {
       //$result = $line;
       $result = substr($line, strlen($term));
+      $result = str_ireplace($term,"\\n","\n");
       break; // one match is all we need
     }
   }
