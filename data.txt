@@ -1,3 +1,96 @@
-larsjensen	Lars Jensen is a cool dude
 lars	Lars is my creator!
-mendeleev	The Mendeleev conference room is near Lars's desk.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
+
+#Steuart 4
+Planck
+Kirschhoff
+Born
+Townsquare
+Dalton
+Hawking
+Lyell
+Linnaeus
+Pavlov
+Margulis
+Hertz
+Apgar
+Wright
+Goodall
+Herschel
+Fleming
+Oppenheimer
+
+#Steuart 3
+Farnsworth
+Westinghouse
+Hodgkin
+Sejima
+Nye
+Braille
+Kauffman
+Piaget
+Kahn
+Eames
+Prouve
+Chomsky
+Montessori
+Maybeck
+Griffin
+Mendeleev	The Mendeleev conference room is near Lars's desk.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
+Leakey
+
+#Steuart 2
+Salk
+Skinner
+Calatrava
+Zeisel
+Pontelli
+Hadid
+Rand
+Earl
+Freud
+Galilei
+Darwin
+Vignelli
+The Park
+Mead
+Keynes
+Mayer
+Pei
+Heinlein
+EIS
+Bethune
+
+#Spear 2
+Albers
+Tyson
+Bennett
+Salvi
+Lamb
+Morgan
+Game Room
+Pelli
+Exner
+Yoga
+Dolci
+Clarke
+Spear Townsquare
+Loewy
+Pisano
+Toolbar
+
+#Landmark 2
+Plato
+Newton
+Euclid
+Ockham
+Pythagoras
+Thales
+Copernicus
+Brahmagupta
+Usability
+Curie
+Gauss
+Maxwell
+Von Neumann
+Ramanujan
+Tesla
