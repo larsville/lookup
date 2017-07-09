@@ -1,14 +1,14 @@
 Lars	Lars is my creator!
 
-Planck	The Planck conference room is on Steuart 4, east side.
-Kirschhoff	The Kirschhoff conference room is on Steuart 4, east side.
-Born	The Born conference room is on Steuart 4, east side.
-Townsquare	The Steuart Townsquare is adjacent to the Steuart 4 kitchen.
-Dalton	The Dalton conference room is on Steuart 4, east side.
-Hawking	The Hawking conference room is on Steuart 4, north end.
+Planck	The Planck conference room is on Steuart 4, east side.\n\nMax Karl Ernst Ludwig Planck (1858-1947) was a German theoretical physicist who originated quantum theory. wikipedia.org/wiki/Max_Planck
+Kirschoff	The Kirschoff conference room is on Steuart 4, east side.\n\nGustav Robert Kirchhoff was a German physicist for whom _three separate sets_ of laws are named -- in electrical circuit theory, spectroscopy, and thermochemistry. wikipedia.org/wiki/Gustav_Kirchhoff
+Born	The Born conference room is on Steuart 4, east side.\n\nMax Born (1882-1970) was a German physicist and mathematician who was instrumental in the development of quantum mechanics. wikipedia.org/wiki/Max_Born
+Townsquare	Steuart Townsquare is adjacent to the Steuart 4 kitchen, east side.
+Dalton	The Dalton conference room is on Steuart 4, east side.\n\nJohn Dalton (1766-1844) was an English chemist, physicist, and meteorologist who first proposed modern atomic theory, and for whom Daltonism (color blindness) is named. wikipedia.org/wiki/John_Dalton
+Hawking	The Hawking conference room is on Steuart 4, north end.\n\nStephen William Hawking (b.1942) is an English theoretical physicist, cosmologist, and author whose numerous scientific contributions include a theory of cosmology explained by a union of the general theory of relativity and quantum mechanics. wikipedia.org/wiki/Stephen_Hawking
 Lyell	The Lyell conference room is on Steuart 4, north end.
 Galton	The Galton conference area (with massage chairs) is on Steuart 4, north end.
-Linnaeus	The Linnaeus game room is on Steuart 4, northwest corner.
+Linnaeus	The Linnaeus game room is on Steuart 4, northwest corner. (See also Leinneaus on Landmark 4.)\n\nCarl Linnaeus (1707-1778) was a Swedish botanist, physician, and zoologist who formalised the modern system of naming organisms called binomial nomenclature. wikipedia.org/wiki/Carl_Linnaeus
 Pavlov	The Pavlov conference room is on Steuart 4, northwest corner.
 Margulis	The Margulis conference room is on Steuart 4, northwest corner.
 Hertz	The Hertz conference room is on Landmarkon Steuart 4, west side.
@@ -34,7 +34,7 @@ Chomsky	The Chomsky conference room is on Steuart 3, northwest corner.
 Montessori	The Montessori conference room is on Steuart 3, west side.
 Maybeck	The Maybeck conference room is on Steuart 3, west side.
 Griffin	The Griffin conference room is on Steuart 3, west side.
-Mendeleev	The Mendeleev conference room is on Steuart 3, west side.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
+Mendeleev	The Mendeleev conference room is on Steuart 3, west side.\n\nDmitri Ivanovich Mendeleev (1834-1907) was a Russian chemist who created the periodic table of elements. wikipedia.org/wiki/Dmitri_Mendeleev
 Leakey	The Leakey conference room is on Steuart 3, southwest corner.
 
 Salk	The Salk conference room is on Steuart 2, east side.
@@ -71,7 +71,7 @@ Exner	The Exner conference room is on Spear 2, center.
 Yoga	The Yoga room is on Spear 2.
 Dolci	The Dolci conference room is on Spear 2, west side.
 Clarke	The Clarke conference room is on Spear 2, west side.
-Townsquare	The Spear Townsquare is adjacent to the Spear 2 kitchen.
+Townsquare	Spear Townsquare is adjacent to the Spear 2 kitchen, southwest corner.
 Loewy	The Loewy conference room is on Spear 2, west side.
 Pisano	The Pisano conference room is on Spear 2, west side.
 Roebling	The Roebling conference room is on Spear 2.
@@ -100,7 +100,7 @@ Heisenberg	The Heisenberg conference room is on Landmark 4, east side.
 Holland	The Holland conference room is on Landmark 4, east side.
 Sutter	The Sutter conference room is on Landmark 4, east side.
 Gaudi	The Gaudi conference room is on Landmark 4, east side.
-Leinneaus	The Leinneaus conference room is on Landmark 4, north side.
+Leinneaus	The Leinneaus conference room is on Landmark 4, north side. (See also Linnaeus on Steuart 4)
 Dirac	The Dirac conference room is on Landmark 4, north side.
 Strauss	The Strauss conference room is on Landmark 4, north side.
 Graves	The Graves conference room is on Landmark 4, north side.
