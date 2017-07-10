@@ -36,7 +36,7 @@ function Response($input)
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
-    $result = 'If you want to know where a conference room is, type: *_/? [room]_*';
+    $result = 'If you want to know about a conference room in San Francisco, type: *_/? [room]_*';
 
   }
   else
