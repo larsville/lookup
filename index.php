@@ -11,14 +11,11 @@ $token = $_POST['token'];
 if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config page
 {
   $msg = "Authorization failure.";
-  die($msg);
+  exit($msg);
   echo $msg;
 }
 
-$DataLines = file("data.txt");
-sort($DataLines);
-
-echo "\n".Response($text);
+echo "---\n".Response($text);
 
 /////////////////
 
@@ -29,6 +26,8 @@ function Debug($scope, $name, $value)
 
 /////////////////
 
+// Return a response for the given input, including help or failure messages.
+
 function Response($input)
 {
   $result = "";
@@ -37,8 +36,7 @@ function Response($input)
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
-    $result = 'Do you want to know who, what, or where a thing is? Just type: *_/? [thing]_*'
-      ."\nThe thing can be a staff member, acronym, business term, or conference room.";
+    $result = 'If you want to know about a conference room in San Francisco, type: *_/? [room]_*';
 
   }
   else
@@ -51,7 +49,7 @@ function Response($input)
     {
       // If there is no definition, admit defeat.
       $quote = '"';
-      $result = "Sorry, I don't know about ".$quote.$input.$quote.". Try a staff member, acronym, business term, or conference room.";
+      $result = "Sorry, I don't recognize ".$quote.$input.$quote.".";
     }
   }
 
@@ -61,24 +59,35 @@ function Response($input)
 
 /////////////////
 
-function Lookup($term) {
+// Return whatever our dataset contains for the given term.
 
+function Lookup($term)
+{
   $result = "";
-  $term_orig = $term; // save for bolding later
-  $term = strtolower($term).chr(9); // append tab char
-    Debug("Lookup", "term", $term);
+  $termWithSep = strtolower($term).chr(9); // append tab char
+    Debug("Lookup", "termWithSep", $termWithSep);
 
-  global $DataLines;
+  static $DataLines;
+  if ($DataLines == NULL)
+  {
+    $DataLines = file("data.txt");
+    sort($DataLines);
+  }
+
   foreach($DataLines as $line)
   {
-    //Debug("Lookup", "line", $line);
-    Debug("Lookup", "stripos($line, $term)", stripos($line, $term));
-    if (stripos($line, $term) === 0) // note strict comparison operator
+    //if strlen((trim($line)) >= 0)
     {
-      $result = substr($line, strlen($term)); // exclude first field
-      # $result = str_ireplace("\\n", chr(13));
-      # $result = str_ireplace($term_orig, "*".$term_orig."*", $result); // bold the target
-      break; // one match is all we need
+      Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
+      if (stripos($line, $termWithSep) === 0) // note strict comparison operator
+      {
+        $result = substr($line, strlen($termWithSep));
+        $result = str_ireplace("\\n", chr(13), $result);
+        # $canonicalTerm = substr($line, strlen($term));
+        # $result = str_ireplace($term, "*".$canonicalTerm."*", $result); // bold the target
+        break; // one match is all we need
+        // hack; should accumulate all matches in an array
+      }
     }
   }
 

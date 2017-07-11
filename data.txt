@@ -1,3 +1,126 @@
-larsjensen	Lars Jensen is a cool dude
-lars	Lars is my creator!
-mendeleev	The Mendeleev conference room is near Lars's desk.\n\nDmitri Ivanovich Mendeleev (1834-1907) created the modern periodic table of elements, among many other scientific achievements. wikipedia.org/wiki/Dmitri_Mendeleev
+Lars	Lars is my creator!
+
+Planck	The Planck conference room is on Steuart 4, east side.\n\nMax Karl Ernst Ludwig Planck (1858-1947) was a German theoretical physicist who originated quantum theory. wikipedia.org/wiki/Max_Planck
+Kirschoff	The Kirschoff conference room is on Steuart 4, east side.\n\nGustav Robert Kirchhoff (1824-1887) was a German physicist for whom three separate sets of laws are named, in electrical circuit theory, spectroscopy, and thermochemistry. wikipedia.org/wiki/Gustav_Kirchhoff
+Born	The Born conference room is on Steuart 4, east side.\n\nMax Born (1882-1970) was a German physicist and mathematician who was instrumental in the development of quantum mechanics. wikipedia.org/wiki/Max_Born
+Townsquare	Steuart Townsquare is adjacent to the Steuart 4 kitchen, east side.
+Dalton	The Dalton conference room is on Steuart 4, east side.\n\nJohn Dalton (1766-1844) was an English chemist, physicist, and meteorologist who first proposed modern atomic theory, and for whom Daltonism (color blindness) is named. wikipedia.org/wiki/John_Dalton
+Hawking	The Hawking conference room is on Steuart 4, north end.\n\nStephen William Hawking (b. 1942) is an English theoretical physicist, cosmologist, and author whose numerous scientific contributions include a theory of cosmology based on general relativity and quantum mechanics. wikipedia.org/wiki/Stephen_Hawking
+Lyell	The Lyell conference room is on Steuart 4, north end.\n\nCharles Lyell (1797-1875) was foremost geologist of his time and one of Britain's most important scientists. He wrote the landmark _Principles of Geology_, which popularized the view that geologic processes are still ongoing. He also advanced knowledge of volcanoes, earthquakes, stratigraphy, paleontology, and glaciology. wikipedia.org/wiki/Charles_Lyell
+Galton	The Galton conference area (with massage chairs) is on Steuart 4, north end.\n\nFrancis Galton (1822-1911) was an English polymath, statistician, progressive, sociologist, psychologist, anthropologist, eugenicist, tropical explorer, geographer, inventor, meteorologist, proto-geneticist, and psychometrician, with numerous contributions to statistics and its application to the study of humans. wikipedia.org/wiki/Francis_Galton
+Linnaeus	The Linnaeus game room is on Steuart 4, northwest corner. (See also Leinneaus on Landmark 4.)\n\nCarl Linnaeus (1707-1778) was a Swedish botanist, physician, and zoologist who formalised the modern system of naming organisms called binomial nomenclature. wikipedia.org/wiki/Carl_Linnaeus
+Pavlov	The Pavlov conference room is on Steuart 4, northwest corner.
+Margulis	The Margulis conference room is on Steuart 4, northwest corner.
+Hertz	The Hertz conference room is on Landmarkon Steuart 4, west side.
+Apgar	The Apgar conference room is on Steuart 4, west side.
+Wright	The Wright conference room is on Steuart 4, west side.
+Goodall	The Goodall conference room is on Steuart 4, southwest corner.
+Herschel	The Herschel conference room is on Steuart 4, south end.
+Fleming	The Fleming conference room is on Steuart 4, south end.
+Oppenheimer	The Oppenheimer conference room is on Steuart 4, south end.
+
+Farnsworth	The Farnsworth conference room is on Steuart 3, east side.
+Westinghouse	The Westinghouse conference room is on Steuart 3, east side.
+Hodgkin	The Hodgkin conference room is next to the Steuart 3 kitchen, east side.
+Sejima	The Sejima conference room is on Steuart 3, east side.
+Nye	The Nye conference room is on Steuart 3, east side.
+Braille	The Braille conference room is on Steuart 3, north end.
+Kauffman	The Kauffman conference room is on Steuart 3, north end.
+Piaget	The Piaget conference room is on Steuart 3, north end.
+Kahn	The Kahn conference room is on Steuart 3, south end.
+Eames	The Eames conference room is on Steuart 3, south end.
+Prouve	The Prouve conference room is on Steuart 3, south end.
+Chomsky	The Chomsky conference room is on Steuart 3, northwest corner.
+Montessori	The Montessori conference room is on Steuart 3, west side.
+Maybeck	The Maybeck conference room is on Steuart 3, west side.
+Griffin	The Griffin conference room is on Steuart 3, west side.
+Mendeleev	The Mendeleev conference room is on Steuart 3, west side.\n\nDmitri Ivanovich Mendeleev (1834-1907) was a Russian chemist who created the periodic table of elements. wikipedia.org/wiki/Dmitri_Mendeleev
+Leakey	The Leakey conference room is on Steuart 3, southwest corner.
+
+Salk	The Salk conference room is on Steuart 2, east side.
+Skinner	The Skinner conference room is on Steuart 2, east side next to the kitchen.
+Calatrava	The Calatrava conference room is on Steuart 2, east side.
+Zeisel	The Zeisel conference room is on Steuart 2, east side.
+Pontelli	The Pontelli conference room is on Steuart 2, south end.
+Hadid	The Hadid conference room is on Steuart 2, south end.
+Rand	The Rand conference room is on Steuart 2, south end.
+Earl	The Earl conference room is on Steuart 2, northwest corner.
+Freud	The Freud conference room is on Steuart 2, north end.
+Galilei	The Galilei conference room is on Steuart 2, north end.
+Darwin	The Darwin conference room is on Steuart 2, north end.
+Vignelli	The Vignelli conference room is on Steuart 2, northwest corner.
+Mead	The Mead conference room is on Steuart 2, northwest corner.
+Keynes	The Keynes conference room is on Steuart 2, west side.
+Mayer	The Mayer conference room is on Steuart 2, west side.
+Pei	The Pei conference room is on Steuart 2, west side.
+Heinlein	The Heinlein conference room is on Steuart 2, west side.
+EIS	The EIS conference room is on Steuart 2, west side.
+Bethune	The Bethune conference room is on Steuart 2, west side.
+
+Toolbar	The Toolbar is on Spear 2, north end.
+The Park	The Park is on Spear 2, north end.
+Albers	The Albers conference room is on Spear 2, north end.
+Tyson	The Tyson conference room is on Spear 2, east side.
+Bennett	The Bennett conference room is on Spear 2, east side.
+Salvi	The Salvi conference room is on Spear 2, east side.
+Lamb	The Lamb conference room is on Spear 2, east side.
+Morgan	The Morgan conference room is on Spear 2, east side.
+Game Room	The Spear Game Room is on Spear 2, southeast corner.
+Pelli	The Pelli conference room is on Spear 2, center.
+Exner	The Exner conference room is on Spear 2, center.
+Yoga	The Yoga room is on Spear 2.
+Dolci	The Dolci conference room is on Spear 2, west side.
+Clarke	The Clarke conference room is on Spear 2, west side.
+Townsquare	Spear Townsquare is adjacent to the Spear 2 kitchen, southwest corner.
+Loewy	The Loewy conference room is on Spear 2, west side.
+Pisano	The Pisano conference room is on Spear 2, west side.
+Roebling	The Roebling conference room is on Spear 2.
+Bracci	The Bracci conference room is on Spear 2.
+
+Tesla	The Tesla conference room is on Landmark 2, east side.
+Von Neumann	The Von Neumann conference room is on Landmark 2, east side.
+Ramanujan	The Ramanujan conference room is on Landmark 2, east side.
+Maxwell	The Maxwell conference room is on Landmark 2, east side.
+Gauss	The Gauss conference room is on Landmark 2, east side.
+Curie	The Curie conference room is on Landmark 2, east side.
+Plato	The Plato conference room is on Landmark 2, west side.
+Newton	The Newton conference room is on Landmark 2, west side.
+Euclid	The Euclid conference room is on Landmark 2, west side.
+Ockham	The Ockham conference room is on Landmark 2, west side.
+Pythagoras	The Pythagoras conference room is on Landmark 2, west side.
+Thales	The Thales conference room is on Landmark 2, west side.
+Copernicus	The Copernicus conference room is on Landmark 2.
+Brahmagupta	The Brahmagupta conference room is on Landmark 2.
+Usability	The Usability lab is on Landmark 2, near reception.
+
+Le Vau	The Le Vau conference room is on Landmark 4, northeast corner.
+Von Braun	The Von Braun conference room is on Landmark 4, northeast corner.
+Imotep	The Imotep conference room is on Landmark 4, northeast corner.
+Heisenberg	The Heisenberg conference room is on Landmark 4, east side.
+Holland	The Holland conference room is on Landmark 4, east side.
+Sutter	The Sutter conference room is on Landmark 4, east side.
+Gaudi	The Gaudi conference room is on Landmark 4, east side.
+Leinneaus	The Leinneaus conference room is on Landmark 4, north side. (See also Linnaeus on Steuart 4)
+Dirac	The Dirac conference room is on Landmark 4, north side.
+Strauss	The Strauss conference room is on Landmark 4, north side.
+Graves	The Graves conference room is on Landmark 4, north side.
+
+Mediterranean	The Mediterranean conference room is on Landmark 5, northeast corner.
+Pacific	The Pacific conference room is on Landmark 5, northeast corner.
+Huron	The Huron conference room is on Landmark 5, northeast corner.
+Indian	The Indian conference room is on Landmark 5, northeast corner.
+Phillippine	The Phillippine conference room is on Landmark 5, southeast corner.
+Adriatic	The Adriatic conference room is on Landmark 5, southeast corner.
+Bering Sea	The Bering Sea conference room is on Landmark 5, southeast corner.
+Red Sea	The Red Sea conference room is on Landmark 5, southeast corner.
+Baltic Sea	The Baltic Sea conference room is on Landmark 5, northwest corner.
+South China Sea	The South China Sea conference room is on Landmark 5, northwest corner.
+Gulf of Mexico	The Gulf of Mexico conference room is on Landmark 5, northwest corner.
+Tasman Sea	The Tasman Sea conference room is on Landmark 5, northwest corner.
+Norwegian	The Norwegian conference room is on Landmark 5, southwest corner.
+Dead Sea	The Dead Sea conference room is on Landmark 5, southwest corner.
+Studio	The Studio is on Landmark 5, southwest corner.
+Library	The Library is on Landmark 5, southwest corner.
+Atlantic	The Atlantic conference room is on Landmark 5, southwest corner.
+Caribbean	The Caribbean conference room is on Landmark 5, southwest corner.
+Aegean	The Aegean conference room is on Landmark 5, southwest corner.
