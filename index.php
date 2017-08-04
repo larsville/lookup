@@ -8,14 +8,14 @@ $token = $_POST['token'];
 
 // Make sure we have the proper token.
 
-if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config page
+if ($token != '7dzbeUVi2B02V5ElqejuWEzN') // token from slash command config page
 {
   $msg = "Authorization failure.";
   exit($msg);
   echo $msg;
 }
 
-echo "---\n".Response($text);
+echo Response($text);
 
 /////////////////
 
@@ -36,7 +36,7 @@ function Response($input)
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
-    $result = 'If you want to know about a conference room in San Francisco, type: *_/? [room]_*';
+    $result = 'If you want to know about a conference room in San Francisco, type: *_/? room-name_*';
 
   }
   else
