@@ -1,109 +1,109 @@
 Lars	Lars is my creator!
 
-Planck	The Planck conference room (24007) is on Steuart 4, east side.\n\nMax Karl Ernst Ludwig Planck (1858-1947) was a German theoretical physicist who originated quantum theory. wikipedia.org/wiki/Max_Planck
-Kirschoff	The Kirschoff conference room (24022) is on Steuart 4, east side.\n\nGustav Robert Kirchhoff (1824-1887) was a German physicist for whom three separate sets of laws are named, in electrical circuit theory, spectroscopy, and thermochemistry. wikipedia.org/wiki/Gustav_Kirchhoff
-Born	The Born conference room (24020) is on Steuart 4, east side.\n\nMax Born (1882-1970) was a German physicist and mathematician who was instrumental in the development of quantum mechanics. wikipedia.org/wiki/Max_Born
+Planck	The Planck conference room (24007) is on Steuart 4, east side. wikipedia.org/wiki/Max_Planck
+Kirschoff	The Kirschoff conference room (24022) is on Steuart 4, east side. wikipedia.org/wiki/Gustav_Kirchhoff
+Born	The Born conference room (24020) is on Steuart 4, east side. wikipedia.org/wiki/Max_Born
 Townsquare	Steuart Townsquare (24023) is adjacent to the Steuart 4 kitchen, east side.
-Dalton	The Dalton conference room (24027) is on Steuart 4, east side.\n\nJohn Dalton (1766-1844) was an English chemist, physicist, and meteorologist who first proposed modern atomic theory, and for whom Daltonism (color blindness) is named. wikipedia.org/wiki/John_Dalton
-Hawking	The Hawking conference room (24002) is on Steuart 4, north end.\n\nStephen William Hawking (b. 1942) is an English theoretical physicist, cosmologist, and author whose numerous scientific contributions include a theory of cosmology based on general relativity and quantum mechanics. wikipedia.org/wiki/Stephen_Hawking
-Lyell	The Lyell conference room (24094) is on Steuart 4, north end.\n\nCharles Lyell (1797-1875) was foremost geologist of his time and one of Britain's most important scientists. He wrote the landmark _Principles of Geology_, which popularized the view that geologic processes are still ongoing. He also advanced knowledge of volcanoes, earthquakes, stratigraphy, paleontology, and glaciology. wikipedia.org/wiki/Charles_Lyell
-Galton	The Galton conference area (24095) with massage chairs is on Steuart 4, north end.\n\nFrancis Galton (1822-1911) was an English polymath, statistician, progressive, sociologist, psychologist, anthropologist, eugenicist, tropical explorer, geographer, inventor, meteorologist, proto-geneticist, and psychometrician, with numerous contributions to statistics and its application to the study of humans. wikipedia.org/wiki/Francis_Galton
-Linnaeus	The Linnaeus game room (24090) is on Steuart 4, northwest corner. (See also Leinneaus on Landmark 4.)\n\nCarl Linnaeus (1707-1778) was a Swedish botanist, physician, and zoologist who formalised the modern system of naming organisms called binomial nomenclature. wikipedia.org/wiki/Carl_Linnaeus
-Pavlov	The Pavlov conference room (24089) is on Steuart 4, northwest corner.\n\nIvan Petrovich Pavlov (1849-1936) was a Russian physiologist and Nobel laureate known primarily for establishing the concept of classical (or "reflex") conditioning. wikipedia.org/wiki/Ivan_Pavlov
-Margulis	The Margulis conference room (24086) is on Steuart 4, northwest corner.\n\nwikipedia.org/wiki/Lynn_Margulis
-Hertz	The Hertz conference room (24078) is on Steuart 4, west side.\n\nwikipedia.org/wiki/Heinrich_Hertz
-Apgar	The Apgar conference room (24069) is on Steuart 4, west side.\n\nwikipedia.org/wiki/Virginia_Apgar
-Wright	The Wright conference room (24061) is on Steuart 4, west side.\n\nwikipedia.org/wiki/Frank_Lloyd_Wright wikipedia.org/wiki/Wright_brothers
-Goodall	The Goodall conference room (24053) is on Steuart 4, southwest corner.\n\nwikipedia.org/wiki/Jane_Goodall
-Herschel	The Herschel conference room (24051) is on Steuart 4, south end.\n\nwikipedia.org/wiki/William_Herschel
-Fleming	The Fleming conference room (24050) is on Steuart 4, south end.\n\nwikipedia.org/wiki/Alexander_Fleming
-Oppenheimer	The Oppenheimer conference room (24048) is on Steuart 4, south end.\n\nwikipedia.org/wiki/J._Robert_Oppenheimer
+Dalton	The Dalton conference room (24027) is on Steuart 4, east side. wikipedia.org/wiki/John_Dalton
+Hawking	The Hawking conference room (24002) is on Steuart 4, north end. wikipedia.org/wiki/Stephen_Hawking
+Lyell	The Lyell conference room (24094) is on Steuart 4, north end. wikipedia.org/wiki/Charles_Lyell
+Galton	The Galton conference area (24095) with massage chairs is on Steuart 4, north end. wikipedia.org/wiki/Francis_Galton
+Linnaeus	The Linnaeus game room (24090) is on Steuart 4, northwest corner. (See also Leinneaus on Landmark 4.) wikipedia.org/wiki/Carl_Linnaeus
+Pavlov	The Pavlov conference room (24089) is on Steuart 4, northwest corner. wikipedia.org/wiki/Ivan_Pavlov
+Margulis	The Margulis conference room (24086) is on Steuart 4, northwest corner. wikipedia.org/wiki/Lynn_Margulis
+Hertz	The Hertz conference room (24078) is on Steuart 4, west side. wikipedia.org/wiki/Heinrich_Hertz
+Apgar	The Apgar conference room (24069) is on Steuart 4, west side. wikipedia.org/wiki/Virginia_Apgar
+Wright	The Wright conference room (24061) is on Steuart 4, west side. wikipedia.org/wiki/Frank_Lloyd_Wright wikipedia.org/wiki/Wright_brothers
+Goodall	The Goodall conference room (24053) is on Steuart 4, southwest corner. wikipedia.org/wiki/Jane_Goodall
+Herschel	The Herschel conference room (24051) is on Steuart 4, south end. wikipedia.org/wiki/William_Herschel
+Fleming	The Fleming conference room (24050) is on Steuart 4, south end. wikipedia.org/wiki/Alexander_Fleming
+Oppenheimer	The Oppenheimer conference room (24048) is on Steuart 4, south end. wikipedia.org/wiki/J._Robert_Oppenheimer
 
-Farnsworth	The Farnsworth conference room (23057) is on Steuart 3, east side.\n\nwikipedia.org/wiki/Philo_Farnsworth
-Westinghouse	The Westinghouse conference room (23015) is on Steuart 3, east side.\n\nwikipedia.org/wiki/George_Westinghouse
-Hodgkin	The Hodgkin conference room (23021) is next to the Steuart 3 kitchen, east side.\n\nwikipedia.org/wiki/Dorothy_Hodgkin
-Sejima	The Sejima (23023) conference room is on Steuart 3, east side.\n\nwikipedia.org/wiki/Kazuyo_Sejima
-Nye	The Nye conference room (23032) is on Steuart 3, east side.\n\nwikipedia.org/wiki/Bill_Nye
-Braille	The Braille conference room (23002) is on Steuart 3, north end.\n\nwikipedia.org/wiki/Louis_Braille
-Kauffman	The Kauffman conference room (23088) is on Steuart 3, north end.\n\nwikipedia.org/wiki/Edgar_J._Kaufmann
-Piaget	The Piaget conference room (23086) is on Steuart 3, north end.\n\nwikipedia.org/wiki/Jean_Piaget
-Kahn	The Kahn conference room (23042) is on Steuart 3, south end.\n\nwikipedia.org/wiki/Louis_Kahn
-Eames	The Eames conference room (23044) is on Steuart 3, south end.\n\nwikipedia.org/wiki/Charles_and_Ray_Eames
-Prouve	The Prouve conference room (23045) is on Steuart 3, south end.\n\nwikipedia.org/wiki/Jean_Prouve
-Chomsky	The Chomsky conference room (23082) is on Steuart 3, northwest corner.\n\nwikipedia.org/wiki/Noam_Chomsky
-Montessori	The Montessori conference room (23072) is on Steuart 3, west side.\n\nwikipedia.org/wiki/Maria_Montessori
-Maybeck	The Maybeck conference room (23071) is on Steuart 3, west side.\n\nwikipedia.org/wiki/Bernard_Maybeck
-Griffin	The Griffin conference room (23066) is on Steuart 3, west side.\n\nwikipedia.org/wiki/Marion_Mahony_Griffin
-Mendeleev	The Mendeleev conference room (23056) is on Steuart 3, west side.\n\nDmitri Ivanovich Mendeleev (1834-1907) was a Russian chemist who created the periodic table of elements. wikipedia.org/wiki/Dmitri_Mendeleev
-Leakey	The Leakey conference room (23046) is on Steuart 3, southwest corner.\n\nwikipedia.org/wiki/Louis_Leakey wikipedia.org/wiki/Mary_Leakey
+Farnsworth	The Farnsworth conference room (23057) is on Steuart 3, east side. wikipedia.org/wiki/Philo_Farnsworth
+Westinghouse	The Westinghouse conference room (23015) is on Steuart 3, east side. wikipedia.org/wiki/George_Westinghouse
+Hodgkin	The Hodgkin conference room (23021) is next to the Steuart 3 kitchen, east side. wikipedia.org/wiki/Dorothy_Hodgkin
+Sejima	The Sejima (23023) conference room is on Steuart 3, east side. wikipedia.org/wiki/Kazuyo_Sejima
+Nye	The Nye conference room (23032) is on Steuart 3, east side. wikipedia.org/wiki/Bill_Nye
+Braille	The Braille conference room (23002) is on Steuart 3, north end. wikipedia.org/wiki/Louis_Braille
+Kauffman	The Kauffman conference room (23088) is on Steuart 3, north end. wikipedia.org/wiki/Edgar_J._Kaufmann
+Piaget	The Piaget conference room (23086) is on Steuart 3, north end. wikipedia.org/wiki/Jean_Piaget
+Kahn	The Kahn conference room (23042) is on Steuart 3, south end. wikipedia.org/wiki/Louis_Kahn
+Eames	The Eames conference room (23044) is on Steuart 3, south end. wikipedia.org/wiki/Charles_and_Ray_Eames
+Prouve	The Prouve conference room (23045) is on Steuart 3, south end. wikipedia.org/wiki/Jean_Prouve
+Chomsky	The Chomsky conference room (23082) is on Steuart 3, northwest corner. wikipedia.org/wiki/Noam_Chomsky
+Montessori	The Montessori conference room (23072) is on Steuart 3, west side. wikipedia.org/wiki/Maria_Montessori
+Maybeck	The Maybeck conference room (23071) is on Steuart 3, west side. wikipedia.org/wiki/Bernard_Maybeck
+Griffin	The Griffin conference room (23066) is on Steuart 3, west side. wikipedia.org/wiki/Marion_Mahony_Griffin
+Mendeleev	The Mendeleev conference room (23056) is on Steuart 3, west side. Dmitri Ivanovich Mendeleev (1834-1907) was a Russian chemist who created the periodic table of elements. wikipedia.org/wiki/Dmitri_Mendeleev
+Leakey	The Leakey conference room (23046) is on Steuart 3, southwest corner. wikipedia.org/wiki/Louis_Leakey wikipedia.org/wiki/Mary_Leakey
 
-Salk	The Salk conference room (22015) is on Steuart 2, east side.
-Skinner	The Skinner conference room (22022) is on Steuart 2, east side next to the kitchen.
-Calatrava	The Calatrava conference room (22024) is on Steuart 2, east side.
-Zeisel	The Zeisel conference room (22034) is on Steuart 2, east side.
-Pontelli	The Pontelli conference room (22042) is on Steuart 2, south end.
-Hadid	The Hadid conference room (22044) is on Steuart 2, south end.
-Rand	The Rand conference room (22045) is on Steuart 2, south end.
-Earl	The Earl conference room (22046) is on Steuart 2, northwest corner.
-Freud	The Freud conference room (22022) is on Steuart 2, north end.
-Galilei	The Galilei conference room (22087) is on Steuart 2 (22087), north end.
-Darwin	The Darwin conference room (22086) is on Steuart 2 (22086), north end.
-Vignelli	The Vignelli conference room (22082) is on Steuart 2, northwest corner.
-Mead	The Mead conference room (22078) is on Steuart 2, northwest corner.
-Keynes	The Keynes conference room (22072) is on Steuart 2, west side.
-Mayer	The Mayer conference room (22071) is on Steuart 2, west side.
-Pei	The Pei conference room (22073) is on Steuart 2, west side.
-Heinlein	The Heinlein conference room (22065) is on Steuart 2, west side.
+Salk	The Salk conference room (22015) is on Steuart 2, east side. wikipedia.org/wiki/Jonas_Salk
+Skinner	The Skinner conference room (22022) is on Steuart 2, east side next to the kitchen. wikipedia.org/wiki/B._F._Skinner
+Calatrava	The Calatrava conference room (22024) is on Steuart 2, east side. wikipedia.org/wiki/Santiago_Calatrava
+Zeisel	The Zeisel conference room (22034) is on Steuart 2, east side. wikipedia.org/wiki/Eva_Zeisel
+Pontelli	The Pontelli conference room (22042) is on Steuart 2, south end. wikipedia.org/wiki/Baccio_Pontelli
+Hadid	The Hadid conference room (22044) is on Steuart 2, south end. wikipedia.org/wiki/Zaha_Hadid
+Rand	The Rand conference room (22045) is on Steuart 2, south end. wikipedia.org/wiki/Paul_Rand
+Earl	The Earl conference room (22046) is on Steuart 2, northwest corner. wikipedia.org/wiki/Harley_Earl
+Freud	The Freud conference room (22022) is on Steuart 2, north end. wikipedia.org/wiki/Sigmund_Freud
+Galilei	The Galilei conference room (22087) is on Steuart 2 (22087), north end. wikipedia.org/wiki/Galileo_Galilei
+Darwin	The Darwin conference room (22086) is on Steuart 2 (22086), north end. wikipedia.org/wiki/Charles_Darwin
+Vignelli	The Vignelli conference room (22082) is on Steuart 2, northwest corner. wikipedia.org/wiki/Massimo_Vignelli
+Mead	The Mead conference room (22078) is on Steuart 2, northwest corner. wikipedia.org/wiki/Margaret_Mead
+Keynes	The Keynes conference room (22072) is on Steuart 2, west side. wikipedia.org/wiki/John_Maynard_Keynes
+Mayer	The Mayer conference room (22071) is on Steuart 2, west side. wikipedia.org/wiki/Maria_Goeppert-Mayer
+Pei	The Pei conference room (22073) is on Steuart 2, west side. wikipedia.org/wiki/I._M._Pei
+Heinlein	The Heinlein conference room (22065) is on Steuart 2, west side. wikipedia.org/wiki/Robert_A._Heinlein
 EIS	The EIS conference room (22056) is on Steuart 2, west side.
-Bethune	The Bethune conference room (22054) is on Steuart 2, west side.
+Bethune	The Bethune conference room (22054) is on Steuart 2, west side. wikipedia.org/wiki/Jean-Baptiste_Bethune
 
 Toolbar	The Toolbar (32001) is on Spear 2, north end.
 The Park	The Park (32006) is on Spear 2, north end.
-Albers	The Albers conference room (32005) is on Spear 2, north end.
-Tyson	The Tyson conference room (32014) is on Spear 2, east side.
-Bennett	The Bennett conference room (32024) is on Spear 2, east side.
-Salvi	The Salvi conference room (32025) is on Spear 2, east side.
-Lamb	The Lamb conference room (32034) is on Spear 2, east side.
-Morgan	The Morgan conference room (32041) is on Spear 2, east side.
+Albers	The Albers conference room (32005) is on Spear 2, north end. wikipedia.org/wiki/Josef_Albers
+Tyson	The Tyson conference room (32014) is on Spear 2, east side. wikipedia.org/wiki/Neil_deGrasse_Tyson
+Bennett	The Bennett conference room (32024) is on Spear 2, east side. wikipedia.org/wiki/Edward_H._Bennett
+Salvi	The Salvi conference room (32025) is on Spear 2, east side. wikipedia.org/wiki/Nicola_Salvi
+Lamb	The Lamb conference room (32034) is on Spear 2, east side. wikipedia.org/wiki/Thomas_W._Lamb
+Morgan	The Morgan conference room (32041) is on Spear 2, east side. wikipedia.org/wiki/Julia_Morgan
 Game Room	The Spear Game Room (32055) is on Spear 2, southeast corner.
-Pelli	The Pelli conference room (32033) is on Spear 2, center.
-Exner	The Exner conference room (32070) is on Spear 2, center.
+Pelli	The Pelli conference room (32033) is on Spear 2, center. wikipedia.org/wiki/Cesar_Pelli
+Exner	The Exner conference room (32070) is on Spear 2, center. wikipedia.org/wiki/Virgil_Exner
 Yoga	The Spear Yoga room (32044) is on Spear 2.
-Dolci	The Dolci conference room (32071) is on Spear 2, west side.
-Clarke	The Clarke conference (32063) room is on Spear 2, west side.
+Dolci	The Dolci conference room (32071) is on Spear 2, west side wikipedia.org/wiki/Sistine_Chapel
+Clarke	The Clarke conference (32063) room is on Spear 2, west side. wikipedia.org/wiki/Arthur_C._Clarke
 Townsquare	Spear Townsquare (32059) is adjacent to the Spear 2 kitchen, southwest corner.
-Loewy	The Loewy conference room (32083) is on Spear 2, west side.
-Pisano	The Pisano conference room (32080) is on Spear 2, west side.
-Roebling	The Roebling conference room (32054) is on Spear 2, south end.
-Bracci	The Bracci conference room (32052) is on Spear 2, south end.
+Loewy	The Loewy conference room (32083) is on Spear 2, west side. wikipedia.org/wiki/Raymond_Loewy
+Pisano	The Pisano conference room (32080) is on Spear 2, west side. wikipedia.org/wiki/Fibonacci
+Roebling	The Roebling conference room (32054) is on Spear 2, south end. wikipedia.org/wiki/John_A._Roebling
+Bracci	The Bracci conference room (32052) is on Spear 2, south end. wikipedia.org/wiki/Pietro_Bracci
 
-Tesla	The Tesla conference room is on Landmark 2, east side.
-Von Neumann	The Von Neumann conference room is on Landmark 2, east side.
-Ramanujan	The Ramanujan conference room is on Landmark 2, east side.
-Maxwell	The Maxwell conference room is on Landmark 2, east side.
-Gauss	The Gauss conference room is on Landmark 2, east side.
-Curie	The Curie conference room is on Landmark 2, east side.
-Plato	The Plato conference room is on Landmark 2, west side.
-Newton	The Newton conference room is on Landmark 2, west side.
-Euclid	The Euclid conference room is on Landmark 2, west side.
-Ockham	The Ockham conference room is on Landmark 2, west side.
-Pythagoras	The Pythagoras conference room is on Landmark 2, west side.
-Thales	The Thales conference room is on Landmark 2, west side.
-Copernicus	The Copernicus conference room is on Landmark 2.
-Brahmagupta	The Brahmagupta conference room is on Landmark 2.
-Usability	The Usability Lab is on Landmark 2, near reception.
+Tesla	The Tesla conference room (12134) is on Landmark 2, east side. wikipedia.org/wiki/Nikola_Tesla
+Von Neumann	The Von Neumann conference room (12135) is on Landmark 2, east side. wikipedia.org/wiki/John_von_Neumann
+Ramanujan	The Ramanujan conference room (12133) is on Landmark 2, east side. wikipedia.org/wiki/Srinivasa_Ramanujan
+Maxwell	The Maxwell conference room (12131) is on Landmark 2, east side. wikipedia.org/wiki/James_Clerk_Maxwell
+Gauss	The Gauss conference room (12129) is on Landmark 2, east side. wikipedia.org/wiki/Carl_Friedrich_Gauss
+Curie	The Curie conference room (12127) is on Landmark 2, east side. wikipedia.org/wiki/Marie_Curie
+Plato	The Plato conference room (12019) is on Landmark 2, west side. wikipedia.org/wiki/Plato
+Newton	The Newton conference room (12018) is on Landmark 2, west side. wikipedia.org/wiki/Isaac_Newton
+Euclid	The Euclid conference room (12009) is on Landmark 2, west side. wikipedia.org/wiki/Euclid
+Ockham	The Ockham conference room (12017) is on Landmark 2, west side. wikipedia.org/wiki/William_of_Ockham
+Pythagoras	The Pythagoras conference room (12016) is on Landmark 2, west side. wikipedia.org/wiki/Pythagoras
+Thales	The Thales conference room (12015) is on Landmark 2, west side. wikipedia.org/wiki/Thales_of_Miletus
+Copernicus	The Copernicus conference room (12010) is on Landmark 2, west side, near the kitchen. wikipedia.org/wiki/Nicolaus_Copernicus
+Brahmagupta	The Brahmagupta conference room (12005) is on Landmark 2, west side, adjacent to the kitchen. wikipedia.org/wiki/Brahmagupta
+Usability	The Usability Lab (12070, 12071, 12072, 12069A) is on Landmark 2, adjacent to Reception.
 
-Le Vau	The Le Vau conference room (14030) is on Landmark 4, northeast corner.
-Von Braun	The Von Braun conference room (14029) is on Landmark 4, northeast corner.
-Imotep	The Imotep conference room (14023) is on Landmark 4, northeast corner.
-Heisenberg	The Heisenberg conference room (14032) is on Landmark 4, east side.
-Holland	The Holland conference room (14009) is on Landmark 4, east side.
-Sutter	The Sutter conference room (14008) is on Landmark 4, east side.
-Gaudi	The Gaudi conference room (14010) is on Landmark 4, east side.
-Leinneaus	The Leinneaus conference room (14038) is on Landmark 4, north side. (See also Linnaeus on Steuart 4)
-Dirac	The Dirac conference room (14006) is on Landmark 4, north side.
-Strauss	The Strauss conference room (14138) is on Landmark 4, north side.
-Graves	The Graves conference room (14048) is on Landmark 4, north side.
+Le Vau	The Le Vau conference room (14030) is on Landmark 4, northeast corner. wikipedia.org/wiki/Louis_Le_Vau
+Von Braun	The Von Braun conference room (14029) is on Landmark 4, northeast corner. wikipedia.org/wiki/Wernher_von_Braun
+Imotep	The Imotep conference room (14023) is on Landmark 4, northeast corner. wikipedia.org/wiki/Imhotep
+Heisenberg	The Heisenberg conference room (14032) is on Landmark 4, east side. wikipedia.org/wiki/Werner_Heisenberg
+Holland	The Holland conference room (14009) is on Landmark 4, east side. wikipedia.org/wiki/Henry_Holland_(architect)
+Sutter	The Sutter conference room (14008) is on Landmark 4, east side. wikipedia.org/wiki/Joe_Sutter
+Gaudi	The Gaudi conference room (14010) is on Landmark 4, east side. wikipedia.org/wiki/Antoni_Gaudi
+Leinneaus	The Leinneaus conference room (14038) is on Landmark 4, north side. (See also Linnaeus on Steuart 4) wikipedia.org/wiki/Carl_Linnaeus
+Dirac	The Dirac conference room (14006) is on Landmark 4, north side. wikipedia.org/wiki/Paul_Dirac
+Strauss	The Strauss conference room (14138) is on Landmark 4, north side. wikipedia.org/wiki/Joseph_Strauss_(engineer)
+Graves	The Graves conference room (14048) is on Landmark 4, north side. wikipedia.org/wiki/Michael_Graves
 
 Mediterranean	The Mediterranean conference room (15726) is on Landmark 5, northeast corner.
 Pacific	The Pacific conference room (15727) is on Landmark 5, northeast corner.
