@@ -8,7 +8,9 @@ $token = $_POST['token'];
 
 // Make sure we have the proper token.
 
-if ($token != 'yGmqYtpolYQE7j2x9E3vx3YQ') // token from slash command config page
+$tokenRequired = file_get_contents('token.txt');
+
+if ($token != $tokenRequired) // token from slash command config page
 {
   $msg = "Authorization failure.";
   exit($msg);
