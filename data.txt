@@ -2,4 +2,4 @@ Lars	Lars is my creator!
 
 One	*One* is the first counting number. It is followed by _Two_.
 Two	*Two* is the second counting number. It is one greater than _One_.
-Three *Three* is the third counting number. It comes after _Two_.
+Three	*Three* is the third counting number. It comes after _Two_.
