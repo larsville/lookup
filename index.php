@@ -31,11 +31,12 @@ function Debug($scope, $name, $value)
 
 function ConfigValue($key)
 {
-  Debug("ConfigValue", "key", $key);
   static $configValues;
   if ($configValues == NULL)
   {
+  	Debug("ConfigValue: before parse_ini_file", "key", $key);
   	$configValues = parse_ini_file("config.ini.php");
+  	Debug("ConfigValue: after parse_ini_file", "key", $key);
   }
   return $configValues[$key];
 }
