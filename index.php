@@ -9,7 +9,11 @@ require "vendor/autoload.php";
 
 // get the Mixpanel class instance, replace with your
 // project token
-$mp = Mixpanel::getInstance(getenv('MIXPANEL_TOKEN'));
+print("1");
+$mpToken = getenv('MIXPANEL_TOKEN');
+print("2".$mpToken);
+$mp = Mixpanel::getInstance($mpToken);
+print("3".$mp);
 
 //////////////
 
