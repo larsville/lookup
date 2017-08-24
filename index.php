@@ -51,7 +51,8 @@ function Response($input)
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
-    $result = 'If you want to know about a conference room in San Francisco, type: *_/? room-name_*';
+    $result = ConfigValue("msg-help");
+    //$result = 'If you want to know about a conference room in San Francisco, type: *_/? room-name_*';
 
   }
   else
