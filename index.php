@@ -8,12 +8,11 @@ $token = $_POST['token'];
 
 // Make sure we have the proper token.
 
-$tokenRequired = ConfigValue("auth-token");
+$tokenRequired = ConfigValue("authorization-token");
 
 if ($token != $tokenRequired) // token from slash command config page
 {
-  $msg = "fail";
-  $msg = ConfigValue("msg-auth-failed");
+  $msg = ConfigValue("msg-authorization-failed");
   exit($msg);
   echo $msg;
 }
@@ -36,9 +35,6 @@ function ConfigValue($key)
   {
   	$configValues = parse_ini_file("config.ini.php");
   }
-  Debug("ConfigValue: before return", "key", $key);
-  print_r($configValues);
-  print($configValues[$key]);
   return $configValues[$key];
 }
 
