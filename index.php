@@ -12,7 +12,8 @@ $tokenRequired = file_get_contents('token.txt');
 
 if ($token != $tokenRequired) // token from slash command config page
 {
-  $msg = "Authorization failure.";
+  $msg = "Authorization failed.";
+  $msg = ConfigValue("auth-token");
   exit($msg);
   echo $msg;
 }
@@ -35,7 +36,7 @@ function ConfigValue($key)
   {
   	$configValues = parse_ini_file("config.ini");
   }
-  print_r($configValues);
+  //print_r($configValues);
   return $configValues[$key];
 }
 
