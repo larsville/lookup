@@ -1,5 +1,18 @@
 <?php
 
+// from https://mixpanel.com/help/reference/php:
+//
+// import dependencies (using composer's autoload)
+// if not using Composer, you'll want to require the
+// lib/Mixpanel.php file here
+require "vendor/autoload.php";
+
+// get the Mixpanel class instance, replace with your
+// project token
+$mp = Mixpanel::getInstance(getenv('MIXPANEL_TOKEN'));
+
+//////////////
+
 // Extract the important values from the slash command.
 
 $command = $_POST['command'];
@@ -102,6 +115,10 @@ function Lookup($term)
   }
 
   Debug("Lookup", "result", $result);
+
+  // track an event
+  $mp->track("looked up", $term);
+
   return $result;
 
 } // end Lookup
