@@ -28,6 +28,19 @@ function Debug($scope, $name, $value)
 
 /////////////////
 
+function ConfigValue($key)
+{
+  static $configValues;
+  if ($configValues == NULL)
+  {
+  	$configValues = parse_ini_file("config.ini");
+  }
+  print_r($configValues);
+  return $configValues[$key];
+}
+
+/////////////////
+
 // Return a response for the given input, including help or failure messages.
 
 function Response($input)
