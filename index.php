@@ -9,7 +9,7 @@ require "vendor/autoload.php";
 
 // get the Mixpanel class instance, replace with your
 // project token
-//$mp = Mixpanel::getInstance(getenv('MIXPANEL_TOKEN'));
+$mp = Mixpanel::getInstance(getenv('MIXPANEL_TOKEN'));
 
 //////////////
 
@@ -117,7 +117,7 @@ function Lookup($term)
   Debug("Lookup", "result", $result);
 
   // track an event
-  //$mp->track("looked up", $term);
+  $mp->track("looked up", $term);
 
   return $result;
 
