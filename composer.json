@@ -1,0 +1,7 @@
+{
+
+"require": {
+    "mixpanel/mixpanel-php" : "2.*"
+}
+
+}
