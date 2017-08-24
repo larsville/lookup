@@ -35,11 +35,10 @@ function ConfigValue($key)
   if ($configValues == NULL)
   {
   	$configValues = parse_ini_file("config.ini.php");
-	Debug("ConfigValue: after parse_ini_file", "key", $key);
-  	print_r($configValues);
   }
   Debug("ConfigValue: before return", "key", $key);
   print_r($configValues);
+  print($configValues[$key]);
   return $configValues[$key];
 }
 
