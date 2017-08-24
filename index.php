@@ -38,6 +38,8 @@ function ConfigValue($key)
 	Debug("ConfigValue: after parse_ini_file", "key", $key);
   	print_r($configValues);
   }
+  Debug("ConfigValue: before return", "key", $key);
+  print_r($configValues);
   return $configValues[$key];
 }
 
