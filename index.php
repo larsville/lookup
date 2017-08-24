@@ -13,7 +13,7 @@ $tokenRequired = ConfigValue("auth-token");
 if ($token != $tokenRequired) // token from slash command config page
 {
   $msg = "fail";
-  //$msg = ConfigValue("msg-auth-failed");
+  $msg = ConfigValue("msg-auth-failed");
   exit($msg);
   echo $msg;
 }
@@ -24,13 +24,14 @@ echo Response($text);
 
 function Debug($scope, $name, $value)
 {
-  //echo "\n-->".$scope.": <".$name."> = <".$value.">";
+  echo "\n-->".$scope.": <".$name."> = <".$value.">";
 }
 
 /////////////////
 
 function ConfigValue($key)
 {
+  Debug("ConfigValue", "key", $key);
   static $configValues;
   if ($configValues == NULL)
   {
