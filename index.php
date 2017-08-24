@@ -8,7 +8,7 @@ $token = $_POST['token'];
 
 // Make sure we have the proper token.
 
-$tokenRequired = "yGmqYtpolYQE7j2x9E3vx3YQ";
+$tokenRequired;// = "yGmqYtpolYQE7j2x9E3vx3YQ";
 $tokenRequired = ConfigValue("auth-token");
 
 if ($token != $tokenRequired) // token from slash command config page
