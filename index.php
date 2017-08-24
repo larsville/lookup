@@ -13,7 +13,8 @@ $tokenRequired;// = "yGmqYtpolYQE7j2x9E3vx3YQ";
 
 if ($token != $tokenRequired) // token from slash command config page
 {
-  $msg = ConfigValue("msg-auth-failed");
+  $msg = "you suck";
+  //$msg = ConfigValue("msg-auth-failed");
   exit($msg);
   echo $msg;
 }
