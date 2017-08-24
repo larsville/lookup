@@ -8,12 +8,10 @@ $token = $_POST['token'];
 
 // Make sure we have the proper token.
 
-$tokenRequired = file_get_contents('token.txt');
 $tokenRequired = ConfigValue("auth-token");
 
 if ($token != $tokenRequired) // token from slash command config page
 {
-  $msg = "Authorization failed.";
   $msg = ConfigValue("msg-auth-failed");
   exit($msg);
   echo $msg;
@@ -37,7 +35,6 @@ function ConfigValue($key)
   {
   	$configValues = parse_ini_file("config.ini.php");
   }
-  //print_r($configValues);
   return $configValues[$key];
 }
 
@@ -54,8 +51,6 @@ function Response($input)
   {
     // Here if the user seems to need help.
     $result = ConfigValue("msg-help");
-    //$result = 'If you want to know about a conference room in San Francisco, type: *_/? room-name_*';
-
   }
   else
   {
@@ -65,9 +60,9 @@ function Response($input)
 
     if ($result == "")
     {
-      // If there is no definition, admit defeat.
-      $quote = '"';
-      $result = "Sorry, I don't recognize ".$quote.$input.$quote.".";
+      // If there is no definition, admit defeat and put up a help message.
+      //$quote = '"';
+      $result = str_ireplace(ConfigValue("msg-term-token"), $input, ConfigValue("msg-help"));
     }
   }
 
@@ -88,7 +83,7 @@ function Lookup($term)
   static $DataLines;
   if ($DataLines == NULL)
   {
-    $DataLines = file("data.txt");
+    $DataLines = file(ConfigValue("data-file-name"));
     sort($DataLines);
   }
 
@@ -101,8 +96,6 @@ function Lookup($term)
       {
         $result = substr($line, strlen($termWithSep));
         $result = str_ireplace("\\n", chr(13), $result);
-        # $canonicalTerm = substr($line, strlen($term));
-        # $result = str_ireplace($term, "*".$canonicalTerm."*", $result); // bold the target
         break; // one match is all we need
         // hack; should accumulate all matches in an array
       }
