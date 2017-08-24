@@ -9,11 +9,12 @@ $token = $_POST['token'];
 // Make sure we have the proper token.
 
 $tokenRequired = file_get_contents('token.txt');
+$tokenRequired = ConfigValue("auth-token");
 
 if ($token != $tokenRequired) // token from slash command config page
 {
   $msg = "Authorization failed.";
-  $msg = ConfigValue("auth-token");
+  $msg = ConfigValue("msg-auth-failed");
   exit($msg);
   echo $msg;
 }
