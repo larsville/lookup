@@ -61,8 +61,7 @@ function Response($input)
     if ($result == "")
     {
       // If there is no definition, admit defeat and put up a help message.
-      //$quote = '"';
-      $result = str_ireplace(ConfigValue("msg-term-token"), $input, ConfigValue("msg-help"));
+      $result = str_ireplace(ConfigValue("msg-term-token"), $input, ConfigValue("msg-unrecognized-term"));
     }
   }
 
