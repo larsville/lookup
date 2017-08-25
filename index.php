@@ -100,7 +100,7 @@ function Lookup($term)
   if ($DataLines == NULL)
   {
     $filename = ConfigValue("data-file-name");
-    $filename = "data.txt"; // hack
+    //$filename = "data.txt"; // hack
     $DataLines = file($filename);
     sort($DataLines);
   }
