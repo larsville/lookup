@@ -13,7 +13,7 @@ echo "1";
 $mpToken = getenv('MIXPANEL_TOKEN');
 
 echo "2".$mpToken;
-$mplToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
+$mpToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
 
 echo "2b".$mpToken;
 $mp = Mixpanel::getInstance($mpToken);
