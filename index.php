@@ -12,10 +12,8 @@ require "vendor/autoload.php";
 
 $mpToken = getenv('MIXPANEL_TOKEN');
 echo "\n2: ".$mpToken;
-
-$mp = Mixpanel::getInstance($mpToken);
-
-echo "3: ".$mp;
+//$mp = Mixpanel::getInstance($mpToken);
+//echo "3: ".$mp;
 
 //////////////
 
