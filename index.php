@@ -10,15 +10,15 @@ require "vendor/autoload.php";
 // get the Mixpanel class instance, replace with your
 // project token
 echo "1";
-$mpToken = getenv('MIXPANEL_TOKEN');
+//$mpToken = getenv('MIXPANEL_TOKEN');
 
 echo "2".$mpToken;
 $mpToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
 
 echo "2b".$mpToken;
-$mp = Mixpanel::getInstance($mpToken);
+//$mp = Mixpanel::getInstance($mpToken);
 
-echo "3".$mp;
+//echo "3".$mp;
 
 //////////////
 
@@ -96,7 +96,7 @@ function Response($input)
 
 function Lookup($term)
 {
-  $mp->track("looked up", $term); // track what users search for
+//  $mp->track("looked up", $term); // track what users search for
 
   $result = "";
   $termWithSeparator = strtolower($term).chr(9); // append tab char
