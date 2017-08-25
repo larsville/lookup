@@ -9,13 +9,16 @@ require "vendor/autoload.php";
 
 // get the Mixpanel class instance, replace with your
 // project token
-echo("1");
+echo "1";
 $mpToken = getenv('MIXPANEL_TOKEN');
-echo("2".$mpToken);
-$mpToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
-echo("2b".$mpToken);
+
+echo "2".$mpToken;
+$mplToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
+
+echo "2b".$mpToken;
 $mp = Mixpanel::getInstance($mpToken);
-echo("3".$mp);
+
+echo "3".$mp;
 
 //////////////
 
@@ -42,7 +45,7 @@ echo Response($text);
 
 function Debug($scope, $name, $value)
 {
-  //echo "\n-->".$scope.": <".$name."> = <".$value.">";
+  echo "\n-->".$scope.": <".$name."> = <".$value.">";
 }
 
 /////////////////
@@ -75,12 +78,11 @@ function Response($input)
   {
     // Get the definition for our term.
     $result = Lookup($input);
-    Debug("Response", "input", $input);
 
     if ($result == "")
     {
       // If there is no definition, admit defeat and put up a help message.
-      $result = str_ireplace(ConfigValue("msg-term-token"), $input, ConfigValue("msg-unrecognized-term"));
+      $result = str_ireplace(ConfigValue("slug-term"), $input, ConfigValue("msg-unrecognized-term"));
     }
   }
 
@@ -94,9 +96,10 @@ function Response($input)
 
 function Lookup($term)
 {
+  $mp->track("looked up", $term); // track what users search for
+
   $result = "";
-  $termWithSep = strtolower($term).chr(9); // append tab char
-    Debug("Lookup", "termWithSep", $termWithSep);
+  $termWithSeparator = strtolower($term).chr(9); // append tab char
 
   static $DataLines;
   if ($DataLines == NULL)
@@ -109,21 +112,15 @@ function Lookup($term)
   {
     //if strlen((trim($line)) >= 0)
     {
-      Debug("Lookup", "stripos($line, $termWithSep)", stripos($line, $termWithSep));
       if (stripos($line, $termWithSep) === 0) // note strict comparison operator
       {
-        $result = substr($line, strlen($termWithSep));
+        $result = substr($line, strlen($termWithSeparator));
         $result = str_ireplace("\\n", chr(13), $result);
         break; // one match is all we need
         // hack; should accumulate all matches in an array
       }
     }
   }
-
-  Debug("Lookup", "result", $result);
-
-  // track an event
-  $mp->track("looked up", $term);
 
   return $result;
 
