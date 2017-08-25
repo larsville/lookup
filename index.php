@@ -100,9 +100,7 @@ function Lookup($term)
   {
     $filename = ConfigValue("data-file-name");
     $DataLines = file($filename);
-    Debug("Lookup", "DataLines 1", $DataLines);
     sort($DataLines);
-    Debug("Lookup", "DataLines 2", $DataLines);
   }
 
   foreach($DataLines as $line)
