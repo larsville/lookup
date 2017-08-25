@@ -109,7 +109,7 @@ function Lookup($term)
   {
     //if strlen((trim($line)) >= 0)
     {
-      if (stripos($line, $termWithSep) === 0) // note strict comparison operator
+      if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
       {
         $result = substr($line, strlen($termWithSeparator));
         $result = str_ireplace("\\n", chr(13), $result);
