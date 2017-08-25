@@ -11,7 +11,6 @@ require "vendor/autoload.php";
 // stashed in a (Heroku) environment variable.
 
 $mpToken = getenv('MIXPANEL_TOKEN');
-echo "\n2: ".$mpToken."\n";
 $mp = Mixpanel::getInstance($mpToken);
 //echo "\n3: ".$mp;
 
@@ -100,7 +99,9 @@ function Lookup($term)
   if ($DataLines == NULL)
   {
     $filename = ConfigValue("data-file-name");
-    //$filename = "data.txt"; // hack
+	Debug("Lookup", "filename 1", $filename);
+    $filename = "data.txt"; // hack
+	Debug("Lookup", "filename 2", $filename);
     $DataLines = file($filename);
     sort($DataLines);
   }
