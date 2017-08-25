@@ -11,7 +11,7 @@ require "vendor/autoload.php";
 // stashed in a (Heroku) environment variable.
 
 $mpToken = getenv('MIXPANEL_TOKEN');
-echo "\n2: ".$mpToken;
+echo "\n2: ".$mpToken."\n";
 //$mp = Mixpanel::getInstance($mpToken);
 //echo "3: ".$mp;
 
