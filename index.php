@@ -10,16 +10,12 @@ require "vendor/autoload.php";
 // Instantiate a Mixpanel object using a token
 // stashed in a (Heroku) environment variable.
 
-echo "\n1: ";
 $mpToken = getenv('MIXPANEL_TOKEN');
-
 echo "\n2: ".$mpToken;
-$mpToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
 
-echo "\n2b: ".$mpToken;
-//$mp = Mixpanel::getInstance($mpToken);
+$mp = Mixpanel::getInstance($mpToken);
 
-//echo "3: ".$mp;
+echo "3: ".$mp;
 
 //////////////
 
