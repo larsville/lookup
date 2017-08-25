@@ -7,10 +7,11 @@
 // lib/Mixpanel.php file here
 require "vendor/autoload.php";
 
-// get the Mixpanel class instance, replace with your
-// project token
+// Instantiate a Mixpanel object using a token
+// stashed in a (Heroku) environment variable.
+
 echo "\n1: ";
-//$mpToken = getenv('MIXPANEL_TOKEN');
+$mpToken = getenv('MIXPANEL_TOKEN');
 
 echo "\n2: ".$mpToken;
 $mpToken = "ed52a52c3c6a5cdd4bf6b16a40c65413";
@@ -104,7 +105,9 @@ function Lookup($term)
   static $DataLines;
   if ($DataLines == NULL)
   {
-    $DataLines = file(ConfigValue("data-file-name"));
+    $filename = ConfigValue("data-file-name");
+    $filename = "data.txt"; // hack
+    $DataLines = file($filename);
     sort($DataLines);
   }
 
