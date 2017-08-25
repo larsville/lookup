@@ -10,8 +10,8 @@ require "vendor/autoload.php";
 // Instantiate a Mixpanel object using a token
 // stashed in a (Heroku) environment variable.
 
-$mpToken = getenv('MIXPANEL_TOKEN');
-$mp = Mixpanel::getInstance($mpToken);
+$RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
+$mp = Mixpanel::getInstance($RequiredMixpanelToken);
 //echo "\n3: ".$mp;
 
 //////////////
@@ -20,13 +20,12 @@ $mp = Mixpanel::getInstance($mpToken);
 
 $command = $_POST['command'];
 $text = $_POST['text'];
-$token = $_POST['token'];
+$SlackToken = $_POST['token'];
 
 // Make sure we have the proper token.
 
-$tokenRequired = ConfigValue("authorization-token");
-
-if ($token != $tokenRequired) // token from slash command config page
+$RequiredSlackToken = getenv('SLACK_TOKEN');
+if ($SlackToken != $RequiredSlackToken) // token from slash command config page
 {
   $msg = ConfigValue("msg-authorization-failed");
   exit($msg);
