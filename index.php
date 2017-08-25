@@ -99,11 +99,10 @@ function Lookup($term)
   if ($DataLines == NULL)
   {
     $filename = ConfigValue("data-file-name");
-	Debug("Lookup", "filename 1", $filename);
-    $filename = "data.txt"; // hack
-	Debug("Lookup", "filename 2", $filename);
     $DataLines = file($filename);
+    Debug("Lookup", "DataLines 1", $DataLines);
     sort($DataLines);
+    Debug("Lookup", "DataLines 2", $DataLines);
   }
 
   foreach($DataLines as $line)
