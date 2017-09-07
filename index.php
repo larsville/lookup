@@ -32,7 +32,7 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   echo $msg;
 }
 
-$mp->track("Response");
+$mp->track("Response", $text);
 
 echo Response($text);
 
