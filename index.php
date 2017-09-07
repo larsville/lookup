@@ -61,7 +61,7 @@ function ConfigValue($key)
 
 function Response($input)
 {
-  $mp->track("input", $input); // track what users search for
+  $mp->track("input".$input); // track what users search for
 
   $result = "";
   $input = strtolower($input);
