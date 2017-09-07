@@ -11,10 +11,7 @@ require "vendor/autoload.php";
 // stashed in a (Heroku) environment variable.
 
 $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-//echo "\n token: ".$RequiredMixpanelToken;
 $mp = Mixpanel::getInstance($RequiredMixpanelToken);
-//echo "\n mp: ".$mp;
-$mp->track("Startup");
 
 // Extract the important values from the slash command.
 
@@ -32,7 +29,7 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   echo $msg;
 }
 
-$mp->track("Response", array("input" => $text));
+$mp->track("response", array("input" => $text));
 
 echo Response($text);
 
@@ -61,8 +58,6 @@ function ConfigValue($key)
 
 function Response($input)
 {
-  //$mp->track("input".$input); // track what users search for
-
   $result = "";
   $input = strtolower($input);
 
