@@ -14,8 +14,8 @@ $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
 //echo "\n token: ".$RequiredMixpanelToken;
 $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 //echo "\n mp: ".$mp;
-$mp->track("Startup");
-$mp->track("Startup");
+$mp->track("Startup 1");
+$mp->track("Startup 2");
 
 // Extract the important values from the slash command.
 
