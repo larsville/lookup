@@ -11,7 +11,7 @@ require "vendor/autoload.php";
 // stashed in a (Heroku) environment variable.
 
 $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-echo "\n token: ".$RequiredMixpanelToken;
+//echo "\n token: ".$RequiredMixpanelToken;
 $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 //echo "\n mp: ".$mp;
 $mp->track("Startup");
@@ -61,6 +61,8 @@ function ConfigValue($key)
 
 function Response($input)
 {
+  $mp->track("input", $input); // track what users search for
+
   $result = "";
   $input = strtolower($input);
 
@@ -91,8 +93,6 @@ function Response($input)
 
 function Lookup($term)
 {
-//  $mp->track("looked up", $term); // track what users search for
-
   $result = "";
   $termWithSeparator = strtolower($term).chr(9); // append tab char
 
