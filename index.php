@@ -15,7 +15,6 @@ $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
 $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 //echo "\n mp: ".$mp;
 $mp->track("Startup 1");
-$mp->track("Startup 2");
 
 // Extract the important values from the slash command.
 
@@ -32,6 +31,8 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   exit($msg);
   echo $msg;
 }
+
+$mp->track("Response");
 
 echo Response($text);
 
