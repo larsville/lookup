@@ -15,8 +15,7 @@ $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
 $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 //echo "\n mp: ".$mp;
 $mp->track("Startup");
-
-//////////////
+$mp->track("Startup");
 
 // Extract the important values from the slash command.
 
@@ -61,7 +60,7 @@ function ConfigValue($key)
 
 function Response($input)
 {
-  $mp->track("input".$input); // track what users search for
+  //$mp->track("input".$input); // track what users search for
 
   $result = "";
   $input = strtolower($input);
