@@ -34,9 +34,13 @@ $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
 $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
 if ($response != "")
+{
   $mp->track("found", array("input" => $text));
+}
 else
+{
   $mp->track("notFound", array("input" => $text));
+}
 
 /////////////////
 
