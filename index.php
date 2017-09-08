@@ -23,24 +23,7 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   echo $msg;
 }
 
-$response = Response($text);
-echo $response;
-
-// Instantiate a Mixpanel object using a token
-// stashed in a (Heroku) environment variable,
-// and track our activity with it.
-
-$RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-$mp = Mixpanel::getInstance($RequiredMixpanelToken);
-
-if ($response != "")
-{
-  $mp->track("lookup", array("found" => $text));
-}
-else
-{
-  $mp->track("lookup", array("notFound" => $text));
-}
+echo Response($text);
 
 /////////////////
 
@@ -67,13 +50,21 @@ function ConfigValue($key)
 
 function Response($input_raw)
 {
+  // Instantiate a Mixpanel object using a token
+  // stashed in a (Heroku) environment variable,
+  // and track our activity with it.
+
   $result = "";
   $input = strtolower($input_raw);
+
+  $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
+  $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
     $result = ConfigValue("msg-help");
+    $mp->track("helped", array("input" => $input_raw));
   }
   else
   {
@@ -84,6 +75,11 @@ function Response($input_raw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unrecognized-term"));
+      $mp->track("unfound", array("input" => $input_raw));
+    }
+    else
+    {
+      $mp->track("found", array("input" => $input_raw));
     }
   }
 
