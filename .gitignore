@@ -1,0 +1,3 @@
+*.pxm
+.DS_Store
+/vendor/
