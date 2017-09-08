@@ -7,6 +7,9 @@
 // lib/Mixpanel.php file here
 require "vendor/autoload.php";
 
+$RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
+global $mp = Mixpanel::getInstance($RequiredMixpanelToken);
+
 // Extract the important values from the slash command.
 
 $command = $_POST['command'];
@@ -55,7 +58,7 @@ function Response($input_raw)
   // stashed in a (Heroku) environment variable,
   // and track our activity with it.
 
-  $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
+  global $mp;
   $mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
   $result = "";
