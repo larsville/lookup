@@ -56,10 +56,10 @@ function ConfigValue($key)
 
 // Return a response for the given input, including help or failure messages.
 
-function Response($input)
+function Response($input_raw)
 {
   $result = "";
-  $input = strtolower($input);
+  $input = strtolower($input_raw);
 
   if ($input == "?" or $input == "" or $input == "help")
   {
@@ -74,7 +74,7 @@ function Response($input)
     if ($result == "")
     {
       // If there is no definition, admit defeat and put up a help message.
-      $result = str_ireplace("{input}", $input, ConfigValue("msg-unrecognized-term"));
+      $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unrecognized-term"));
     }
   }
 
