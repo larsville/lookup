@@ -8,7 +8,9 @@
 require "vendor/autoload.php";
 
 $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-global $mp = Mixpanel::getInstance($RequiredMixpanelToken);
+
+global $mp;
+$mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
 // Extract the important values from the slash command.
 
