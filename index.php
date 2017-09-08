@@ -7,12 +7,6 @@
 // lib/Mixpanel.php file here
 require "vendor/autoload.php";
 
-// Instantiate a Mixpanel object using a token
-// stashed in a (Heroku) environment variable.
-
-$RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-$mp = Mixpanel::getInstance($RequiredMixpanelToken);
-
 // Extract the important values from the slash command.
 
 $command = $_POST['command'];
@@ -29,9 +23,20 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   echo $msg;
 }
 
-$mp->track("response", array("input" => $text));
+$response = Response($text);
+echo $response;
 
-echo Response($text);
+// Instantiate a Mixpanel object using a token
+// stashed in a (Heroku) environment variable,
+// and track our activity with it.
+
+$RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
+$mp = Mixpanel::getInstance($RequiredMixpanelToken);
+
+if ($response != "")
+  $mp->track("found", array("input" => $text));
+else
+  $mp->track("notFound", array("input" => $text));
 
 /////////////////
 
