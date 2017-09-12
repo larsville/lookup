@@ -131,7 +131,7 @@ function Lookup($term)
     $filename2 = ConfigValue("data-file-name4");
     if (strlen($filename4) > 0)
     {
-    	$DataLines3 = file($filename4);
+    	$DataLines4 = file($filename4);
     	sort($DataLines4);
   		foreach($DataLines4 as $line)
   		{
