@@ -117,7 +117,7 @@ function Lookup($term)
   		}
     }
 
-    $filename2 = ConfigValue("data-file-name3");
+    $filename3 = ConfigValue("data-file-name3");
     if (strlen($filename3) > 0)
     {
     	$DataLines3 = file($filename3);
@@ -128,7 +128,7 @@ function Lookup($term)
   		}
     }
 
-    $filename2 = ConfigValue("data-file-name4");
+    $filename4 = ConfigValue("data-file-name4");
     if (strlen($filename4) > 0)
     {
     	$DataLines4 = file($filename4);
