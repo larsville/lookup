@@ -127,7 +127,6 @@ function Lookup($term)
   			array_push($DataLines, $line);
   		}
     }
-  }
 
     $filename2 = ConfigValue("data-file-name4");
     if (strlen($filename4) > 0)
