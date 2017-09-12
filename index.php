@@ -100,8 +100,22 @@ function Lookup($term)
   if ($DataLines == NULL)
   {
     $filename = ConfigValue("data-file-name");
-    $DataLines = file($filename);
-    sort($DataLines);
+    if (strlen($filename2) > 0)
+    {
+    	$DataLines = file($filename);
+    	sort($DataLines);
+    }
+
+    $filename2 = ConfigValue("data-file-name2");
+    if (strlen($filename2) > 0)
+    {
+    	$DataLines2 = file($filename2);
+    	sort($DataLines2);
+  		foreach($DataLines2 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
   }
 
   foreach($DataLines as $line)
