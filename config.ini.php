@@ -3,11 +3,11 @@
 ;/*
 
 msg-authorization-failed = "Authorization failure."
-msg-help = "To learn about something, type: `\? something`"
+msg-help = "To look something up, type: `\? something`"
 msg-unrecognized-term = "Sorry, I don't recognize \"{input}\"."
 
-data-file-name = "data.txt"
-data-file-name2 = "data2.txt"
+data-file-name = "https://raw.githubusercontent.com/larsville/lookup/master/data.txt"
+xdata-file-name2 = "data2.txt"
 
 ;*/
 
