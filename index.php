@@ -123,7 +123,7 @@ function Lookup($term)
       if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
       {
         $result = substr($line, strlen($termWithSeparator));
-        //if strlen((trim($result)) > 0) // ignore empty definitions
+        if (strlen(trim($result)) > 0) // ignore empty definitions
         {
 			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
 			break; // one match is all we need
