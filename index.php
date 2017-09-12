@@ -74,7 +74,7 @@ function Response($input_raw)
     if ($result == "")
     {
       // If there is no definition, admit defeat and put up a help message.
-      $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unrecognized-term"));
+      $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unlisted-term"));
       $mp->track("unfound <".$input_raw.">");//, array("input" => $input_raw));
     }
     else
@@ -112,6 +112,29 @@ function Lookup($term)
     	$DataLines2 = file($filename2);
     	sort($DataLines2);
   		foreach($DataLines2 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
+
+    $filename2 = ConfigValue("data-file-name3");
+    if (strlen($filename3) > 0)
+    {
+    	$DataLines3 = file($filename3);
+    	sort($DataLines3);
+  		foreach($DataLines3 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
+  }
+
+    $filename2 = ConfigValue("data-file-name4");
+    if (strlen($filename4) > 0)
+    {
+    	$DataLines3 = file($filename4);
+    	sort($DataLines4);
+  		foreach($DataLines4 as $line)
   		{
   			array_push($DataLines, $line);
   		}
