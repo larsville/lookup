@@ -100,7 +100,7 @@ function Lookup($term)
   if ($DataLines == NULL)
   {
     $filename = ConfigValue("data-file-name");
-    if (strlen($filename2) > 0)
+    if (strlen($filename) > 0)
     {
     	$DataLines = file($filename);
     	sort($DataLines);
