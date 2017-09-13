@@ -99,7 +99,11 @@ function Lookup($term)
   static $DataLines;
   if ($DataLines == NULL)
   {
+    echo "here";
     $FileUrls = ConfigValue("data-file");
+    echo $FileUrls;
+
+/*
     foreach($FileUrls as $FileUrl)
     {
       echo $FileUrl;
@@ -110,6 +114,8 @@ function Lookup($term)
       }
       sort($DataLines);
     }
+*/
+
 /*
   foreach($DataLines as $Line)
   {
