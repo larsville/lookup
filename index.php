@@ -37,13 +37,13 @@ function Debug($scope, $name, $value)
 function ConfigValue($key)
 {
   return "";
-/* static $configValues;
+  static $configValues;
   if ($configValues == NULL)
   {
   	$configValues = parse_ini_file("config.ini.php");
   }
   return $configValues[$key];
-*/
+
 }
 
 /////////////////
@@ -96,13 +96,13 @@ function Response($input_raw)
 function Lookup($term)
 {
   $result = "";
-  $termWithSeparator = strtolower($term).chr(9); // append tab char
+/*  $termWithSeparator = strtolower($term).chr(9); // append tab char
 
   static $DataLines;
   if ($DataLines == NULL)
   {
     echo "here";
-/*    $FileUrls = ConfigValue("data-file");
+    $FileUrls = ConfigValue("data-file");
     echo $FileUrls;
 
 /*
