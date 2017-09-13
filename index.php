@@ -36,12 +36,14 @@ function Debug($scope, $name, $value)
 
 function ConfigValue($key)
 {
-  static $configValues;
+  return "";
+/* static $configValues;
   if ($configValues == NULL)
   {
   	$configValues = parse_ini_file("config.ini.php");
   }
   return $configValues[$key];
+*/
 }
 
 /////////////////
@@ -100,7 +102,7 @@ function Lookup($term)
   if ($DataLines == NULL)
   {
     echo "here";
-    $FileUrls = ConfigValue("data-file");
+/*    $FileUrls = ConfigValue("data-file");
     echo $FileUrls;
 
 /*
