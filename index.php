@@ -110,7 +110,7 @@ function Lookup($term)
       }
       sort($DataLines);
     }
-
+/*
   foreach($DataLines as $Line)
   {
 	if (stripos($Line, $termWithSeparator) === 0) // note strict comparison operator
@@ -124,7 +124,7 @@ function Lookup($term)
 		}
 	  }
   }
-
+*/
   return $result;
 
 } // end Lookup
