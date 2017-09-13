@@ -102,7 +102,7 @@ function Lookup($term)
     $FileUrls = ConfigValue("data-file");
     foreach($FileUrls as $FileUrl)
     {
-      echo $FileUrl
+      echo $FileUrl;
       $Lines = file($FileUrl);
       foreach($Lines as $Line)
       {
