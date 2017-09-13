@@ -36,14 +36,12 @@ function Debug($scope, $name, $value)
 
 function ConfigValue($key)
 {
-  return "";
   static $configValues;
   if ($configValues == NULL)
   {
   	$configValues = parse_ini_file("config.ini.php");
   }
   return $configValues[$key];
-
 }
 
 /////////////////
@@ -96,43 +94,66 @@ function Response($input_raw)
 function Lookup($term)
 {
   $result = "";
-/*  $termWithSeparator = strtolower($term).chr(9); // append tab char
+  $termWithSeparator = strtolower($term).chr(9); // append tab char
 
   static $DataLines;
   if ($DataLines == NULL)
   {
-    echo "here";
-    $FileUrls = ConfigValue("data-file");
-    echo $FileUrls;
-
-/*
-    foreach($FileUrls as $FileUrl)
+    $filename = ConfigValue("data-file-name");
+    if (strlen($filename) > 0)
     {
-      echo $FileUrl;
-      $Lines = file($FileUrl);
-      foreach($Lines as $Line)
-      {
-        array_push($DataLines, $Line);
-      }
-      sort($DataLines);
+    	$DataLines = file($filename);
+    	sort($DataLines);
     }
-*/
 
-/*
-  foreach($DataLines as $Line)
+    $filename2 = ConfigValue("data-file-name2");
+    if (strlen($filename2) > 0)
+    {
+    	$DataLines2 = file($filename2);
+    	sort($DataLines2);
+  		foreach($DataLines2 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
+
+    $filename3 = ConfigValue("data-file-name3");
+    if (strlen($filename3) > 0)
+    {
+    	$DataLines3 = file($filename3);
+    	sort($DataLines3);
+  		foreach($DataLines3 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
+
+    $filename4 = ConfigValue("data-file-name4");
+    if (strlen($filename4) > 0)
+    {
+    	$DataLines4 = file($filename4);
+    	sort($DataLines4);
+  		foreach($DataLines4 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
+  }
+
+  foreach($DataLines as $line)
   {
-	if (stripos($Line, $termWithSeparator) === 0) // note strict comparison operator
-	{
-		$result = trim(substr($Line, strlen($termWithSeparator)));
-		if (strlen($result) > 0) // ignore empty definitions
-		{
+      if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
+      {
+        $result = trim(substr($line, strlen($termWithSeparator)));
+        if (strlen($result) > 0) // ignore empty definitions
+        {
 			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
 			break; // one match is all we need
 			// hack; should accumulate all matches in an array
-		}
-	  }
+        }
+      }
   }
-*/
+
   return $result;
 
 } // end Lookup
