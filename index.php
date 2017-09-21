@@ -138,6 +138,28 @@ function Lookup($term)
   			array_push($DataLines, $line);
   		}
     }
+
+    $filename5 = ConfigValue("data-file-name5");
+    if (strlen($filename5) > 0)
+    {
+    	$DataLines5 = file($filename5);
+    	sort($DataLines5);
+  		foreach($DataLines5 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
+
+    $filename6 = ConfigValue("data-file-name6");
+    if (strlen($filename6) > 0)
+    {
+    	$DataLines6 = file($filename6);
+    	sort($DataLines6);
+  		foreach($DataLines6 as $line)
+  		{
+  			array_push($DataLines, $line);
+  		}
+    }
   }
 
   foreach($DataLines as $line)
