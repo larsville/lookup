@@ -166,7 +166,6 @@ function Lookup($term)
 
   foreach($DataLines as $line)
   {
-  
       if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
       {
         $result = trim(substr($line, strlen($termWithSeparator)));
@@ -181,7 +180,7 @@ function Lookup($term)
       }
   }
 
-  return $results;
+  return $results[0];
 
 } // end Lookup
 
