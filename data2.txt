@@ -6,6 +6,3 @@ Gamma	*Gamma* is the third Greek letter.
 Delta	D
 Epsilon	
 Phi
-
-Three	*Three* is a low number.
-Three	*Three* is also the fourth whole number. How about that?
