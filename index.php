@@ -162,21 +162,26 @@ function Lookup($term)
     }
   }
 
+  $results = Array("results:")
+
   foreach($DataLines as $line)
   {
+  
       if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
       {
         $result = trim(substr($line, strlen($termWithSeparator)));
         if (strlen($result) > 0) // ignore empty definitions
         {
+ 		 	array_push($results, $result);
+  	
 			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
-			break; // one match is all we need
+			// break; // one match is all we need
 			// hack; should accumulate all matches in an array
         }
       }
   }
 
-  return $result;
+  return $results;
 
 } // end Lookup
 
