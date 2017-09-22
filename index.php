@@ -174,7 +174,7 @@ function Lookup($term)
 			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
 			// break; // one match is all we need
 			// hack; should accumulate all matches in an array
- 		 	$results = $results.$result."\n";
+ 		 	$results = $results.chr(13).$result;
   	        }
       }
   }

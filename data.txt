@@ -3,8 +3,6 @@ Lars	*Lars* is my creator!
 One	*One* is the first counting number. It is followed by _Two_. <http://github.com/larsville/lookup|More info>
 Two	*Two* is the second counting number. It is one greater than _One_.
 Three	*Three* is a low number.
-Three	*Three* is the third counting number. It comes after _Two_.
-Three	*Three* is also the fourth whole number. How about that?
 Four	F
 Five	
 Six
