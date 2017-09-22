@@ -171,12 +171,11 @@ function Lookup($term)
         $result = trim(substr($line, strlen($termWithSeparator)));
         if (strlen($result) > 0) // ignore empty definitions
         {
- 		 	$results = $results.$result."\n";
-  	
 			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
 			// break; // one match is all we need
 			// hack; should accumulate all matches in an array
-        }
+ 		 	$results = $results.$result."\n";
+  	        }
       }
   }
 
