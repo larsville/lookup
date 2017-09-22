@@ -110,7 +110,7 @@ function Lookup($term)
     	sort($DataLines2);
   		foreach($DataLines2 as $line)
   		{
-  			array_push($DataLines, $line);
+  			array_push($DataLines2, $line);
   		}
     }
 
@@ -171,7 +171,7 @@ function Lookup($term)
         {
 			$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
  		 	$result = $result.chr(13).$found;
-  	        }
+  	  }
       }
   }
 
