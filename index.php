@@ -162,7 +162,7 @@ function Lookup($term)
     }
   }
 
-  $results = Array("results:")
+  $results = Array("results:");
 
   foreach($DataLines as $line)
   {
