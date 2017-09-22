@@ -83,7 +83,7 @@ function Response($input_raw)
     }
   }
 
-  return $result;
+  return trim($result);
 
 } // end Response
 
@@ -93,9 +93,6 @@ function Response($input_raw)
 
 function Lookup($term)
 {
-  $result = "";
-  $termWithSeparator = strtolower($term).chr(9); // append tab char
-
   static $DataLines;
   if ($DataLines == NULL)
   {
@@ -162,24 +159,23 @@ function Lookup($term)
     }
   }
 
-  $results = "";
+  $result = "";
+  $termWithSeparator = strtolower($term).chr(9); // append tab char
 
   foreach($DataLines as $line)
   {
       if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
       {
-        $result = trim(substr($line, strlen($termWithSeparator)));
+        $found = trim(substr($line, strlen($termWithSeparator)));
         if (strlen($result) > 0) // ignore empty definitions
         {
-			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
-			// break; // one match is all we need
-			// hack; should accumulate all matches in an array
- 		 	$results = $results.chr(13).$result;
+			$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
+ 		 	$result = $result.chr(13).$found;
   	        }
       }
   }
 
-  return $results;
+  return trim($result);
 
 } // end Lookup
 
