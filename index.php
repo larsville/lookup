@@ -162,7 +162,7 @@ function Lookup($term)
     }
   }
 
-  $results = Array("results:");
+  $results = "";
 
   foreach($DataLines as $line)
   {
@@ -171,7 +171,7 @@ function Lookup($term)
         $result = trim(substr($line, strlen($termWithSeparator)));
         if (strlen($result) > 0) // ignore empty definitions
         {
- 		 	array_push($results, $result);
+ 		 	$results = $results.$result."\n";
   	
 			$result = str_ireplace("\\n", chr(13), $result); // support escaped line breaks
 			// break; // one match is all we need
@@ -180,7 +180,7 @@ function Lookup($term)
       }
   }
 
-  return $results[0];
+  return $results;
 
 } // end Lookup
 
