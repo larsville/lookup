@@ -110,7 +110,7 @@ function Lookup($term)
     	sort($DataLines2);
   		foreach($DataLines2 as $line)
   		{
-  			array_push($DataLines2, $line);
+  			array_push($DataLines, $line);
   		}
     }
 
