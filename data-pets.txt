@@ -1,5 +1,5 @@
-Dog	*Dogs* like humans.
-Dog	*Dogs* like bones.
 Cat	*Cats* barf a lot.
 Cat *Cats* are very flexible.
 Cat *Cats* are felines.
+Dog	*Dogs* like humans.
+Dog	*Dogs* like bones.
