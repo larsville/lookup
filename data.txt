@@ -7,7 +7,7 @@ Three	*Three* is the third counting number. It comes after _Two_.
 Test	Testing formatting:\n- multiple lines\n- *bold*\n- _italic_\n- `code`\n- ~strikethrough~\n- <http://github.com/larsville/lookup|hyperlink>
 Test	Testing multiple results: this should be one of several results for `test`
 
-Test words	Testing multiple words: this line should appear for `test` or `words`
+Test phrase	Testing multiple words: this line should appear for `p h r a s e` (without spaces)
 
 // The following lines should not appear:
 
