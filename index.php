@@ -166,9 +166,9 @@ function Lookup($term)
   foreach($DataLines as $line)
   {
   	$line = trim($line);
-/*
 	if (stripos($line, $term) !== 0) // does the line contain the search term?
 	{
+/*
 		$SeparatorPos = stripos($line, chr(9));
 		if ($SeparatorPos !== 0) and strlen($line) > $SeparatorPos) // does the line contain a definition?
 		{
@@ -181,8 +181,8 @@ function Lookup($term)
 				//break;	// uncomment this to limit the result to only one item
 			}
 		}
-	}
 */
+	}
   }
 
   return trim($result);
