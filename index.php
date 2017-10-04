@@ -172,8 +172,8 @@ function Lookup($term)
 		if (($SeparatorPos !== 0) and (strlen($line) > $SeparatorPos)) // does the line contain a definition?
 		{
 			// We have a definition. Accumulate it!
-/*			$found = substr($line, $SeparatorPos+1);
-			$found = trim($found);
+			$found = substr($line, $SeparatorPos+1);
+/*			$found = trim($found);
 			//$found = trim(substr($line, $SeparatorPos+1));
 
 			if (strlen($found) > 0) // ignore empty definitions
