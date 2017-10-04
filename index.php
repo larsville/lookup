@@ -64,7 +64,7 @@ function Response($input_raw)
   {
     // Here if the user seems to need help.
     $result = ConfigValue("msg-help");
-    $mp->track("?????  <".$input_raw.">");//, array("input" => $input_raw));
+    $mp->track("helped  <".$input_raw.">");//, array("input" => $input_raw));
   }
   else
   {
@@ -75,11 +75,11 @@ function Response($input_raw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unlisted-term"));
-      $mp->track("XXXXX <".$input_raw.">");//, array("input" => $input_raw));
+      $mp->track("FAILED <".$input_raw.">");//, array("input" => $input_raw));
     }
     else
     {
-      $mp->track("+++++ <".$input_raw.">");//, array("input" => $input_raw));
+      $mp->track("found <".$input_raw.">");//, array("input" => $input_raw));
     }
   }
 
