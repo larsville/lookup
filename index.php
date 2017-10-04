@@ -102,14 +102,14 @@ function Lookup($Term)
     if (strlen($filename) > 0)
     {
     	$DataLines = file($filename);
-    	sort($DataLines);
+    	//sort($DataLines);
     }
 
     $filename2 = ConfigValue("data-file-name2");
     if (strlen($filename2) > 0)
     {
     	$DataLines2 = file($filename2);
-    	sort($DataLines2);
+    	//sort($DataLines2);
   		foreach($DataLines2 as $line)
   		{
   			array_push($DataLines, $line);
@@ -120,7 +120,7 @@ function Lookup($Term)
     if (strlen($filename3) > 0)
     {
     	$DataLines3 = file($filename3);
-    	sort($DataLines3);
+    	//sort($DataLines3);
   		foreach($DataLines3 as $line)
   		{
   			array_push($DataLines, $line);
@@ -131,7 +131,7 @@ function Lookup($Term)
     if (strlen($filename4) > 0)
     {
     	$DataLines4 = file($filename4);
-    	sort($DataLines4);
+    	//sort($DataLines4);
   		foreach($DataLines4 as $line)
   		{
   			array_push($DataLines, $line);
@@ -142,7 +142,7 @@ function Lookup($Term)
     if (strlen($filename5) > 0)
     {
     	$DataLines5 = file($filename5);
-    	sort($DataLines5);
+    	//sort($DataLines5);
   		foreach($DataLines5 as $line)
   		{
   			array_push($DataLines, $line);
@@ -153,7 +153,7 @@ function Lookup($Term)
     if (strlen($filename6) > 0)
     {
     	$DataLines6 = file($filename6);
-    	sort($DataLines6);
+    	//sort($DataLines6);
   		foreach($DataLines6 as $line)
   		{
   			array_push($DataLines, $line);
