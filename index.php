@@ -174,15 +174,15 @@ function Lookup($term)
 			// We have a definition. Accumulate it!
 			$found = substr($line, $SeparatorPos+1);
 			$found = trim($found);
-/*			//$found = trim(substr($line, $SeparatorPos+1));
 
 			if (strlen($found) > 0) // ignore empty definitions
 			{
+/*
 				$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
 				$result = $result.chr(13).$found;
 				//break;	// uncomment this to limit the result to only one item
-			}
 */
+			}
 		}
 	}
   }
