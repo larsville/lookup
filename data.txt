@@ -3,3 +3,9 @@ Lars	*Lars* is my creator!
 One	*One* is the first counting number. It is followed by _Two_. <http://github.com/larsville/lookup|More info>
 Two	*Two* is the second counting number. It is one greater than _One_.
 Three	*Three* is the third counting number. It comes after _Two_.
+
+Test	Test formatting:\n- bulleted lines\n- *bold* _italic_ `code` ~strikethrough~\n- <http://github.com/larsville/lookup|hyperlink>
+Test	Test multiple results: This should be one of several results for `test`
+
+Test separator with no definition	
+Test no separator
