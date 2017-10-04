@@ -166,7 +166,7 @@ function Lookup($term)
   {
       if (stripos($line, $termNormalized) === 0) // note strict comparison operator
       {
-        $found = trim(substr($line, strlen($termWithSeparator)));
+        $found = trim(substr($line, strlen($termNormalized)));
         if (strlen($found) > 0) // ignore empty definitions
         {
 			$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
