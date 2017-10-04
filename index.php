@@ -23,8 +23,6 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   echo $msg;
 }
 
-echo "test";
-
 echo Response($text);
 
 /////////////////
@@ -71,7 +69,7 @@ function Response($input_raw)
   else
   {
     // Get the definition for our term.
-    $result = "success";//Lookup($input);
+    $result = Lookup($input);
 
     if ($result == "")
     {
@@ -91,11 +89,12 @@ function Response($input_raw)
 
 /////////////////
 
-/*
 // Return whatever our dataset contains for the given term.
 
 function Lookup($term)
 {
+  $result = "groovy";
+/*
   static $DataLines;
   if ($DataLines == NULL)
   {
@@ -162,7 +161,6 @@ function Lookup($term)
     }
   }
 
-  $result = "";
   $term = trim(strtolower($term)); // hack; strip spaces and corp name
 
   foreach($DataLines as $line)
@@ -184,10 +182,10 @@ function Lookup($term)
 		}
 	}
   }
+*/
 
   return trim($result);
 
 } // end Lookup
-*/
 
 ?>
