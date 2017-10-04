@@ -23,6 +23,7 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
   echo $msg;
 }
 
+echo "test";
 echo Response($text);
 
 /////////////////
