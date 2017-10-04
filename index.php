@@ -168,8 +168,8 @@ function Lookup($term)
   	$line = trim($line);
 	if (stripos($line, $term) !== 0) // does the line contain the search term?
 	{
-/*
 		$SeparatorPos = stripos($line, chr(9));
+/*
 		if ($SeparatorPos !== 0) and strlen($line) > $SeparatorPos) // does the line contain a definition?
 		{
 			// We have a definition. Accumulate it!
