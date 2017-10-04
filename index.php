@@ -91,7 +91,7 @@ function Response($input_raw)
 
 // Return whatever our dataset contains for the given term.
 
-function Lookup($term)
+function Lookup($Term)
 {
   $result = "";
 
@@ -161,24 +161,25 @@ function Lookup($term)
     }
   }
 
-  $term = trim(strtolower($term)); // hack; strip spaces and corp name too
+  $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
-  foreach($DataLines as $line)
+  foreach($DataLines as $Line)
   {
-  	$line = trim($line);
-	if (stripos($line, $term) === 0) // does the line contain the search term?
+  	$Line = trim($Line);
+  	$PosFound = stripos($Line, $Term);
+	if ($PosFound !== false) // does the line contain the search term?
 	{
-		$SeparatorPos = stripos($line, chr(9));
-		if (($SeparatorPos !== 0) and (strlen($line) > $SeparatorPos)) // does the line contain a definition?
+		$SeparatorPos = stripos($Line, chr(9));
+		if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // does the line contain a definition?
 		{
 			// We have a definition. Accumulate it!
-			$found = substr($line, $SeparatorPos+1);
-			$found = trim($found);
+			$Found = substr($Line, $SeparatorPos);
+			$Found = trim($Found);
 
-			if (strlen($found) > 0) // ignore empty definitions
+			if (strlen($Found) > 0) // ignore empty definitions
 			{
-				$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
-				$result = $result.chr(13).$found;
+				$Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
+				$result = $result.chr(13).$Found;
 
 				//break;	// uncomment this to limit the result to only one item
 			}
