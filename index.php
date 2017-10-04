@@ -109,7 +109,6 @@ function Lookup($Term)
     if (strlen($filename2) > 0)
     {
     	$DataLines2 = file($filename2);
-    	//sort($DataLines2);
   		foreach($DataLines2 as $line)
   		{
   			array_push($DataLines, $line);
@@ -120,7 +119,6 @@ function Lookup($Term)
     if (strlen($filename3) > 0)
     {
     	$DataLines3 = file($filename3);
-    	//sort($DataLines3);
   		foreach($DataLines3 as $line)
   		{
   			array_push($DataLines, $line);
@@ -131,7 +129,6 @@ function Lookup($Term)
     if (strlen($filename4) > 0)
     {
     	$DataLines4 = file($filename4);
-    	//sort($DataLines4);
   		foreach($DataLines4 as $line)
   		{
   			array_push($DataLines, $line);
@@ -142,7 +139,6 @@ function Lookup($Term)
     if (strlen($filename5) > 0)
     {
     	$DataLines5 = file($filename5);
-    	//sort($DataLines5);
   		foreach($DataLines5 as $line)
   		{
   			array_push($DataLines, $line);
@@ -153,7 +149,6 @@ function Lookup($Term)
     if (strlen($filename6) > 0)
     {
     	$DataLines6 = file($filename6);
-    	//sort($DataLines6);
   		foreach($DataLines6 as $line)
   		{
   			array_push($DataLines, $line);
@@ -162,15 +157,15 @@ function Lookup($Term)
   }
 
   $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
-
+  
   foreach($DataLines as $Line)
   {
   	$Line = trim($Line);
-  	$PosFound = stripos($Line, $Term);
-	if ($PosFound !== false) // does the line contain the search term?
+	$SeparatorPos = stripos($Line, chr(9));
+	if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
 	{
-		$SeparatorPos = stripos($Line, chr(9));
-		if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // does the line contain a definition?
+  		$PosFound = stripos($Line, $Term);
+		if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
 		{
 			// We have a definition. Accumulate it!
 			$Found = substr($Line, $SeparatorPos);
