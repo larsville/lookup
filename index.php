@@ -160,18 +160,18 @@ function Lookup($term)
   }
 
   $result = "";
-  $termWithSeparator = strtolower($term).chr(9); // append tab char
+  $termNormalized = strtolower($term);//.chr(9); // append tab char
 
   foreach($DataLines as $line)
   {
-      if (stripos($line, $termWithSeparator) === 0) // note strict comparison operator
+      if (stripos($line, $termNormalized) === 0) // note strict comparison operator
       {
         $found = trim(substr($line, strlen($termWithSeparator)));
         if (strlen($found) > 0) // ignore empty definitions
         {
 			$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
  		 	$result = $result.chr(13).$found;
- 		 	//break;	// uncomment this to limit result to be just the first item
+ 		 	//break;	// uncomment this to limit the result to only one item
   	    }
       }
   }
