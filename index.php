@@ -25,7 +25,6 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
 
 echo "test";
 
-/*
 echo Response($text);
 
 /////////////////
@@ -72,7 +71,7 @@ function Response($input_raw)
   else
   {
     // Get the definition for our term.
-    $result = Lookup($input);
+    $result = "success";//Lookup($input);
 
     if ($result == "")
     {
@@ -92,6 +91,7 @@ function Response($input_raw)
 
 /////////////////
 
+/*
 // Return whatever our dataset contains for the given term.
 
 function Lookup($term)
