@@ -163,10 +163,10 @@ function Lookup($term)
 
   $term = trim(strtolower($term)); // hack; strip spaces and corp name
 
-/*
   foreach($DataLines as $line)
   {
   	$line = trim($line);
+/*
 	if (stripos($line, $term) !== 0) // does the line contain the search term?
 	{
 		$SeparatorPos = stripos($line, chr(9));
@@ -182,8 +182,8 @@ function Lookup($term)
 			}
 		}
 	}
-  }
 */
+  }
 
   return trim($result);
 
