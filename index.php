@@ -93,8 +93,8 @@ function Response($input_raw)
 
 function Lookup($term)
 {
-  $result = "groovy";
-/*
+  $result = "";
+
   static $DataLines;
   if ($DataLines == NULL)
   {
@@ -161,6 +161,7 @@ function Lookup($term)
     }
   }
 
+/*
   $term = trim(strtolower($term)); // hack; strip spaces and corp name
 
   foreach($DataLines as $line)
