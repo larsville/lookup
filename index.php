@@ -57,14 +57,14 @@ function Response($input_raw)
   $result = "";
   $input = strtolower($input_raw);
 
-  $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-  $mp = Mixpanel::getInstance($RequiredMixpanelToken);
+  //$RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
+  //$mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
   if ($input == "?" or $input == "" or $input == "help")
   {
     // Here if the user seems to need help.
     $result = ConfigValue("msg-help");
-    $mp->track("?????  <".$input_raw.">");//, array("input" => $input_raw));
+    //$mp->track("?????  <".$input_raw.">");//, array("input" => $input_raw));
   }
   else
   {
@@ -75,11 +75,11 @@ function Response($input_raw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unlisted-term"));
-      $mp->track("XXXXX <".$input_raw.">");//, array("input" => $input_raw));
+      //$mp->track("XXXXX <".$input_raw.">");//, array("input" => $input_raw));
     }
     else
     {
-      $mp->track("found <".$input_raw.">");//, array("input" => $input_raw));
+      //$mp->track("found <".$input_raw.">");//, array("input" => $input_raw));
     }
   }
 
