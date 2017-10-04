@@ -1,7 +1,7 @@
 Cat	*Cats* barf a lot.
 Cat	*Cats* are very flexible.
 Cat	*Cats* are felines.
-Cats *Cats* sleep on the furniture.
+Cats	*Cats* sleep on the furniture.
 Dog	*Dogs* like humans.
 Dog	*Dogs* like bones.
-Dogs *Dogs* jump on the furniture.
+Dogs	*Dogs* jump on the furniture.
