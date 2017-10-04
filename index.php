@@ -24,7 +24,9 @@ if ($SlackToken != $RequiredSlackToken) // token from slash command config page
 }
 
 echo "test";
-//echo Response($text);
+
+/*
+echo Response($text);
 
 /////////////////
 
@@ -186,5 +188,6 @@ function Lookup($term)
   return trim($result);
 
 } // end Lookup
+*/
 
 ?>
