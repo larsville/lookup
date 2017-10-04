@@ -160,20 +160,26 @@ function Lookup($term)
   }
 
   $result = "";
-  $termNormalized = strtolower($term);//.chr(9); // append tab char
+  $term = trim(strtolower($term)); // hack; strip spaces and corp name
 
   foreach($DataLines as $line)
   {
-      if (stripos($line, $termNormalized) === 0) // note strict comparison operator
-      {
-        $found = trim(substr($line, strlen($termNormalized)));
-        if (strlen($found) > 0) // ignore empty definitions
-        {
-			$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
- 		 	$result = $result.chr(13).$found;
- 		 	//break;	// uncomment this to limit the result to only one item
-  	    }
-      }
+  	$line = $line.trim();
+	if (stripos($line, $term) !== 0) // does the line contain the search term?
+	{
+		$SeparatorPos = stripos($line, chr(9));
+		if ($SeparatorPos !== 0) and strlen($line) > $SeparatorPos) // does the line contain a definition?
+		{
+			// We have a definition. Accumulate it!
+			$found = trim(substr($line, $SeparatorPos+1));
+			if (strlen($found) > 0) // ignore empty definitions
+			{
+				$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
+				$result = $result.chr(13).$found;
+				//break;	// uncomment this to limit the result to only one item
+			}
+		}
+	}
   }
 
   return trim($result);
