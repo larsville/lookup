@@ -161,9 +161,9 @@ function Lookup($term)
     }
   }
 
-/*
   $term = trim(strtolower($term)); // hack; strip spaces and corp name
 
+/*
   foreach($DataLines as $line)
   {
   	$line = trim($line);
