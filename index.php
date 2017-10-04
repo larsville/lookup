@@ -64,7 +64,7 @@ function Response($input_raw)
   {
     // Here if the user seems to need help.
     $result = ConfigValue("msg-help");
-    $mp->track("helped  <".$input_raw.">");//, array("input" => $input_raw));
+    $mp->track("?????  <".$input_raw.">");//, array("input" => $input_raw));
   }
   else
   {
@@ -75,7 +75,7 @@ function Response($input_raw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unlisted-term"));
-      $mp->track("unfound <".$input_raw.">");//, array("input" => $input_raw));
+      $mp->track("XXXXX <".$input_raw.">");//, array("input" => $input_raw));
     }
     else
     {
@@ -171,7 +171,8 @@ function Lookup($term)
         {
 			$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
  		 	$result = $result.chr(13).$found;
-  	  }
+ 		 	//break;	// uncomment this to limit result to be just the first item
+  	    }
       }
   }
 
