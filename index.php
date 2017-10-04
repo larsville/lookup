@@ -75,7 +75,7 @@ function Response($input_raw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unlisted-term"));
-      $mp->track("***** <".$input_raw.">");//, array("input" => $input_raw));
+      $mp->track("XXXXX <".$input_raw.">");//, array("input" => $input_raw));
     }
     else
     {
