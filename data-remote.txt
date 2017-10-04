@@ -1,1 +1,1 @@
-Test remote access	This item was accessed remotely via a GitHub URL.
+Test	Testing URL file access: this item was accessed via a GitHub URL.
