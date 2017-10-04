@@ -177,11 +177,10 @@ function Lookup($term)
 
 			if (strlen($found) > 0) // ignore empty definitions
 			{
-/*
 				$found = str_ireplace("\\n", chr(13), $found); // support escaped line breaks
 				$result = $result.chr(13).$found;
+
 				//break;	// uncomment this to limit the result to only one item
-*/
 			}
 		}
 	}
