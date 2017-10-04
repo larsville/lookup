@@ -161,12 +161,12 @@ function Lookup($term)
     }
   }
 
-  $term = trim(strtolower($term)); // hack; strip spaces and corp name
+  $term = trim(strtolower($term)); // hack; strip spaces and corp name too
 
   foreach($DataLines as $line)
   {
   	$line = trim($line);
-	if (stripos($line, $term) !== 0) // does the line contain the search term?
+	if (stripos($line, $term) === 0) // does the line contain the search term?
 	{
 		$SeparatorPos = stripos($line, chr(9));
 		if (($SeparatorPos !== 0) and (strlen($line) > $SeparatorPos)) // does the line contain a definition?
