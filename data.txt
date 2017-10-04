@@ -1,15 +1,16 @@
+Sourcefile	data.txt
 Lars	*Lars* is my creator!
 
 One	*One* is the first counting number. It is followed by _Two_.
 Two	*Two* is the second counting number. It is one greater than _One_.
 Three	*Three* is the third counting number. It comes after _Two_.
 
-Test	Testing formatting:\n- multiple lines\n- *bold*\n- _italic_\n- `code`\n- ~strikethrough~\n- <http://github.com/larsville/lookup|hyperlink>
-Test	Testing multiple results: this should be one of several results for `test`
+Test	*Test of formatting*:\n- line breaks\n- *bold*\n- _italic_\n- `code`\n- ~strikethrough~\n- <http://github.com/larsville/lookup|hyperlink>
+Test	*Test of multiple results*: this should be one of several results for `test`
 
-Test phrase	Testing multiple words: this line should appear for `p h r a s e` (without spaces)
+Test phrase	*Testing of multi-word terms*: this line should appear for `t e s t` or `p h r a s e` or `t e s t   p h r a s e` (without spaces)
 
-// The following lines should not appear:
+// These lines should not appear:
 
 Test separator with no definition	
 Test no separator
