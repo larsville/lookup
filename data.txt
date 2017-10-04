@@ -5,7 +5,7 @@ One	*One* is the first counting number. It is followed by _Two_.
 Two	*Two* is the second counting number. It is one greater than _One_.
 Three	*Three* is the third counting number. It comes after _Two_.
 
-VR	*Virtual Reality* is the simulation of an immersive computed environment, primarily by use of a head-mounted display, sometimes with audio. See also Augmented Reality and Mixed Reality.
+VR	*Virtual Reality* is the simulation of an immersive computed environment, primarily by use of a head-mounted display that covers the user's entire field of view and responds to the user's movement. Similarly immersive audio is often included. See also Augmented Reality and Mixed Reality.
 AR	*Augmented Reality* is using a head-mounted display to superimpose computed information in the user's field of view. Google Glass is an example. Mixed Reality is often conflated with Augmented Reality.
 MR	*Mixed Reality* is using a head-mounted display to simulate computed entities within the user's field of view as if they existed in reality. Mixed Reality is often conflated with Augmented Reality.
 
