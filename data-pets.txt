@@ -5,3 +5,4 @@ Cats	*Cats* sleep on the furniture.
 Dog	*Dogs* like humans.
 Dog	*Dogs* like bones.
 Dogs	*Dogs* jump on the furniture.
+Fish	*Fish* think we live behind glass walls.
