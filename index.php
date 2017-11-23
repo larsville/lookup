@@ -101,6 +101,7 @@ function Lookup($Term)
 	static $DataLines;
 	if ($DataLines == NULL)
 	{
+		$DataLines[] = "";
 		$DataFiles = ConfigValue("data-files");
 		foreach ($DataFiles as &$DataFile)
 		{
