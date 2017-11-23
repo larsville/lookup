@@ -1,4 +1,6 @@
 Sourcefile	data.txt
+Content	Miscellaneous lines for testing, and AR/VR/MR definitions.
+
 Lars	*Lars* is my creator!
 
 One	*One* is the first counting number. It is followed by _Two_.

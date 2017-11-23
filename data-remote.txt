@@ -1,2 +1,4 @@
 Sourcefile	data-remote.txt
+Content	A line for testing a remote file.
+
 Test	*Testing URL file access*: this item was accessed via a GitHub URL

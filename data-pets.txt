@@ -1,4 +1,6 @@
 Sourcefile	data-pets.txt
+Content	A few common and uncommon pets.
+
 Cat	*Cats* barf a lot.
 Cat	*Cats* are very flexible.
 Cat	*Cats* are felines.
