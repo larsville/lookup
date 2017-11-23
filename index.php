@@ -106,8 +106,8 @@ function Lookup($Term)
 	{
 		//echo $DataFile."\n";
 
-    	$Lines = file($DataFile);
-  		foreach($Lines as $InputLine)
+    	$InputLines = file($DataFile);
+  		foreach($InputLines as $InputLine)
   		{
   			array_push($DataLines, $InputLine);
 			//echo "-- ".$InputLine."\n";
@@ -181,6 +181,7 @@ function Lookup($Term)
 	$SeparatorPos = stripos($Line, chr(9));
 	if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
 	{
+		echo "-- ".$Line."\n";
   		$PosFound = stripos($Line, $Term);
 		if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
 		{
