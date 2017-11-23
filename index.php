@@ -104,12 +104,13 @@ function Lookup($Term)
 		$DataFiles = ConfigValue("data-files");
 		foreach ($DataFiles as &$DataFile)
 		{
+			echo "\nDataFile = ".$nDataFile;
 			$InputLines = file($DataFile);
 			foreach($InputLines as $InputLine)
 			{
-				//echo "\nInputLine = ".$InputLine;
+				echo "\nInputLine = ".$InputLine;
 				array_push($DataLines, $InputLine);
-				//echo "\n\DataLines = ".$DataLines;
+				echo "\n\DataLines = ".$DataLines;
 			}
 		}
 
