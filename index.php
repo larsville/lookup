@@ -104,7 +104,7 @@ function Lookup($Term)
     $datafiles = ConfigValue("data-files");
 	foreach ($datafiles as &$datafile)
 	{
-		//echo $datafile."\n";
+		echo $datafile."\n";
 
     	$Lines = file($datafile);
   		foreach($Lines as $Line)
