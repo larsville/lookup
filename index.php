@@ -97,6 +97,7 @@ function Response($input_raw)
 function Lookup($Term)
 {
 	$result = "";
+	$Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
 	static $DataLines;
 	if ($DataLines == NULL)
@@ -105,79 +106,13 @@ function Lookup($Term)
 		$DataFiles = ConfigValue("data-files");
 		foreach ($DataFiles as &$DataFile)
 		{
-			//echo "\nDataFile = ".$DataFile;
 			$InputLines = file($DataFile);
 			foreach($InputLines as $InputLine)
 			{
-				//echo "\nInputLine = ".$InputLine;
 				array_push($DataLines, $InputLine);
-				//echo "\nDataLines = ".$DataLines;
 			}
 		}
-
-/*
-		$filename = ConfigValue("data-file-name");
-		if (strlen($filename) > 0)
-		{
-			$DataLines = file($filename);
-			//sort($DataLines);
-		}
-
-		$filename2 = ConfigValue("data-file-name2");
-		if (strlen($filename2) > 0)
-		{
-			$DataLines2 = file($filename2);
-			foreach($DataLines2 as $line)
-			{
-				array_push($DataLines, $line);
-			}
-		}
-
-		$filename3 = ConfigValue("data-file-name3");
-		if (strlen($filename3) > 0)
-		{
-			$DataLines3 = file($filename3);
-			foreach($DataLines3 as $line)
-			{
-				array_push($DataLines, $line);
-			}
-		}
-
-		$filename4 = ConfigValue("data-file-name4");
-		if (strlen($filename4) > 0)
-		{
-			$DataLines4 = file($filename4);
-			foreach($DataLines4 as $line)
-			{
-				array_push($DataLines, $line);
-			}
-		}
-
-		$filename5 = ConfigValue("data-file-name5");
-		if (strlen($filename5) > 0)
-		{
-			$DataLines5 = file($filename5);
-			foreach($DataLines5 as $line)
-			{
-				array_push($DataLines, $line);
-			}
-		}
-
-		$filename6 = ConfigValue("data-file-name6");
-		if (strlen($filename6) > 0)
-		{
-			$DataLines6 = file($filename6);
-			foreach($DataLines6 as $line)
-			{
-				array_push($DataLines, $line);
-			}
-		}
-*/
 	}
-
-	$Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
-
-	//echo "\n\n==========".$DataLines."\n==========\n\n";
 
 	foreach($DataLines as $Line)
 	{
