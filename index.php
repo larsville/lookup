@@ -101,16 +101,16 @@ function Lookup($Term)
   static $DataLines;
   if ($DataLines == NULL)
   {
-    $datafiles = ConfigValue("data-files");
-	foreach ($datafiles as &$datafile)
+    $DataFiles = ConfigValue("data-files");
+	foreach ($DataFiles as &$DataFile)
 	{
-		echo $datafile."\n";
+		//echo $DataFile."\n";
 
-    	$Lines = file($datafile);
-  		foreach($Lines as $Line)
+    	$Lines = file($DataFile);
+  		foreach($Lines as $InputLine)
   		{
-  			array_push($DataLines, $Line);
-			echo "-- ".$Line."\n";
+  			array_push($DataLines, $InputLine);
+			//echo "-- ".$InputLine."\n";
   		}
 	}
 /*
