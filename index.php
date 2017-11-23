@@ -110,6 +110,7 @@ function Lookup($Term)
   		foreach($Lines as $Line)
   		{
   			array_push($DataLines, $Line);
+			echo "-- ".$Line."\n";
   		}
 	}
 /*
