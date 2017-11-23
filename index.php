@@ -175,9 +175,10 @@ function Lookup($Term)
 
   $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
   
+	echo "\n\n==========".$DataLines."\n===========\n\n";
+
   foreach($DataLines as $Line)
   {
-	echo "-- ".$Line."\n";
   	$Line = trim($Line);
 	$SeparatorPos = stripos($Line, chr(9));
 	if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
