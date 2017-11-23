@@ -96,7 +96,7 @@ function Response($input_raw)
 
 function Lookup($Term)
 {
-	$result = "";
+	$Result = "";
 	$Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
 	static $DataLines;
@@ -130,7 +130,7 @@ function Lookup($Term)
 				if (strlen($Found) > 0) // ignore empty definitions
 				{
 					$Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
-					$result = $result.chr(13).$Found;
+					$Result = $result.chr(13).$Found;
 
 					//break;	// uncomment this to limit the result to only one item
 				}
@@ -138,7 +138,7 @@ function Lookup($Term)
 		}
 	}
 
-	return trim($result);
+	return trim($Result);
 
 } // end Lookup
 
