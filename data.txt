@@ -1,5 +1,4 @@
-Sourcefile	data.txt
-Content	Things you can look up:\n- Miscellaneous lines for testing, and AR/VR/MR definitions.
+Data	*data.txt*: miscellaneous lines for testing, low numbers, and AR/VR/MR definitions
 
 Lars	*Lars* is my creator!
 
