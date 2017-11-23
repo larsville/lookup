@@ -96,112 +96,112 @@ function Response($input_raw)
 
 function Lookup($Term)
 {
-  $result = "";
+	$result = "";
 
-  static $DataLines;
-  if ($DataLines == NULL)
-  {
-    $DataFiles = ConfigValue("data-files");
-	foreach ($DataFiles as &$DataFile)
+	static $DataLines;
+	if ($DataLines == NULL)
 	{
-		//echo $DataFile."\n";
-
-    	$InputLines = file($DataFile);
-  		foreach($InputLines as $InputLine)
-  		{
-  			array_push(&$DataLines, $InputLine);
-			//echo "-- ".$InputLine."\n";
-  		}
-	}
-/*
-    $filename = ConfigValue("data-file-name");
-    if (strlen($filename) > 0)
-    {
-    	$DataLines = file($filename);
-    	//sort($DataLines);
-    }
-
-    $filename2 = ConfigValue("data-file-name2");
-    if (strlen($filename2) > 0)
-    {
-    	$DataLines2 = file($filename2);
-  		foreach($DataLines2 as $line)
-  		{
-  			array_push($DataLines, $line);
-  		}
-    }
-
-    $filename3 = ConfigValue("data-file-name3");
-    if (strlen($filename3) > 0)
-    {
-    	$DataLines3 = file($filename3);
-  		foreach($DataLines3 as $line)
-  		{
-  			array_push($DataLines, $line);
-  		}
-    }
-
-    $filename4 = ConfigValue("data-file-name4");
-    if (strlen($filename4) > 0)
-    {
-    	$DataLines4 = file($filename4);
-  		foreach($DataLines4 as $line)
-  		{
-  			array_push($DataLines, $line);
-  		}
-    }
-
-    $filename5 = ConfigValue("data-file-name5");
-    if (strlen($filename5) > 0)
-    {
-    	$DataLines5 = file($filename5);
-  		foreach($DataLines5 as $line)
-  		{
-  			array_push($DataLines, $line);
-  		}
-    }
-
-    $filename6 = ConfigValue("data-file-name6");
-    if (strlen($filename6) > 0)
-    {
-    	$DataLines6 = file($filename6);
-  		foreach($DataLines6 as $line)
-  		{
-  			array_push($DataLines, $line);
-  		}
-    }
-*/
-  }
-
-  $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
-  
-  //echo "\n\n==========".$DataLines."\n==========\n\n";
-
-  foreach($DataLines as $Line)
-  {
-  	$Line = trim($Line);
-	$SeparatorPos = stripos($Line, chr(9));
-	if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
-	{
-  		$PosFound = stripos($Line, $Term);
-		if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
+		$DataFiles = ConfigValue("data-files");
+		foreach ($DataFiles as &$DataFile)
 		{
-			// We have a definition. Accumulate it!
-			$Found = substr($Line, $SeparatorPos);
-			$Found = trim($Found);
-
-			if (strlen($Found) > 0) // ignore empty definitions
+			$InputLines = file($DataFile);
+			foreach($InputLines as $InputLine)
 			{
-				$Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
-				$result = $result.chr(13).$Found;
+				//echo "\nInputLine = ".$InputLine;
+				array_push($DataLines, $InputLine);
+				//echo "\n\DataLines = ".$DataLines;
+			}
+		}
 
-				//break;	// uncomment this to limit the result to only one item
+/*
+		$filename = ConfigValue("data-file-name");
+		if (strlen($filename) > 0)
+		{
+			$DataLines = file($filename);
+			//sort($DataLines);
+		}
+
+		$filename2 = ConfigValue("data-file-name2");
+		if (strlen($filename2) > 0)
+		{
+			$DataLines2 = file($filename2);
+			foreach($DataLines2 as $line)
+			{
+				array_push($DataLines, $line);
+			}
+		}
+
+		$filename3 = ConfigValue("data-file-name3");
+		if (strlen($filename3) > 0)
+		{
+			$DataLines3 = file($filename3);
+			foreach($DataLines3 as $line)
+			{
+				array_push($DataLines, $line);
+			}
+		}
+
+		$filename4 = ConfigValue("data-file-name4");
+		if (strlen($filename4) > 0)
+		{
+			$DataLines4 = file($filename4);
+			foreach($DataLines4 as $line)
+			{
+				array_push($DataLines, $line);
+			}
+		}
+
+		$filename5 = ConfigValue("data-file-name5");
+		if (strlen($filename5) > 0)
+		{
+			$DataLines5 = file($filename5);
+			foreach($DataLines5 as $line)
+			{
+				array_push($DataLines, $line);
+			}
+		}
+
+		$filename6 = ConfigValue("data-file-name6");
+		if (strlen($filename6) > 0)
+		{
+			$DataLines6 = file($filename6);
+			foreach($DataLines6 as $line)
+			{
+				array_push($DataLines, $line);
+			}
+		}
+*/
+	}
+
+	$Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
+
+	//echo "\n\n==========".$DataLines."\n==========\n\n";
+
+	foreach($DataLines as $Line)
+	{
+		$Line = trim($Line);
+		$SeparatorPos = stripos($Line, chr(9));
+		if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
+		{
+			$PosFound = stripos($Line, $Term);
+			if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
+			{
+				// We have a definition. Accumulate it!
+				$Found = substr($Line, $SeparatorPos);
+				$Found = trim($Found);
+
+				if (strlen($Found) > 0) // ignore empty definitions
+				{
+					$Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
+					$result = $result.chr(13).$Found;
+
+					//break;	// uncomment this to limit the result to only one item
+				}
 			}
 		}
 	}
-  }
 
-  return trim($result);
+	return trim($result);
 
 } // end Lookup
 
