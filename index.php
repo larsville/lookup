@@ -9,84 +9,84 @@ require "vendor/autoload.php";
 
 // Extract the important values from the slash command.
 
-$command = $_POST['command'];
-$text = $_POST['text'];
+//$Command = $_POST['command'];
+$Text = $_POST['text'];
 $SlackToken = $_POST['token'];
 
 // Make sure we have the proper token.
 
-$RequiredSlackToken = getenv('SLACK_TOKEN');
-if ($SlackToken != $RequiredSlackToken) // token from slash command config page
+$RequiredSlackToken = getenv('SLACK_TOKEN'); // from slash command config page
+if ($SlackToken != $RequiredSlackToken)
 {
-  $msg = ConfigValue("msg-authorization-failed");
-  exit($msg);
-  echo $msg;
+  $Msg = ConfigValue("msg-authorization-failed");
+  exit($Msg);
+  echo $Msg;
 }
 
-echo Response($text);
+echo Response($Text);
 
 /////////////////
 
-function Debug($scope, $name, $value)
+function Debug($Scope, $Name, $Value)
 {
-  echo "\n-->".$scope.": <".$name."> = <".$value.">";
+  echo "\n-->".$Scope.": <".$Name."> = <".$Value.">";
 }
 
 /////////////////
 
-function ConfigValue($key)
+function ConfigValue($Key)
 {
-  static $configValues;
-  if ($configValues == NULL)
+  static $ConfigValues;
+  if ($ConfigValues == NULL)
   {
-  	$configValues = parse_ini_file("config.ini.php");
+  	$ConfigValues = parse_ini_file("config.ini.php");
   }
-  return $configValues[$key];
+  return $ConfigValues[$Key];
 }
 
 /////////////////
 
 // Return a response for the given input, including help or failure messages.
 
-function Response($input_raw)
+function Response($InputRaw)
 {
   // Instantiate a Mixpanel object using a token
   // stashed in a (Heroku) environment variable,
   // and track our activity with it.
 
-  $result = "";
-  $input = strtolower($input_raw);
+  $Result = "";
+  $Input = strtolower($InputRaw);
 
   $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
-  $mp = Mixpanel::getInstance($RequiredMixpanelToken);
+  $Mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
-  if ($input == "?" or $input == "" or $input == "help")
+  if ($Input == "?" or $Input == "" or $Input == "help")
   {
     // Here if the user seems to need help. We could simply make
     // this part of the data file. But that could potentially return
     // multiple unrelated results as well. Probably better to check
     // for the existence of msg-help, and proceed appropriately.
-    $result = ConfigValue("msg-help");
-    $mp->track("helped  <".$input_raw.">");
+    $Result = ConfigValue("msg-help");
+    $Mp->track("helped  <".$input_raw.">");
   }
   else
   {
     // Get the definition for our term.
-    $result = Lookup($input);
+    $Result = Lookup($Input);
 
-    if ($result == "")
+    if ($Result == "")
     {
       // If there is no definition, admit defeat and put up a help message.
-      $result = str_ireplace("{input}", $input_raw, ConfigValue("msg-unlisted-term"));
-      $mp->track("FAILED <".$input_raw.">");
+      $Result = str_ireplace("{input}", $InputRaw, ConfigValue("msg-unlisted-term"));
+      $Mp->track("FAILED <".$input_raw.">");
     }
     else
     {
-      $mp->track("found <".$input_raw.">");
+      $Mp->track("found <".$input_raw.">");
     }
   }
 
-  return trim($result);
+  return trim($Result);
 
 } // end Response
 
