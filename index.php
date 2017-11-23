@@ -177,11 +177,11 @@ function Lookup($Term)
   
   foreach($DataLines as $Line)
   {
+	echo "-- ".$Line."\n";
   	$Line = trim($Line);
 	$SeparatorPos = stripos($Line, chr(9));
 	if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
 	{
-		echo "-- ".$Line."\n";
   		$PosFound = stripos($Line, $Term);
 		if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
 		{
