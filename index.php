@@ -101,17 +101,17 @@ function Lookup($Term)
 	static $DataLines;
 	if ($DataLines == NULL)
 	{
-		$DataLines[] = "";
+		$DataLines[] = ""; // array_push doesn't work without this
 		$DataFiles = ConfigValue("data-files");
 		foreach ($DataFiles as &$DataFile)
 		{
-			echo "\nDataFile = ".$DataFile;
+			//echo "\nDataFile = ".$DataFile;
 			$InputLines = file($DataFile);
 			foreach($InputLines as $InputLine)
 			{
-				echo "\nInputLine = ".$InputLine;
+				//echo "\nInputLine = ".$InputLine;
 				array_push($DataLines, $InputLine);
-				echo "\nDataLines = ".$DataLines;
+				//echo "\nDataLines = ".$DataLines;
 			}
 		}
 
