@@ -7,4 +7,4 @@ Dog	*Dogs* like humans.
 Dog	*Dogs* like bones.
 Dogs	*Dogs* jump on the furniture.
 Fish	*Fish* think _we_ live behind glass walls.
-Snake	*Snakes* are among the narrowest pets.
+Snakes	*Snakes* are among the narrowest pets.
