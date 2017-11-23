@@ -130,7 +130,7 @@ function Lookup($Term)
 				if (strlen($Found) > 0) // ignore empty definitions
 				{
 					$Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
-					$Result = $result.chr(13).$Found;
+					$Result = $Result.chr(13).$Found;
 
 					//break;	// uncomment this to limit the result to only one item
 				}
