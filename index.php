@@ -104,9 +104,15 @@ function Lookup($Term)
     $datafiles = ConfigValue("data-files");
 	foreach ($datafiles as &$datafile)
 	{
-		echo $datafile."\n";
+		//echo $datafile."\n";
+
+    	$Lines = file($datafile);
+  		foreach($Lines as $Line)
+  		{
+  			array_push($DataLines, $Line);
+  		}
 	}
-    
+/*
     $filename = ConfigValue("data-file-name");
     if (strlen($filename) > 0)
     {
@@ -163,6 +169,7 @@ function Lookup($Term)
   			array_push($DataLines, $line);
   		}
     }
+*/
   }
 
   $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
