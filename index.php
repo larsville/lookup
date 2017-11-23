@@ -101,7 +101,12 @@ function Lookup($Term)
   static $DataLines;
   if ($DataLines == NULL)
   {
-    $filenames = ConfigValue("data-files");
+    $datafiles = ConfigValue("data-files");
+	foreach ($datafiles as &$datafile)
+	{
+		echo $datafile."\n";
+	}
+    
     $filename = ConfigValue("data-file-name");
     if (strlen($filename) > 0)
     {
