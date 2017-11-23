@@ -109,7 +109,7 @@ function Lookup($Term)
     	$InputLines = file($DataFile);
   		foreach($InputLines as $InputLine)
   		{
-  			array_push($DataLines, $InputLine);
+  			array_push(&$DataLines, $InputLine);
 			//echo "-- ".$InputLine."\n";
   		}
 	}
@@ -175,7 +175,7 @@ function Lookup($Term)
 
   $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
   
-	echo "\n\n==========".$DataLines."\n===========\n\n";
+  //echo "\n\n==========".$DataLines."\n==========\n\n";
 
   foreach($DataLines as $Line)
   {
