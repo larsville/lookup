@@ -97,7 +97,7 @@ function Response($InputRaw)
 function Lookup($Term)
 {
   $Result = "";
-  $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
+  $TermLower = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
   static $DataLines;
   if ($DataLines == NULL)
@@ -120,7 +120,7 @@ function Lookup($Term)
     $SeparatorPos = stripos($Line, chr(9));
     if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
     {
-      $PosFound = stripos($Line, $Term);
+      $PosFound = stripos($Line, $TermLower);
       if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
       {
         // We have a definition. Accumulate it!
