@@ -67,7 +67,7 @@ function Response($InputRaw)
     // multiple unrelated results as well. Probably better to check
     // for the existence of msg-help, and proceed appropriately.
     $Result = ConfigValue("msg-help");
-    $Mp->track("helped  <".$input_raw.">");
+    $Mp->track("helped  <".$InputRaw.">");
   }
   else
   {
@@ -78,11 +78,11 @@ function Response($InputRaw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $Result = str_ireplace("{input}", $InputRaw, ConfigValue("msg-unlisted-term"));
-      $Mp->track("FAILED <".$input_raw.">");
+      $Mp->track("FAILED <".$InputRaw.">");
     }
     else
     {
-      $Mp->track("found <".$input_raw.">");
+      $Mp->track("found <".$InputRaw.">");
     }
   }
 
