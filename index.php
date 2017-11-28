@@ -36,12 +36,14 @@ function Debug($Scope, $Name, $Value)
 
 function ConfigValue($Key)
 {
+  $Result = "";
   static $ConfigValues;
   if ($ConfigValues == NULL)
   {
     $ConfigValues = parse_ini_file("config.ini.php");
   }
-  return $ConfigValues[$Key];
+  $Result = str_ireplace("\\n", chr(13), $ConfigValues[$Key]); // support escaped line breaks
+  return $Result;
 }
 
 /////////////////
