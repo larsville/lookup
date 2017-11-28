@@ -39,7 +39,7 @@ function ConfigValue($Key)
   static $ConfigValues;
   if ($ConfigValues == NULL)
   {
-  	$ConfigValues = parse_ini_file("config.ini.php");
+    $ConfigValues = parse_ini_file("config.ini.php");
   }
   return $ConfigValues[$Key];
 }
@@ -96,49 +96,49 @@ function Response($InputRaw)
 
 function Lookup($Term)
 {
-	$Result = "";
-	$Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
+  $Result = "";
+  $Term = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
-	static $DataLines;
-	if ($DataLines == NULL)
-	{
-		$DataLines[] = ""; // array_push doesn't work without this
-		$DataFiles = ConfigValue("data-files");
-		foreach ($DataFiles as &$DataFile)
-		{
-			$InputLines = file($DataFile);
-			foreach($InputLines as $InputLine)
-			{
-				array_push($DataLines, $InputLine);
-			}
-		}
-	}
+  static $DataLines;
+  if ($DataLines == NULL)
+  {
+    $DataLines[] = ""; // array_push doesn't work without this
+    $DataFiles = ConfigValue("data-files");
+    foreach ($DataFiles as &$DataFile)
+    {
+      $InputLines = file($DataFile);
+      foreach($InputLines as $InputLine)
+      {
+        array_push($DataLines, $InputLine);
+      }
+    }
+  }
 
-	foreach($DataLines as $Line)
-	{
-		$Line = trim($Line);
-		$SeparatorPos = stripos($Line, chr(9));
-		if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
-		{
-			$PosFound = stripos($Line, $Term);
-			if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
-			{
-				// We have a definition. Accumulate it!
-				$Found = substr($Line, $SeparatorPos);
-				$Found = trim($Found);
+  foreach($DataLines as $Line)
+  {
+    $Line = trim($Line);
+    $SeparatorPos = stripos($Line, chr(9));
+    if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
+    {
+      $PosFound = stripos($Line, $Term);
+      if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
+      {
+        // We have a definition. Accumulate it!
+        $Found = substr($Line, $SeparatorPos);
+        $Found = trim($Found);
 
-				if (strlen($Found) > 0) // ignore empty definitions
-				{
-					$Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
-					$Result = $Result.chr(13).$Found;
+        if (strlen($Found) > 0) // ignore empty definitions
+        {
+          $Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
+          $Result = $Result.chr(13).$Found;
 
-					//break;	// uncomment this to limit the result to only one item
-				}
-			}
-		}
-	}
+          //break;  // uncomment this to limit the result to only one item
+        }
+      }
+    }
+  }
 
-	return trim($Result);
+  return trim($Result);
 
 } // end Lookup
 
