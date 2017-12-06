@@ -13,6 +13,8 @@ require "vendor/autoload.php";
 $Text = $_POST['text'];
 $SlackToken = $_POST['token'];
 
+// hack; should we sanitize above inputs?
+
 // Make sure we have the proper token.
 
 $RequiredSlackToken = getenv('SLACK_TOKEN'); // from slash command config page
