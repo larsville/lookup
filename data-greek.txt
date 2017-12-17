@@ -1,4 +1,4 @@
-Datafiles	*data-greek.txt*: the first several Greek letters
+Data	*data-greek.txt*: the first several Greek letters
 
 Alpha	*Alpha* is the first Greek letter.
 Beta	*Beta* is the second Greek letter.
