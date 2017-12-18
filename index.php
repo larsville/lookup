@@ -111,7 +111,7 @@ function Lookup($Term)
   if ($DataLines == NULL)
   {
     $DataFiles = ConfigValue("data-files");
-    foreach ($DataFiles as &$DataFile)
+    foreach ($DataFiles as $DataFile)
     {
       $InputLines = file($DataFile);
       foreach($InputLines as $InputLine)
@@ -160,6 +160,10 @@ function Lookup($Term)
         }
       }
     }
+  }
+
+  foreach($MatchesAsName as $Line)
+  {
   }
 
   return trim($Result);
