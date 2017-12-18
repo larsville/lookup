@@ -23,7 +23,8 @@ Test a line with no separator
 
 // This is for testing our matching smartness.
 
-Smart	*Smart* should produce this line (1 of 3)
-Smarty	*Smart* should produce this line (2 of 3)
-Smarter	*Smart* should produce this line (3 of 3)
-Smartest	*Smart* should not produce this line
+Smart	*Smart* should produce this line (1 of 4)
+Smarty	*Smart* should produce this line (2 of 4)
+Smarter	*Smart* should produce this line (3 of 4)
+Smartest	*Smart* should produce this line (4 of 4)
+Smartings	*Smart* should _not_ produce this line
