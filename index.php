@@ -103,10 +103,10 @@ function Lookup($Term)
   $Result = "";
   $TermLower = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
-  static $DataLines;
+  $DataLines = array();
   if ($DataLines == NULL)
   {
-    $DataLines[] = ""; // array_push doesn't work without this
+    //$DataLines[] = ""; // array_push doesn't work without this
     $DataFiles = ConfigValue("data-files");
     foreach ($DataFiles as &$DataFile)
     {
