@@ -162,8 +162,34 @@ function Lookup($Term)
     }
   }
 
+  if (strlen($Result) > 0)
+  {
+    $Result = $Result.chr(13);
+  }
+  $Result = $Result.chr(13)."MatchesAsName";
   foreach($MatchesAsName as $Line)
   {
+    $Result = $Result.chr(13).$Line;
+  }
+
+  if (strlen($Result) > 0)
+  {
+    $Result = $Result.chr(13);
+  }
+  $Result = $Result.chr(13)."MatchesInName";
+  foreach($MatchesInName as $Line)
+  {
+    $Result = $Result.chr(13).$Line;
+  }
+
+  if (strlen($Result) > 0)
+  {
+    $Result = $Result.chr(13);
+  }
+  $Result = $Result.chr(13)."MatchesInDefinition";
+  foreach($MatchesInDefinition as $Line)
+  {
+    $Result = $Result.chr(13).$Line;
   }
 
   return trim($Result);
