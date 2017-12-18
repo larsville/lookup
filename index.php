@@ -162,7 +162,7 @@ function Lookup($Term)
     }
   }
 
-  if count($MatchesAsName) > 0
+  if (count($MatchesAsName) > 0)
   {
     $Result = "";
     foreach($MatchesAsName as $Line)
@@ -170,7 +170,7 @@ function Lookup($Term)
       $Result = $Result.chr(13).$Line;
     }
   }
-  elseif count($MatchesInName) > 0
+  elseif (count($MatchesInName) > 0)
   {
     $Result = "";
     foreach($MatchesInName as $Line)
@@ -178,7 +178,7 @@ function Lookup($Term)
       $Result = $Result.chr(13).$Line;
     }
   }
-  elseif count($MatchesInDefinition) > 0
+  elseif (count($MatchesInDefinition) > 0)
   {
     $Result = "";
     foreach($MatchesInDefinition as $Line)
