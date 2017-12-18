@@ -140,13 +140,11 @@ function Lookup($Term)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            //echo chr(13)."SeparatorPos = ".$SeparatorPos;
-            //echo chr(13)."strlen($TermNormalized) = ".strlen($TermNormalized);
             if ($SeparatorPos == strlen($TermNormalized)) // did we match the name exactly?
             {
               array_push($MatchesAsName, $DefinitionFound);
             }
-            else
+            else // we matched in the name, but not exactly
             {
               array_push($MatchesInName, $DefinitionFound);
             }
@@ -164,6 +162,32 @@ function Lookup($Term)
     }
   }
 
+  if count($MatchesAsName) > 0
+  {
+    $Result = "";
+    foreach($MatchesAsName as $Line)
+    {
+      $Result = $Result.chr(13).$Line;
+    }
+  }
+  elseif count($MatchesInName) > 0
+  {
+    $Result = "";
+    foreach($MatchesInName as $Line)
+    {
+      $Result = $Result.chr(13).$Line;
+    }
+  }
+  elseif count($MatchesInDefinition) > 0
+  {
+    $Result = "";
+    foreach($MatchesInDefinition as $Line)
+    {
+      $Result = $Result.chr(13).$Line;
+    }
+  }
+
+/*
   if (strlen($Result) > 0)
   {
     $Result = $Result.chr(13);
@@ -193,6 +217,7 @@ function Lookup($Term)
   {
     $Result = $Result.chr(13).$Line;
   }
+*/
 
   return trim($Result);
 
