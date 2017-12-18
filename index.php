@@ -140,7 +140,7 @@ function Lookup($Term)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            if ($SeparatorPos == strlen($TermNormalized)) // did we match the name exactly?
+            if (strlen($TermNormalized) >= $SeparatorPos-2) // did we match the name "exactly"?
             {
               array_push($MatchesAsName, $DefinitionFound);
             }
@@ -154,9 +154,6 @@ function Lookup($Term)
 		    array_push($MatchesInDefinition, $DefinitionFound);
 		  }
 
-          $Result = $Result.chr(13).$DefinitionFound;
-
-          //break;  // uncomment this to limit the result to only one item
         }
       }
     }
@@ -164,7 +161,6 @@ function Lookup($Term)
 
   if (count($MatchesAsName) > 0)
   {
-    $Result = "";
     foreach($MatchesAsName as $Line)
     {
       $Result = $Result.chr(13).$Line;
@@ -172,7 +168,6 @@ function Lookup($Term)
   }
   elseif (count($MatchesInName) > 0)
   {
-    $Result = "";
     foreach($MatchesInName as $Line)
     {
       $Result = $Result.chr(13).$Line;
@@ -180,44 +175,11 @@ function Lookup($Term)
   }
   elseif (count($MatchesInDefinition) > 0)
   {
-    $Result = "";
     foreach($MatchesInDefinition as $Line)
     {
       $Result = $Result.chr(13).$Line;
     }
   }
-
-/*
-  if (strlen($Result) > 0)
-  {
-    $Result = $Result.chr(13);
-  }
-  $Result = $Result.chr(13)."========== MatchesAsName ==========";
-  foreach($MatchesAsName as $Line)
-  {
-    $Result = $Result.chr(13).$Line;
-  }
-
-  if (strlen($Result) > 0)
-  {
-    $Result = $Result.chr(13);
-  }
-  $Result = $Result.chr(13)."========== MatchesInName ==========";
-  foreach($MatchesInName as $Line)
-  {
-    $Result = $Result.chr(13).$Line;
-  }
-
-  if (strlen($Result) > 0)
-  {
-    $Result = $Result.chr(13);
-  }
-  $Result = $Result.chr(13)."========== MatchesInDefinition ==========";
-  foreach($MatchesInDefinition as $Line)
-  {
-    $Result = $Result.chr(13).$Line;
-  }
-*/
 
   return trim($Result);
 
