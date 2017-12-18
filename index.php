@@ -140,11 +140,13 @@ function Lookup($Term)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            if (strlen($TermNormalized) >= $SeparatorPos-2) // did we match the name "exactly"?
+            // hack; need to split by words and pipes
+            if (strlen($TermNormalized) >= $SeparatorPos-3) // did we match the name closely?
             {
+              // hack; need to consider absolute length of word as well
               array_push($MatchesAsName, $DefinitionFound);
             }
-            else // we matched in the name, but not exactly
+            else // we matched in the name, but not closely
             {
               array_push($MatchesInName, $DefinitionFound);
             }
