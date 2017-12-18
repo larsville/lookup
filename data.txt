@@ -18,5 +18,12 @@ Test phrase	*Testing multi-word terms*: this line should appear for `t e s t` or
 
 // These lines should not appear:
 
-Test separator with no definition	
-Test no separator
+Test a separator with no definition	
+Test a line with no separator
+
+// This is for testing our matching smartness.
+
+Smart	*Smart* should produce this line (1 of 3)
+Smarts	*Smart* should produce this line (2 of 3)
+Smarter	*Smart* should produce this line (3 of 3)
+Smarting	*Smart* should not produce this line
