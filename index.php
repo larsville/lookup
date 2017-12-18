@@ -140,7 +140,7 @@ function Lookup($Term)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            if ($SeparatorPos = strlen($TermNormalized)+1) // did we match the name exactly?
+            if ($SeparatorPos == strlen($TermNormalized)+1) // did we match the name exactly?
             {
               array_push($MatchesAsName, $DefinitionFound);
             }
