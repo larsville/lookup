@@ -103,9 +103,9 @@ function Lookup($Term)
   $Result = "";
   $TermNormalized = trim(strtolower($Term)); // hack; strip spaces and corp name too
 
-  $Matches_ExactName = array();
-  $Matches_WithinName = array();
-  $Matches_WithinDefinition = array();
+  $MatchesAsName = array();
+  $MatchesInName = array();
+  $MatchesInDefinition = array();
 
   $DataLines = array();
   if ($DataLines == NULL)
@@ -130,22 +130,33 @@ function Lookup($Term)
       $PosFound = stripos($Line, $TermNormalized); // is the term within the line at all?
       if ($PosFound !== false) // if so...
       {
-        if ($PosFound < $SeparatorPos) // is the search term within the name?
-        {
-          // We have a definition. Accumulate it!
-          $Found = substr($Line, $SeparatorPos);
-          $Found = trim($Found);
+        // We have a match. Get the corresponding definition.
 
-          if (strlen($Found) > 0) // ignore empty definitions
+        $DefinitionFound = substr($Line, $SeparatorPos);
+        $DefinitionFound = str_ireplace("\\n", chr(13), $DefinitionFound); // support escaped line breaks
+        $DefinitionFound = trim($DefinitionFound);
+
+        if (strlen($DefinitionFound) > 0) // ignore empty definitions
+        {
+          if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            $Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
-            $Result = $Result.chr(13).$Found;
-
-            //break;  // uncomment this to limit the result to only one item
+            if ($PosFound = strlen(&TermNormalized)-1) // did we match the name exactly?
+            {
+              array_push($MatchesAsName, $DefinitionFound);
+            }
+            else
+            {
+              array_push($MatchesInName, $DefinitionFound);
+            }
           }
-        }
-        else // here if the search term was not in the name -- it must be in the definition.
-        {
+		  else // we didn't match in the name, so it must be in the definition
+		  {
+		    array_push($MatchesInDefinition, $DefinitionFound);
+		  }
+
+          $Result = $Result.chr(13).$DefinitionFound;
+
+          //break;  // uncomment this to limit the result to only one item
         }
       }
     }
