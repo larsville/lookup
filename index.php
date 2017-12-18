@@ -140,7 +140,7 @@ function Lookup($Term)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            // hack; need to split by words and pipes
+            // hack; need to split by pipes and spaces (with parens stripped)
             if (strlen($TermNormalized) >= $SeparatorPos-3) // did we match the name closely?
             {
               // hack; need to consider absolute length of word as well
