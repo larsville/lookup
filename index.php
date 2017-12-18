@@ -165,21 +165,42 @@ function Lookup($Term)
   {
     foreach($MatchesAsName as $Line)
     {
-      $Result = $Result.chr(13).$Line;
+      if (count($MatchesAsName) > 1)
+      {
+        $Result = $Result.chr(13)."- ".$Line;
+      }
+      else
+      {
+        $Result = $Result.chr(13).$Line;
+      }
     }
   }
   elseif (count($MatchesInName) > 0)
   {
     foreach($MatchesInName as $Line)
     {
-      $Result = $Result.chr(13).$Line;
+      if (count($MatchesInName) > 1)
+      {
+        $Result = $Result.chr(13)."- ".$Line;
+      }
+      else
+      {
+        $Result = $Result.chr(13).$Line;
+      }
     }
   }
   elseif (count($MatchesInDefinition) > 0)
   {
     foreach($MatchesInDefinition as $Line)
     {
-      $Result = $Result.chr(13).$Line;
+      if (count($MatchesInDefinition) > 1)
+      {
+        $Result = $Result.chr(13)."- ".$Line;
+      }
+      else
+      {
+        $Result = $Result.chr(13).$Line;
+      }
     }
   }
 
