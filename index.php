@@ -101,12 +101,15 @@ function Response($InputRaw)
 function Lookup($Term)
 {
   $Result = "";
-  $TermLower = trim(strtolower($Term)); // hack; strip spaces and corp name too
+  $TermNormalized = trim(strtolower($Term)); // hack; strip spaces and corp name too
+
+  $Matches_ExactName = array();
+  $Matches_WithinName = array();
+  $Matches_WithinDefinition = array();
 
   $DataLines = array();
   if ($DataLines == NULL)
   {
-    //$DataLines[] = ""; // array_push doesn't work without this
     $DataFiles = ConfigValue("data-files");
     foreach ($DataFiles as &$DataFile)
     {
@@ -124,19 +127,25 @@ function Lookup($Term)
     $SeparatorPos = stripos($Line, chr(9));
     if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
     {
-      $PosFound = stripos($Line, $TermLower);
-      if ($PosFound !== false and ($PosFound < $SeparatorPos)) // does the item name contain the search term?
+      $PosFound = stripos($Line, $TermNormalized); // is the term within the line at all?
+      if ($PosFound !== false) // if so...
       {
-        // We have a definition. Accumulate it!
-        $Found = substr($Line, $SeparatorPos);
-        $Found = trim($Found);
-
-        if (strlen($Found) > 0) // ignore empty definitions
+        if ($PosFound < $SeparatorPos) // is the search term within the name?
         {
-          $Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
-          $Result = $Result.chr(13).$Found;
+          // We have a definition. Accumulate it!
+          $Found = substr($Line, $SeparatorPos);
+          $Found = trim($Found);
 
-          //break;  // uncomment this to limit the result to only one item
+          if (strlen($Found) > 0) // ignore empty definitions
+          {
+            $Found = str_ireplace("\\n", chr(13), $Found); // support escaped line breaks
+            $Result = $Result.chr(13).$Found;
+
+            //break;  // uncomment this to limit the result to only one item
+          }
+        }
+        else // here if the search term was not in the name -- it must be in the definition.
+        {
         }
       }
     }
