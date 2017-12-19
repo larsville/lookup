@@ -6,9 +6,9 @@ One	*One* is the first counting number. It is followed by _Two_.
 Two	*Two* is the second counting number. It is one greater than _One_.
 Three	*Three* is the third counting number. It comes after _Two_.
 
-VR	*Virtual Reality (VR)* is the simulation of an immersive computed environment, primarily by use of a head-mounted display that covers the user's entire field of view and responds to the user's head movement and orientation. Similarly immersive audio might also be included. See also Augmented Reality and Mixed Reality.
-AR	*Augmented Reality (AR)* is using a head-mounted display to show computed information within the user's field of view. Google Glass is an example. Mixed Reality is often conflated with Augmented Reality.
-MR	*Mixed Reality (MR)* is using a head-mounted display to simulate computed entities within the user's field of view, as if they existed in physical reality. Mixed Reality is often conflated with Augmented Reality.
+VR	*Virtual Reality (VR)* is the simulation of an immersive computed environment, primarily by use of a head-mounted display that covers the user's entire field of view and responds to the user's head movement and orientation. Similarly immersive audio might also be included. See also Augmented Reality (AR) and Mixed Reality (MR).
+AR	*Augmented Reality (AR)* is using a head-mounted display to show computed information within the user's field of view. Google Glass is an example. Augmented Reality is often conflated with Mixed Reality (MR).
+MR	*Mixed Reality (MR)* is using a head-mounted display to simulate computed entities within the user's field of view, as if they existed in physical reality. Mixed Reality is often conflated with Augmented Reality (AR).
 
 Test	*Testing formatting*:\n- line breaks\n- *bold*\n- _italic_\n- `code`\n- ~strikethrough~\n- <http://github.com/larsville/lookup|hyperlink>
 Test	*Testing multiple results*: this should be one of several results for `test`
