@@ -10,6 +10,7 @@ data-files[] = "data.txt"
 data-files[] = "data-greek.txt"
 data-files[] = "data-pets.txt"
 data-files[] = "https://raw.githubusercontent.com/larsville/lookup/master/data-remote.txt"
+data-files[] = "https://raw.githubusercontent.com/larsville/lookup/master/data-nonexistent.txt"
 
 ;*/
 
