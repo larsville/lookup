@@ -161,51 +161,36 @@ function Lookup($Term)
     }
   }
 
-  if (count($MatchesAsName) > 0)
+  if (count($MatchesAsName) > 0) $Result = $Result.chr(13).Formatted($MatchesAsName);
+  elseif (count($MatchesInName) > 0) $Result = $Result.chr(13).Formatted($MatchesInName);
+  elseif (count($MatchesInDefinition) > 0) $Result = $Result.chr(13).Formatted($MatchesInDefinition);
+
+  return trim($Result);
+
+} // end Lookup
+
+/////////////////
+
+// Return whatever our dataset contains for the given term.
+
+function Formatted($OutputArray)
+{
+  $Result = "";
+  
+  foreach($OutputArray as $Line)
   {
-    foreach($MatchesAsName as $Line)
+    if (count($OutputArray) > 1)
     {
-      if (count($MatchesAsName) > 1)
-      {
-        $Result = $Result.chr(13)."- ".$Line;
-      }
-      else
-      {
-        $Result = $Result.chr(13).$Line;
-      }
+      $Result = $Result.chr(13)."- ".$Line;
     }
-  }
-  elseif (count($MatchesInName) > 0)
-  {
-    foreach($MatchesInName as $Line)
+    else
     {
-      if (count($MatchesInName) > 1)
-      {
-        $Result = $Result.chr(13)."- ".$Line;
-      }
-      else
-      {
-        $Result = $Result.chr(13).$Line;
-      }
-    }
-  }
-  elseif (count($MatchesInDefinition) > 0)
-  {
-    foreach($MatchesInDefinition as $Line)
-    {
-      if (count($MatchesInDefinition) > 1)
-      {
-        $Result = $Result.chr(13)."- ".$Line;
-      }
-      else
-      {
-        $Result = $Result.chr(13).$Line;
-      }
+      $Result = $Result.chr(13).$Line;
     }
   }
 
   return trim($Result);
 
-} // end Lookup
+} // end Formatted
 
 ?>
