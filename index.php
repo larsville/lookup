@@ -161,9 +161,9 @@ function Lookup($Term)
     }
   }
 
-  if (count($MatchesAsName) > 0) $Result = $Result.chr(13).Formatted($MatchesAsName);
-  elseif (count($MatchesInName) > 0) $Result = $Result.chr(13).Formatted($MatchesInName);
-  elseif (count($MatchesInDefinition) > 0) $Result = $Result.chr(13).Formatted($MatchesInDefinition);
+  if (count($MatchesAsName) > 0) $Result = $Result.Formatted($MatchesAsName);
+  elseif (count($MatchesInName) > 0) $Result = $Result.Formatted($MatchesInName);
+  elseif (count($MatchesInDefinition) > 0) $Result = $Result.Formatted($MatchesInDefinition);
 
   return trim($Result);
 
@@ -189,7 +189,7 @@ function Formatted($OutputArray)
     }
   }
 
-  return trim($Result);
+  return chr(13).trim($Result);
 
 } // end Formatted
 
