@@ -140,6 +140,14 @@ function Lookup($Term)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
+            // If the term is in the name but not in the definition, then insert the
+            // name as a prefix, so the user won't wonder why that definition is found.
+            
+            if (stripos($DefinitionFound, $TermNormalized) === false)
+            {
+              $DefinitionFound = substr($Line, 0, $SeparatorPos).": ".$DefinitionFound;
+            }
+            
             // hack; need to split by pipes and spaces (with parens stripped)
             if (strlen($TermNormalized) >= $SeparatorPos-3) // did we match the name closely?
             {
@@ -154,7 +162,7 @@ function Lookup($Term)
 		  else // we didn't match in the name, so it must be in the definition.
 		  {
 		    // prefix the definition with the term, so the user will know why it's there.
-		    array_push($MatchesInDefinition, substr($Line, 0, $SeparatorPos).": ".$DefinitionFound);
+		    array_push($MatchesInDefinition, $DefinitionFound);
 		  }
 
         }
