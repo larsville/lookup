@@ -151,9 +151,10 @@ function Lookup($Term)
               array_push($MatchesInName, $DefinitionFound);
             }
           }
-		  else // we didn't match in the name, so it must be in the definition
+		  else // we didn't match in the name, so it must be in the definition.
 		  {
-		    array_push($MatchesInDefinition, $DefinitionFound);
+		    // prefix the definition with the term, so the user will know why it's there.
+		    array_push($MatchesInDefinition, substr($Line, 0, $SeparatorPos).": ".$DefinitionFound);
 		  }
 
         }
