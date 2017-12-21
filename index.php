@@ -161,7 +161,6 @@ function Lookup($Term)
           }
 		  else // we didn't match in the name, so it must be in the definition.
 		  {
-		    // prefix the definition with the term, so the user will know why it's there.
 		    array_push($MatchesInDefinition, $DefinitionFound);
 		  }
 
