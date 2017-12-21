@@ -171,15 +171,15 @@ function Lookup($Term)
 
 /////////////////
 
-// Return whatever our dataset contains for the given term.
+// Return the given array of lines, formated appropriately for output.
 
-function Formatted($OutputArray)
+function Formatted($Lines)
 {
   $Result = "";
   
-  foreach($OutputArray as $Line)
+  foreach($Lines as $Line)
   {
-    if (count($OutputArray) > 1)
+    if (count($Lines) > 1)
     {
       $Result = $Result.chr(13)."- ".$Line;
     }
