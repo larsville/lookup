@@ -10,7 +10,7 @@ VR	*Virtual Reality (VR)* is the simulation of an immersive computed environment
 AR	*Augmented Reality (AR)* is using a head-mounted display to show computed information within the user's field of view. Google Glass is an example. Augmented Reality is often conflated with Mixed Reality (MR).
 MR	*Mixed Reality (MR)* is using a head-mounted display to simulate computed entities within the user's field of view, as if they existed in physical reality. Mixed Reality is often conflated with Augmented Reality (AR).
 
-Test	*Testing formatting*:\n- line breaks\n- *bold*\n- _italic_\n- `code`\n- ~strikethrough~\n- <http://github.com/larsville/lookup|hyperlink>
+Test	*Testing formatting*:\n  - line breaks\n  - *bold*\n  - _italic_\n  - `code`\n  - ~strikethrough~\n  - <http://github.com/larsville/lookup|hyperlink>
 Test	*Testing multiple results*: this should be one of several results for `test`
 Check	*Testing name matching*: this should NOT appear for `test`
 
