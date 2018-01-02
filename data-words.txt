@@ -1,5 +1,46 @@
 Data	*data-words.txt*: lines for testing matching by word
 
-George Washington	The father of our country
-Abraham Lincoln	Fought the civil war
-John Adams	The second president
+Barack Obama	I have a lot more material prepared, but I have to get the Secret Service home in time for their new curfew.
+George W. Bush	Cheney's a good man. He's got a good heart. (Pause) Well, he's a good man.
+Bill Clinton	Over the last few months, I've lost 10 pounds. Where did they go? Why haven't I produced them to the independent counsel? How did some of them manage to wind up on Tim Russert?
+George H.W. Bush	People say I'm indecisive, but I don't know about that.
+Ronald Reagan	'Make love, not war'? By the looks of you, you don't look like you could do much of either.
+Jimmy Carter	Press Secretary Jody Powell “has been trying to persuade me to reopen the White House swimming pool — suddenly. ... Any of you that survive would, of course, have permanent swimming privileges.
+Gerald Ford	At a time when funds for the Defense budget may be cut, it's comforting to see so many of the big guns from your industry still getting loaded.
+Richard Nixon	Let me make one thing perfectly clear. I wouldn't want to wake up next to a lady pipefitter.
+Lyndon Johnson	So dumb he can't fart and chew gum at the same time.
+John F. Kennedy	I don't see anything wrong with giving Bobby a little legal experience before he goes out on his own to practice law.
+Dwight D. Eisenhower	If you give me a week, I might think of one.
+Harry S. Truman	He's no better than a regular sissy.
+Franklin D. Roosevelt	I'm not surprised. But what for?
+Herbert Hoover	Blessed are the young, for they shall inherit the national debt.
+Calvin Coolidge	That man has offered me unsolicited advice for six years, all of it bad.
+Warren G. Harding	Jerry — you recall Jerry, whose cards I once sent you to Europe — came in while I was pondering your notes in glad reflection, and we talked about it.
+Woodrow Wilson	A conservative is someone who makes no changes and consults his grandmother when in doubt.
+William Howard Taft	Some men are graduated from college cum laude, some are graduated summa cum laude, and some are graduated mirabile dictu.
+Theodore Roosevelt	A flub-dub with a streak of the second rate and common in him.
+William McKinley	Well, Judge Day, every change so far in the office of secretary of state has been an improvement!
+Grover Cleveland	No man has ever yet been hanged for breaking the spirit of a law.
+Benjamin Harrison	When I hear a Democrat boasting himself of the age of his party, I feel like reminding him that there are other organized evils in the world older than the Democratic party.
+Grover Cleveland had two separate administrations but just not enough good quips to fill them both, so we turn to a joke told not by but about Cleveland during the 1884 race, concerning rumors that he had fathered a child out of wedlock	Ma, Ma, where's my Pa? Gone to the White House. Ha ha ha!
+Chester A. Arthur, dishing at a Republican banquet about how his ticket won Indiana	If it were not for the reporters, I would tell you the truth.
+James Garfield, on the presidency	My God! What is there in this place that a man should ever want to get into it?
+Rutherford B. Hayes, when told that a congressional uprising wanted to remove him and install Democrat Samuel J. Tilden	Mr. Tilden will be arrested and shot.
+Ulysses S. Grant, when told that Charles Sumner, a righteous senator from Massachusetts, didn't believe in the Bible	No, he didn't write it.
+Andrew Johnson	Washington, D.C., is 12 square miles bordered by reality.
+Abraham Lincoln	If I were two-faced, would I be wearing this one?
+James Buchanan, to his liquor merchants regarding their small bottles of bubbly	Pints are very inconvenient in this house, as (Champagne) is not used in such small quantities.
+Franklin Pierce, when asked about a president's duties after leaving office	There's nothing left ... but to get drunk.
+Millard Fillmore, declining an honorary degree from Oxford (and possibly poking fun at Andrew Jackson's acceptance of one from Harvard)	I have not the advantage of a classical education, and no man should, in my judgment, accept a degree he cannot read.
+Zachary Taylor, when a Whig first suggested that Taylor run for president	Stop your nonsense and drink your whiskey!
+James K. Polk, on Buchanan	Mr. Buchanan is an able man but ... sometimes acts like an old maid.
+John Tyler, on his death bed	Doctor, I am going. Perhaps it is best.
+William Henry Harrison	To Englishmen, life is a topic, not an activity.
+Martin Van Buren	As to the presidency, the two happiest days of my life were those of my entrance upon the office and my surrender of it.
+Andrew Jackson	John Calhoun, if you secede from my nation I will secede your head from the rest of your body.
+John Quincy Adams, on Jackson	A barbarian who cannot write a sentence of grammar and can hardly spell his own name.
+James Monroe, to Alexander Hamilton	You are a scoundrel.
+James Madison, on his death bed	I always talk better lying down.
+Thomas Jefferson, on John Adams	He is as disinterested as the being who made him.
+John Adams, on Alexander Hamilton	That bastard brat of a Scottish peddler!
+George Washington, in a 1788 letter congratulating the Marquis de Chastellux on his recent marriage	Now you are well served for coming to fight in favour of the American Rebels, all the way across the Atlantic Ocean, by catching that terrible Contagion — domestic felicity — which like the small pox or the plague, a man can have only once in his life: because it commonly lasts him (at least with us in America — I don't know how you manage these matters in France) for his whole life time.”
