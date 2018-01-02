@@ -1,0 +1,4 @@
+Data	*data-words.txt*: lines for testing matching by word
+
+w1 w2	definition
+w1 w2	definition
