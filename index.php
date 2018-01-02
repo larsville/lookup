@@ -176,7 +176,7 @@ function Lookup($Term)
       	$CountOfWordsInTerm = count($WordsInTerm);
       	if ($CountOfWordsInTerm > 0)
       	{
-      	  print_r(WordsInTerm);
+      	  print_r($WordsInTerm);
       	}
       }
     }
