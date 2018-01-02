@@ -106,6 +106,8 @@ function Lookup($Term)
   $MatchesAsName = array();
   $MatchesInName = array();
   $MatchesInDefinition = array();
+  $MatchesByWordInName = array();
+  $MatchesByWordInDefinition = array();
 
   $DataLines = array();
   if ($DataLines == NULL)
@@ -114,14 +116,14 @@ function Lookup($Term)
     foreach ($DataFiles as $DataFile)
     {
       $InputLines = file($DataFile);
-      foreach($InputLines as $InputLine)
+      foreach ($InputLines as $InputLine)
       {
         array_push($DataLines, $InputLine);
       }
     }
   }
 
-  foreach($DataLines as $Line)
+  foreach ($DataLines as $Line)
   {
     $Line = trim($Line);
     $SeparatorPos = stripos($Line, chr(9));
@@ -168,15 +170,71 @@ function Lookup($Term)
       }
       else // here if the term does not occur verbatim in the line
       {
-      	// If the term has more than one word, then don't give up yet;
-      	// figure out if one or more target words occur in the name or
-      	// in the definition.
+      	// If the term has more than one word, don't give up yet!
+      	// Count the number of target words that occur in the name
+      	// or in the definition.
       	
-      	$WordsInTerm = str_word_count($TermNormalized, 1);
-      	$CountOfWordsInTerm = count($WordsInTerm);
-      	if ($CountOfWordsInTerm > 0)
+      	$TermWords = str_word_count($TermNormalized, 1);
+      	$TermWordCount = count($TermWords);
+      	if ($TermWordCount > 1)
       	{
-      	  print_r($WordsInTerm);
+      	  $TermWordsFoundInNameCount = 0; // how many words have we found in the name?
+      	  $TermWordsFoundInDefinitionCount = 0; // how many words have we found in the definition?
+
+      	  foreach ($TermWords as $TermWord)
+      	  {
+      		$PosFound = stripos($Line, $TermWord); // is the word within the line at all?
+      		if ($PosFound !== false) // if so...
+      		{
+			  if ($PosFound < $SeparatorPos) // did we find the word within the name?
+			  {
+				$TermWordsFoundInNameCount = $TermWordsFoundInNameCount + 1;
+			  }
+			  else
+			  {
+				$TermWordsFoundInDefinitionCount = $TermWordsFoundInDefinitionCount + 1;
+			  }
+			}
+		  }
+
+		  // If either word count exceeds our threshold (currently zero),
+		  // accumulate the definition into the appropriate array.
+
+		  if ($TermWordsFoundInNameCount !== 0)
+		  {
+			// We have words in the name. Get the corresponding definition.
+
+			$DefinitionFound = substr($Line, $SeparatorPos);
+			$DefinitionFound = str_ireplace("\\n", chr(13), $DefinitionFound); // support escaped line breaks
+			$DefinitionFound = trim($DefinitionFound);
+
+       		// If the term is in the name but not in the definition, then insert the
+      		// name as a prefix, so the user won't wonder why that definition is found.
+            
+        	if ($TermWordsFoundInDefinitionCount === 0)
+     		{
+			  $DefinitionFound = substr($Line, 0, $SeparatorPos).": ".$DefinitionFound;
+        	}
+
+			if (strlen($DefinitionFound) > 0) // ignore empty definitions
+			{
+			  array_push($MatchesByWordInName, $DefinitionFound);
+			}
+		  }
+		  elseif ($TermWordsFoundInDefinitionCount !== 0)
+		  {
+			// We have words in the definition. Get the corresponding definition.
+
+			$DefinitionFound = substr($Line, $SeparatorPos);
+			$DefinitionFound = str_ireplace("\\n", chr(13), $DefinitionFound); // support escaped line breaks
+			$DefinitionFound = trim($DefinitionFound);
+
+			if (strlen($DefinitionFound) > 0) // ignore empty definitions
+			{
+			  array_push($MatchesByWordInDefinition, $DefinitionFound);
+			}
+		  }
+
       	}
       }
     }
@@ -188,9 +246,15 @@ function Lookup($Term)
   elseif (count($MatchesInName) > 0)
     $Result = $Result.Formatted($MatchesInName);
     
+  elseif (count($MatchesByWordInName) > 0)
+    $Result = $Result.Formatted($MatchesByWordInName);
+    
   elseif (count($MatchesInDefinition) > 0)
     $Result = $Result.Formatted($MatchesInDefinition);
 
+  elseif (count($MatchesByWordInDefinition) > 0)
+    $Result = $Result.Formatted($MatchesByWordInDefinition);
+    
   return trim($Result);
 
 } // end Lookup
