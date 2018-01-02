@@ -159,12 +159,25 @@ function Lookup($Term)
               array_push($MatchesInName, $DefinitionFound);
             }
           }
-		  else // we didn't match in the name, so it must be in the definition.
+		  else // we didn't match in the name, so it must be in the defix``nition.
 		  {
 		    array_push($MatchesInDefinition, $DefinitionFound);
 		  }
 
         }
+      }
+      else // here if the term does not occur verbatim in the line
+      {
+      	// If the term has more than one word, then don't give up yet;
+      	// figure out if one or more target words occur in the name or
+      	// in the definition.
+      	
+      	$WordsInTerm = str_word_count($TermNormalized, 1);
+      	$CountOfWordsInTerm = count($WordsInTerm);
+      	if ($CountOfWordsInTerm > 0)
+      	{
+      	  print_r(WordsInTerm);
+      	}
       }
     }
   }
