@@ -169,9 +169,14 @@ function Lookup($Term)
     }
   }
 
-  if (count($MatchesAsName) > 0) $Result = $Result.Formatted($MatchesAsName);
-  elseif (count($MatchesInName) > 0) $Result = $Result.Formatted($MatchesInName);
-  elseif (count($MatchesInDefinition) > 0) $Result = $Result.Formatted($MatchesInDefinition);
+  if (count($MatchesAsName) > 0)
+    $Result = $Result.Formatted($MatchesAsName);
+    
+  elseif (count($MatchesInName) > 0)
+    $Result = $Result.Formatted($MatchesInName);
+    
+  elseif (count($MatchesInDefinition) > 0)
+    $Result = $Result.Formatted($MatchesInDefinition);
 
   return trim($Result);
 
@@ -179,7 +184,7 @@ function Lookup($Term)
 
 /////////////////
 
-// Return the given array of lines, formated appropriately for output.
+// Return the given array of lines, formatted appropriately for output.
 
 function Formatted($Lines)
 {
