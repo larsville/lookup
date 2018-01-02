@@ -1,4 +1,5 @@
 Data	*data-words.txt*: lines for testing matching by word
 
-w1 w2	definition
-w1 w2	definition
+George Washington	The father of our country
+Abraham Lincoln	Fought the civil war
+John Adams	The second president
