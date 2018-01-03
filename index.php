@@ -130,7 +130,7 @@ function Lookup($Input)
     $SeparatorPos = stripos($Line, chr(9));
     if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
     {
-      $PosFound = stripos($Line, $InputNormalized); // is the term within the line at all?
+      $PosFound = stripos($Line, $InputNormalized); // is the input string within the line at all?
       if ($PosFound !== false) // if so...
       {
         // We have a match. Get the corresponding definition.
@@ -143,8 +143,9 @@ function Lookup($Input)
         {
           if ($PosFound < $SeparatorPos) // did we match within the name?
           {
-            // If the term is in the name but not in the definition, then insert the
-            // name as a prefix, so the user won't wonder why that definition is found.
+            // If the input string is in the name but not in the definition, then insert
+            // the input string as a prefix, so the user won't wonder why that definition
+            // was returned.
             
             if (stripos($DefinitionFound, $InputNormalized) === false)
             {
@@ -263,6 +264,7 @@ function Lookup($Input)
 /////////////////
 
 // Return the given array of lines, formatted appropriately for output.
+// The original input can be included as well, if provided.
 
 function Formatted($Lines, $Input = NULL)
 {
@@ -279,6 +281,8 @@ function Formatted($Lines, $Input = NULL)
       $Result = $Result.chr(13).$Line;
     }
   }
+
+  // If there are multiple return lines, then repeat the input. It seems to help.
 
   if ((count($Lines) > 1) && ($Input !== NULL))
   {

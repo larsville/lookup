@@ -13,7 +13,6 @@ data-files[] = "https://raw.githubusercontent.com/larsville/lookup/master/data-r
 data-files[] = "https://raw.githubusercontent.com/larsville/lookup/master/data-nonexistent.txt"
 
 data-files[] = "data-pets.txt"
-data-files[] = "data-words.txt"
 
 ;*/
 
