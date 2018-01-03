@@ -282,7 +282,7 @@ function Formatted($Lines, $Input = NULL)
 
   if ((count($Lines) > 1) && ($Input !== NULL))
   {
-    $Result = count($Lines).' results for "'$Input.':'.chr(13).$Result;
+    $Result = count($Lines).' results for "'.$Input.'":'.chr(13).$Result;
   }
 
   return chr(13).trim($Result);
