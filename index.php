@@ -210,10 +210,10 @@ function Lookup($Input)
 			$DefinitionFound = str_ireplace("\\n", chr(13), $DefinitionFound); // support escaped line breaks
 			$DefinitionFound = trim($DefinitionFound);
 
-       		// If the term is in the name but not in the definition, then insert the
-      		// name as a prefix, so the user won't wonder why that definition is found.
+       		// If not all the input words are in the definition, then insert the
+      		// name as a prefix, so the user won't wonder why that definition was returned.
             
-        	if ($InputWordsFoundInDefinitionCount === 0)
+        	if ($InputWordsFoundInDefinitionCount < $InputWordCount)
      		{
 			  $DefinitionFound = substr($Line, 0, $SeparatorPos).": ".$DefinitionFound;
         	}
