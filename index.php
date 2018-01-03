@@ -242,19 +242,19 @@ function Lookup($Input)
   }
 
   if (count($MatchesAsName) > 0)
-    $Result = $Result.Formatted($MatchesAsName);
+    $Result = $Result.Formatted($MatchesAsName, $InputTrimmed);
     
   elseif (count($MatchesInName) > 0)
-    $Result = $Result.Formatted($MatchesInName);
+    $Result = $Result.Formatted($MatchesInName, $InputTrimmed);
     
   elseif (count($MatchesByWordInName) > 0)
-    $Result = $Result.Formatted($MatchesByWordInName);
+    $Result = $Result.Formatted($MatchesByWordInName, $InputTrimmed);
     
   elseif (count($MatchesInDefinition) > 0)
-    $Result = $Result.Formatted($MatchesInDefinition);
+    $Result = $Result.Formatted($MatchesInDefinition, $InputTrimmed);
 
   elseif (count($MatchesByWordInDefinition) > 0)
-    $Result = $Result.Formatted($MatchesByWordInDefinition);
+    $Result = $Result.Formatted($MatchesByWordInDefinition, $InputTrimmed);
     
   return trim($Result);
 
