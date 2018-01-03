@@ -280,6 +280,11 @@ function Formatted($Lines, $Input = NULL)
     }
   }
 
+  if ((count($Lines) > 1) && ($Input !== NULL))
+  {
+    $Result = $Input." (".count($Lines)."):".chr(13).$Result;
+  }
+
   return chr(13).trim($Result);
 
 } // end Formatted
