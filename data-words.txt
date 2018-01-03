@@ -1,4 +1,4 @@
-Data	*data-words.txt*: lines for testing matching by word
+Data	*data-words.txt*: lines for testing matching by word (from http://triblive.com/lifestyles/morelifestyles/10380996-74/presidential-dinner-john and https://www.brainyquote.com/lists/authors/top_10_alexander_hamilton_quotes)
 
 Barack Obama	At the 2012 White House correspondents' dinner: I have a lot more material prepared, but I have to get the Secret Service home in time for their new curfew.
 George W. Bush	At the 2006 White House correspondents' dinner: Cheney's a good man. He's got a good heart. (Pause) Well, he's a good man.
@@ -38,9 +38,10 @@ John Tyler	On his death bed: Doctor, I am going. Perhaps it is best.
 William Henry Harrison	To Englishmen, life is a topic, not an activity.
 Martin Van Buren	As to the presidency: The two happiest days of my life were those of my entrance upon the office and my surrender of it.
 Andrew Jackson	John Calhoun, if you secede from my nation I will secede your head from the rest of your body.
+Alexander Hamilton	A well adjusted person is one who makes the same mistake twice without getting nervous.
 John Quincy Adams	On Jackson: A barbarian who cannot write a sentence of grammar and can hardly spell his own name.
 James Monroe	To Alexander Hamilton: You are a scoundrel.
 James Madison	On his death bed: I always talk better lying down.
 Thomas Jefferson	On John Adams: He is as disinterested as the being who made him.
 John Adams	On Alexander Hamilton: That bastard brat of a Scottish peddler!
-George Washington	In a 1788 letter congratulating the Marquis de Chastellux on his recent marriage: Now you are well served for coming to fight in favour of the American Rebels	All the way across the Atlantic Ocean, by catching that terrible Contagion — domestic felicity — which like the small pox or the plague	A man can have only once in his life: because it commonly lasts him (at least with us in America — I don't know how you manage these matters in France) for his whole life time.”
+George Washington	In a 1788 letter congratulating the Marquis de Chastellux on his recent marriage: Now you are well served for coming to fight in favour of the American Rebels, all the way across the Atlantic Ocean, by catching that terrible Contagion — domestic felicity — which like the small pox or the plague, a man can have only once in his life: because it commonly lasts him (at least with us in America — I don't know how you manage these matters in France) for his whole life time.
