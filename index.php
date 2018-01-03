@@ -96,12 +96,13 @@ function Response($InputRaw)
 
 /////////////////
 
-// Return whatever our dataset contains for the given term.
+// Return whatever our dataset contains for the given input.
 
-function Lookup($Term)
+function Lookup($Input)
 {
   $Result = "";
-  $TermNormalized = trim(strtolower($Term)); // hack; strip spaces and corp name too
+  $InputTrimmed = trim($Input); // hack; strip spaces and corp name too
+  $InputNormalized = strtolower($InputTrimmed);
 
   $MatchesAsName = array();
   $MatchesInName = array();
@@ -115,10 +116,10 @@ function Lookup($Term)
     $DataFiles = ConfigValue("data-files");
     foreach ($DataFiles as $DataFile)
     {
-      $InputLines = file($DataFile);
-      foreach ($InputLines as $InputLine)
+      $DataLines = file($DataFile);
+      foreach ($DataLines as $DataLine)
       {
-        array_push($DataLines, $InputLine);
+        array_push($DataLines, $DataLine);
       }
     }
   }
@@ -129,7 +130,7 @@ function Lookup($Term)
     $SeparatorPos = stripos($Line, chr(9));
     if (($SeparatorPos !== false) and (strlen($Line) > $SeparatorPos)) // ignore lines w/no definition
     {
-      $PosFound = stripos($Line, $TermNormalized); // is the term within the line at all?
+      $PosFound = stripos($Line, $InputNormalized); // is the term within the line at all?
       if ($PosFound !== false) // if so...
       {
         // We have a match. Get the corresponding definition.
@@ -145,13 +146,13 @@ function Lookup($Term)
             // If the term is in the name but not in the definition, then insert the
             // name as a prefix, so the user won't wonder why that definition is found.
             
-            if (stripos($DefinitionFound, $TermNormalized) === false)
+            if (stripos($DefinitionFound, $InputNormalized) === false)
             {
               $DefinitionFound = substr($Line, 0, $SeparatorPos).": ".$DefinitionFound;
             }
             
             // hack; need to split by pipes and spaces (with parens stripped)
-            if (strlen($TermNormalized) >= $SeparatorPos-3) // did we match the name closely?
+            if (strlen($InputNormalized) >= $SeparatorPos-3) // did we match the name closely?
             {
               // hack; need to consider absolute length of word as well
               array_push($MatchesAsName, $DefinitionFound);
@@ -174,25 +175,25 @@ function Lookup($Term)
       	// Count the number of target words that occur in the name
       	// or in the definition.
       	
-      	$TermWords = str_word_count($TermNormalized, 1);
-      	$TermWordCount = count($TermWords);
-      	if ($TermWordCount > 1)
+      	$InputWords = str_word_count($InputNormalized, 1);
+      	$InputWordCount = count($InputWords);
+      	if ($InputWordCount > 1)
       	{
-      	  $TermWordsFoundInNameCount = 0; // how many words have we found in the name?
-      	  $TermWordsFoundInDefinitionCount = 0; // how many words have we found in the definition?
+      	  $InputWordsFoundInNameCount = 0; // how many words have we found in the name?
+      	  $InputWordsFoundInDefinitionCount = 0; // how many words have we found in the definition?
 
-      	  foreach ($TermWords as $TermWord)
+      	  foreach ($InputWords as $InputWord)
       	  {
-      		$PosFound = stripos($Line, $TermWord); // is the word within the line at all?
+      		$PosFound = stripos($Line, $InputWord); // is the word within the line at all?
       		if ($PosFound !== false) // if so...
       		{
 			  if ($PosFound < $SeparatorPos) // did we find the word within the name?
 			  {
-				$TermWordsFoundInNameCount = $TermWordsFoundInNameCount + 1;
+				$InputWordsFoundInNameCount = $InputWordsFoundInNameCount + 1;
 			  }
 			  else
 			  {
-				$TermWordsFoundInDefinitionCount = $TermWordsFoundInDefinitionCount + 1;
+				$InputWordsFoundInDefinitionCount = $InputWordsFoundInDefinitionCount + 1;
 			  }
 			}
 		  }
@@ -200,7 +201,7 @@ function Lookup($Term)
 		  // If either word count exceeds our threshold (currently zero),
 		  // accumulate the definition into the appropriate array.
 
-		  if ($TermWordsFoundInNameCount === $TermWordCount)
+		  if ($InputWordsFoundInNameCount === $InputWordCount)
 		  {
 			// We have words in the name. Get the corresponding definition.
 
@@ -211,7 +212,7 @@ function Lookup($Term)
        		// If the term is in the name but not in the definition, then insert the
       		// name as a prefix, so the user won't wonder why that definition is found.
             
-        	if ($TermWordsFoundInDefinitionCount === 0)
+        	if ($InputWordsFoundInDefinitionCount === 0)
      		{
 			  $DefinitionFound = substr($Line, 0, $SeparatorPos).": ".$DefinitionFound;
         	}
@@ -221,7 +222,7 @@ function Lookup($Term)
 			  array_push($MatchesByWordInName, $DefinitionFound);
 			}
 		  }
-		  elseif ($TermWordsFoundInDefinitionCount === $TermWordCount)
+		  elseif ($InputWordsFoundInDefinitionCount === $InputWordCount)
 		  {
 			// We have words in the definition. Get the corresponding definition.
 
@@ -263,7 +264,7 @@ function Lookup($Term)
 
 // Return the given array of lines, formatted appropriately for output.
 
-function Formatted($Lines)
+function Formatted($Lines, $Term)
 {
   $Result = "";
   
@@ -277,6 +278,11 @@ function Formatted($Lines)
     {
       $Result = $Result.chr(13).$Line;
     }
+  }
+
+  if (count($Lines) > 1)
+  {
+    $Result = $Term.":".chr(13).$Result;
   }
 
   return chr(13).trim($Result);
