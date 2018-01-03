@@ -1,4 +1,4 @@
-Data: *data-words.txt*: lines for testing matching by word
+Data	*data-words.txt*: lines for testing matching by word
 
 Barack Obama	At the 2012 White House correspondents' dinner: I have a lot more material prepared, but I have to get the Secret Service home in time for their new curfew.
 George W. Bush	At the 2006 White House correspondents' dinner: Cheney's a good man. He's got a good heart. (Pause) Well, he's a good man.
