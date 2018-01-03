@@ -116,10 +116,10 @@ function Lookup($Input)
     $DataFiles = ConfigValue("data-files");
     foreach ($DataFiles as $DataFile)
     {
-      $DataLines = file($DataFile);
-      foreach ($DataLines as $DataLine)
+      $Lines = file($DataFile);
+      foreach ($Lines as $Line)
       {
-        array_push($DataLines, $DataLine);
+        array_push($DataLines, $Line);
       }
     }
   }
