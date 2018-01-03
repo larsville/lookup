@@ -200,7 +200,7 @@ function Lookup($Term)
 		  // If either word count exceeds our threshold (currently zero),
 		  // accumulate the definition into the appropriate array.
 
-		  if ($TermWordsFoundInNameCount !== 0)
+		  if ($TermWordsFoundInNameCount === $TermWordCount)
 		  {
 			// We have words in the name. Get the corresponding definition.
 
@@ -221,7 +221,7 @@ function Lookup($Term)
 			  array_push($MatchesByWordInName, $DefinitionFound);
 			}
 		  }
-		  elseif ($TermWordsFoundInDefinitionCount !== 0)
+		  elseif ($TermWordsFoundInDefinitionCount === $TermWordCount)
 		  {
 			// We have words in the definition. Get the corresponding definition.
 
