@@ -264,7 +264,7 @@ function Lookup($Input)
 
 // Return the given array of lines, formatted appropriately for output.
 
-function Formatted($Lines, $Term)
+function Formatted($Lines, $Input = NULL)
 {
   $Result = "";
   
@@ -280,9 +280,9 @@ function Formatted($Lines, $Term)
     }
   }
 
-  if (count($Lines) > 1)
+  if ((count($Lines) > 1) && ($Input !== NULL))
   {
-    $Result = $Term.":".chr(13).$Result;
+    $Result = $Input." (".count($Lines)."):".chr(13).$Result;
   }
 
   return chr(13).trim($Result);
