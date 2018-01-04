@@ -89,7 +89,7 @@ function Response($InputRaw)
     else
     {
       // Track our count of results, so analytics can reveal if things blow up.
-      $Mp->track($Org.": found <".$InputRaw."> (".count(explode(chr(13), $Result)).")");
+      $Mp->track($Org.": found <".$InputRaw."> (".(count(explode(chr(13), $Result))-2).")");
     }
   }
 
@@ -292,6 +292,9 @@ function Formatted($Lines, $Input = NULL)
     $Result = count($Lines).' results for "'.$Input.'":'.chr(13).$Result;
   }
 
+  // Hack; note that in the case of mulitple results, there are two extra lines,
+  // and our Response function relies on this when calculating result counts.
+  
   return chr(13).trim($Result);
 
 } // end Formatted
