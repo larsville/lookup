@@ -64,6 +64,8 @@ function Response($InputRaw)
   $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
   $Mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
+  $Org = ConfigValue("msg-org");
+
   if ($Input == "?" or $Input == "" or $Input == "help")
   {
     // Here if the user seems to need help. We could simply make
@@ -71,7 +73,7 @@ function Response($InputRaw)
     // multiple unrelated results as well. Probably better to check
     // for the existence of msg-help, and proceed appropriately.
     $Result = ConfigValue("msg-help");
-    $Mp->track("helped  <".$InputRaw.">");
+    $Mp->track($Org.": helped  <".$InputRaw.">");
   }
   else
   {
@@ -82,11 +84,12 @@ function Response($InputRaw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $Result = str_ireplace("{input}", $InputRaw, ConfigValue("msg-unlisted-term"));
-      $Mp->track("FAILED <".$InputRaw.">");
+      $Mp->track($Org.": FAILED <".$InputRaw.">");
     }
     else
     {
-      $Mp->track("found <".$InputRaw.">");
+      // Track our count of results so we can see if things blow up.
+      $Mp->track($Org.": found <".$InputRaw."> (".count(explode($Result, chr(13))).")");
     }
   }
 
