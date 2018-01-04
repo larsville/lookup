@@ -88,8 +88,8 @@ function Response($InputRaw)
     }
     else
     {
-      // Track our count of results so we can see if things blow up.
-      $Mp->track($Org.": found <".$InputRaw."> (".count(explode($Result, chr(13))).")");
+      // Track our count of results, so analytics can reveal if things blow up.
+      $Mp->track($Org.": found <".$InputRaw."> (".count(explode(chr(13), $Result)).")");
     }
   }
 
