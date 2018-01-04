@@ -64,7 +64,7 @@ function Response($InputRaw)
   $RequiredMixpanelToken = getenv('MIXPANEL_TOKEN');
   $Mp = Mixpanel::getInstance($RequiredMixpanelToken);
 
-  $Org = ConfigValue("msg-org");
+  $Org = ConfigValue("org");
 
   if ($Input == "?" or $Input == "" or $Input == "help")
   {
