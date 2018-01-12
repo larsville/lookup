@@ -17,8 +17,6 @@ data-files[] = "https://raw.githubusercontent.com/larsville/lookup/master/data-n
 data-files[] = "data-pets.txt"
 data-files[] = "data-words.txt"
 
-data-files[] = "adsk-products.txt"
-
 ;*/
 
 ;?>
