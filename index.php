@@ -84,6 +84,7 @@ function Response($InputRaw)
     {
       // If there is no definition, admit defeat and put up a help message.
       $Result = str_ireplace("{input}", $InputRaw, ConfigValue("msg-unlisted-term"));
+      $Result = str_ireplace("{inputDot}", str_ireplace(" ", ".", $InputRaw), $Result);
       $Mp->track($Org.": FAILED <".$InputRaw.">");
     }
     else
