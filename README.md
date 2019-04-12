@@ -5,6 +5,9 @@ Simple project for a web service that looks up a word in a dictionary and return
 Set up git remotes as follows:
 
 deploy	https://git.heroku.com/larsville-lookup.git (fetch)
+
 deploy	https://git.heroku.com/larsville-lookup.git (push)
+
 origin	https://github.com/larsville/lookup.git (fetch)
+
 origin	https://github.com/larsville/lookup.git (push)
